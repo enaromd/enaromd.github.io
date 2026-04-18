@@ -39,7 +39,7 @@ projects:
           <img src="/assets/images/badge-meta-database-engineer.png" alt="Meta Database Engineer" class="cert-badge">
         </a>
         <a href="https://verify.skilljar.com/c/i3bkw2vc5bcd" target="_blank">
-          <img src="/assets/images/badge-notion-advanced-test.png" alt="Notion Academy: Advanced" class="cert-badge">
+          <img src="/assets/images/badge-notion-advanced.png" alt="Notion Academy: Advanced" class="cert-badge">
         </a>
       </div>
     </div>
