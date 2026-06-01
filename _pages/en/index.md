@@ -44,7 +44,6 @@ projects:
         <a href="https://www.credly.com/badges/b87a61e6-0b8d-41ff-b8a5-f52833fca99f" target="_blank">
           <img src="/assets/images/badge-google-analytics.png" alt="Google Data Analyst" class="cert-badge">
         </a> -->
-        </a>
       </div>
     </div>
   </div>
