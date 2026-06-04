@@ -27,7 +27,7 @@ projects:
     <img src="/assets/images/web_hero.png" alt="Foto de perfil" class="hero-img">
     <div class="hero-text-content">
       <h1>Más allá del estetoscopio: <br>Evidencia con estadística en salud</h1>
-      <p>Soy Enyel Rodríguez, médico y analista de datos. Ayudo a transformar la <strong>complejidad clínica</strong> en <strong>modelos explicativos y predictivos</strong> que contribuyen a tomar decisiones estratégicas que impacten en las vidas de los pacientes.</p>
+      <p>Soy Enyel Rodríguez, médico y analista de datos clínicos. Cierro la brecha crítica entre los flujos de trabajo clínicos de primera línea y la bioestadística rigurosa. Al integrar índices clínicos validados en tuberías de datos del mundo real (RWD), ayudo a equipos de investigación a desarrollar modelos explicativos que se traducen directamente en resultados de pacientes más seguros y basados en evidencia.</p>
       <a href="/es/contacto/" class="btn btn--primary">Contáctame</a>
     </div>
   </div>
@@ -52,10 +52,10 @@ projects:
 <div class="hero_problem">
   <div class="hero__image-wrapper" data-image-src="/assets/images/hero_problem.png"></div>
   <div>
-    <h1>El Precio de la Incertidumbre</h1>
-    <p>En la toma de decisiones críticas, la evidencia es el único camino seguro. Pero, ¿qué pasa si esa evidencia no es sólida?</p>
-    <p>Un análisis de datos defectuoso puede llevar a interpretaciones incorrectas, a la pérdida de perspectivas valiosas, y, lo más preocupante, a decisiones mal informadas que afectan directamente a los pacientes y el crecimiento de tu organización.</p>
-    <p>El trabajo duro sin un análisis riguroso puede no ser suficiente. La incertidumbre no es solo una molestia, es un riesgo.</p>
+    <h1>El costo de los datos distorsionados</h1>
+    <p>En los ensayos clínicos y estudios observacionales, la evidencia es tan confiable como su fuente. Sin embargo, las bases de datos clínicas son notoriamente desordenadas, plagadas de sesgos sistemáticos y parámetros ausentes.</p>
+    <p>Cuando los datos de los pacientes se analizan sin una comprensión profunda y de primera línea de los flujos de trabajo clínicos, las variables críticas se clasifican erróneamente, la selección de cohortes se sesga y los modelos bioestadísticos no logran reflejar los resultados reales de los pacientes.</p>
+    <p>Para las organizaciones de investigación y los sistemas de salud, la mala interpretación de los datos clínicos es más que un error técnico: es una amenaza directa para la seguridad del paciente y la eficacia terapéutica.</p>
   </div>
 </div>
 
@@ -67,7 +67,7 @@ projects:
     <h1>El éxito: Cuando la evidencia te guía</h1>
     <p>Imagina un escenario donde tus datos te dan las respuestas que necesitas, cuando las necesitas.</p>
     <p>El éxito es tener una comprensión clara de la información que ya tienes, descubriendo perspectivas que ni siquiera sabías que existían. Es pasar de la incertidumbre a la certeza.</p>
-    <p>Esto se traduce en decisiones estratégicas inteligentes que impulsan la eficiencia, optimizan el crecimiento y, lo más importante, mejoran los resultados de los pacientes. </p>
+    <p>Esto se traduce en decisiones estratégicas inteligentes que impulsan la eficiencia, optimizan flujos clínicos y, lo más importante, mejoran los resultados de los pacientes. </p>
     <p>Con una base sólida de evidencia, tus decisiones no solo serán correctas, sino que también inspirarán confianza y liderazgo.</p>
   </div>
 </div>
@@ -151,10 +151,8 @@ projects:
   <img src="/assets/images/web_hero-about.png" alt="Acerca de mí">
   <div>
     <h1>Acerca de mí</h1>
-    <h2>“El médico que solo sabe de medicina, ni de medicina sabe” — José de Letamendi</h2>
-    <p>Para mí, ser médico va más allá de la práctica clínica; cada experiencia ha sido una oportunidad para aprender lecciones valiosas sobre la complejidad del mundo que nos rodea y cómo podemos integrar ese conocimiento en el cuidado de la salud.</p>
-    <h2>Del saber al hacer: Una integración práctica</h2>
-    <p>Mi trayectoria es la prueba que el rigor estadístico y la intuición clínica no son opuestos, sino el camino de avanzar en la medicina moderna basada en la evidencia.</p>
+    <p>Como médico en ejercicio, he pasado años escuchando corazones, estabilizando a pacientes críticos bajo estrés agudo y dirigiendo departamentos de emergencia municipales. Sin embargo, me di cuenta de que la mayor barrera para la atención médica moderna no es la capacidad clínica, sino la integridad de los datos que dan forma a los protocolos clínicos.</p>
+    <p>Este hallazgo me transformó en una fuerza dual: un médico activo que también es ingeniero de bases de datos certificado y bioestadístico. No me limito a analizar filas en una base de datos; entiendo el flujo de trabajo humano que las generó, los índices clínicos necesarios para normalizarlas y los resultados bioestadísticos por los que debemos esforzarnos.</p>
   </div>
 </div>
 

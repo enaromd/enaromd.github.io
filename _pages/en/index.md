@@ -27,7 +27,8 @@ projects:
     <img src="/assets/images/web_hero_eng.png" alt="Profile picture" class="hero-img">
     <div class="hero-text-content">
       <h1>Beyond the stethoscope: <br>Evidence with health statistics</h1>
-      <p>I am Enyel Rodríguez, MD and Data Analyst. I help transform <strong>clinical complexity</strong> into <strong>explanatory and predictive models</strong> that contribute to making strategic decisions that impact patients' lives.</p>
+      <p>I am Enyel Rodríguez, MD and Clinical Data Analyst. I bridge the critical gap between front-line clinical workflows and rigorous biostatistics. By engineering validated clinical indices into Real-World Data (RWD) pipelines, I help research teams build explanatory models that translate directly into safer, evidence-based patient outcomes.</p>
+
       <a href="contact/" class="btn btn--primary">Get in touch</a>
     </div>
   </div>
@@ -52,10 +53,10 @@ projects:
 <div class="hero_problem">
   <div class="hero__image-wrapper" data-image-src="/assets/images/hero_problem.png"></div>
   <div>
-    <h1>The Price of Uncertainty</h1>
-    <p>In critical decision-making, evidence is the only safe path. But what happens if that evidence is not solid?</p>
-    <p>Flawed data analysis can lead to incorrect interpretations, the loss of valuable perspectives, and, most worryingly, ill-informed decisions that directly affect patients and your organization's growth.</p>
-    <p>Hard work without rigorous analysis may not be enough. Uncertainty is not just a nuisance, it is a risk.</p>
+    <h1>The Cost of Distorted Data</h1>
+    <p>In clinical trials and observational studies, evidence is only as reliable as its source. But clinical databases are notoriously messy, fraught with systematic biases and missing parameters.</p>
+    <p>When patient data is parsed without a deep, front-line understanding of clinical workflows, critical variables are misclassified, cohort selections become biased, and biostatistical models fail to reflect true patient outcomes.</p>
+    <p>For research organizations and healthcare systems, clinical data misinterpretation is more than a technical error—it is a direct threat to patient safety and therapeutic efficacy.</p>
   </div>
 </div>
 
@@ -67,7 +68,7 @@ projects:
     <h1>Success: When evidence guides you</h1>
     <p>Imagine a scenario where your data gives you the answers you need, when you need them.</p>
     <p>Success is having a clear understanding of the information you already have, discovering perspectives you didn't even know existed. It's moving from uncertainty to certainty.</p>
-    <p>This translates into smart strategic decisions that drive efficiency, optimize growth and, most importantly, improve patient outcomes.</p>
+    <p>This translates into smart strategic decisions that drive efficiency, optimize clinical operations and, most importantly, improve patient outcomes.</p>
     <p>With a solid foundation of evidence, your decisions will not only be correct, but will also inspire confidence and leadership.</p>
   </div>
 </div>
@@ -148,10 +149,8 @@ projects:
   <img src="/assets/images/web_hero-about.png" alt="About me">
   <div>
     <h1>About Me</h1>
-    <h2>“The physician who only knows medicine, knows not even medicine” — José de Letamendi</h2>
-    <p>To me, being a doctor goes beyond clinical practice; every experience has been an opportunity to learn valuable lessons about the complexity of the world around us and how we can integrate that knowledge into healthcare.</p>
-    <h2>Translating Knowledge into Action</h2>
-    <p>My career path is proof that statistical rigor and clinical intuition are not opposites, but the way forward in modern evidence-based medicine.</p>
+    <p>As a practicing physician, I have spent years listening to hearts, stabilizing critical patients under acute stress, and running municipal emergency departments. But I realized that the greatest barrier to modern patient care isn’t clinical capacity—it is the integrity of the data that shapes clinical protocols.</p>
+    <p>This realization transformed me into a dual-force: an active MD who is also a certified database engineer and biostatistician. I do not just analyze rows in a database; I understand the human workflow that generated them, the clinical indices required to normalize them, and the biostatistical outcomes we must strive for.</p>
   </div>
 </div>
 

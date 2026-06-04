@@ -52,10 +52,10 @@ books:
 <div class="about-hero">
   <img src="/assets/images/web_hero-about.png" alt="Acerca de mí">
   <div>
-    <h1>Detrás del Estetoscopio: <br> Aprendizaje constante y <br> persuasión impactante en acción</h1>
+    <h1>Detrás del estetoscopio:<br>Datos procesados. Realidades humanas.</h1>
     <hr>
-    <p>Para mí, el desarrollo personal es un viaje de aprendizaje continuo, donde la integración de diversas habilidades y experiencias me permite abordar desafíos desde múltiples perspectivas. Este enfoque amplía mi comprensión del mundo y facilita la generación de soluciones innovadoras y efectivas para problemas complejos.</p>
-    <p>Persuadir y convencer son habilidades esenciales en mi arsenal. Entiendo que la persuasión no solo se trata de presentar argumentos, sino de conectar emocionalmente con las personas y comunicar la importancia de una idea de manera clara y convincente. </p>
+    <p>Como médico en ejercicio, he pasado años escuchando corazones, estabilizando a pacientes críticos bajo estrés agudo y dirigiendo departamentos de emergencia municipales. Sin embargo, me di cuenta de que la mayor barrera para la atención médica moderna no es la capacidad clínica, sino la integridad de los datos que dan forma a los protocolos clínicos.</p>
+    <p>Este hallazgo me transformó en una fuerza dual: un médico activo que también es ingeniero de bases de datos certificado y bioestadístico. No me limito a analizar filas en una base de datos; entiendo el flujo de trabajo humano que las generó, los índices clínicos necesarios para normalizarlas y los resultados bioestadísticos por los que debemos esforzarnos.</p>
   </div>
 </div>
 
