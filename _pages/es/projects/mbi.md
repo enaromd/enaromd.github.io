@@ -200,7 +200,9 @@ highlights:
 {% include feature_row id="dashboard" type="center" %}
 
 <div class="mbi-main-plot" style="margin: 3rem 0; text-align: center;">
-  <img src="/assets/images/mbi_dashboard.png" alt="MBI Distribution and Triage Zones" style="width: 45%; max-width: 900px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+  <a href="https://public.tableau.com/app/profile/enyel.a.rodr.guez.g./viz/MBIstratification/MBIstratification" target="_blank">
+    <img src="/assets/images/mbi_dashboard.png" alt="MBI Distribution and Triage Zones" style="width: 45%; max-width: 900px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+  </a>
 </div>
 
 <div class="project-grid">
