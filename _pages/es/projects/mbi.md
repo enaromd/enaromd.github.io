@@ -14,11 +14,14 @@ seo:
   image: "/assets/images/mbi_triage.png"
 # Sections
 approach:
-  - title: "La Arquitectura: <code>ClinicalConfig</code>"
-  - excerpt: "Desarrollé un motor analítico en Python que traduce listas de medicación fragmentadas en un índice de carga farmacológica (MBI). No es solo código; es un diccionario médico digital que mapea dosis máximas y pesos clínicos para predecir la gravedad hemodinámica antes de realizar un ecocardiograma."
+  - title: "Estructura del proyecto"
+  - excerpt: "El pipeline se divide en tres etapas modulares y listas para producción con el fin de preservar un estricto linaje de datos y reproducibilidad:"
 results:
   - title: "El Factor Impacto: Precisión Predictiva"
   - excerpt: "El modelo validó que un MBI > 5.25 identifica hipertensión pulmonar crítica con un 85% de precisión. Esta herramienta permite un 'triaje de recepción', priorizando a los pacientes con mayor beneficio de intervención y optimizando el recurso más escaso de la misión: el tiempo de los especialistas."
+dashboard:
+  - title: Estructura del dashboard y visualizaciones
+  - excerpt: "Cada componente visual funciona como un filtro interactivo activo, permitiendo a los usuarios realizar exámenes cruzados de subcohortes de forma dinámica con solo hacer clic en segmentos de datos específicos."
 highlights_title: 
   - title: "Análisis de Datos y Visualización"
   - excerpt: "Del procesamiento de crudos a la validación estadística: el proceso completo de la brigada de cardiología 'Project Health for Leon' 2025."
@@ -82,13 +85,6 @@ highlights:
     <strong>Tech Stack:</strong> Object-Oriented Programming (OOP), <code>Pandas</code>, <code>NumPy</code>, <code>Statsmodels</code>, <code>Scikit-learn</code>, <code>Matplotlib/Seaborn</code>
 </div>
 
-<!-- <div style="background-color: #f0f7ff; border-left: 5px solid #003152; padding: 15px; margin: 20px 0; border-radius: 4px;">
-    <h4 style="margin-top: 0; color: #003152;"><i class="fas fa-info-circle"></i> Revisión por Pares</h4>
-    <p style="margin-bottom: 0; font-size: 0.95em;">
-        Actualmente en fase de preparación para publicación en colaboración con especialistas de <strong>UNC Chapel Hill Cardiology</strong>, basada en la cohorte de la misión <strong>Project Health for Leon</strong>.
-    </p>
-</div> -->
-
 <h2>El corazón del análisis: ¿Qué es el 'Medication Burden Index' (MBI)?</h2>
 <p>
   El <strong>MBI</strong> es un índice ponderado que cuantifica la intensidad del tratamiento farmacológico de un paciente. En lugar de solo contar cuántas pastillas toma una persona, el MBI evalúa el "esfuerzo" que el sistema cardiovascular está realizando bajo soporte médico.
@@ -149,7 +145,7 @@ highlights:
 </div>
 
 <h2>El Reto: El "Silencio de los Normales" (Sesgo MNAR)</h2>
-<p>En el caos de una brigada de alto volumen, los datos suelen estar incompletos: si una válvula es normal, el cardiólogo no va a perder su tiempo registrándolo. Esto genera un sesgo de <strong>Missing Not At Random (MNAR)</strong> que invalida cualquier modelo estadístico. Mi primer desafío fue implementar una <strong>Imputación Normal Natural</strong> (ruido gaussiano) para restaurar la distribución fisiológica real de la población ($N=152$).</p>
+<p>En misiones de alto volumen, los datos suelen ser incompletos: los cardiólogos enfocaron la velocidad de ejecución en la patología crítica, dejando los campos para estructuras sanas completamente en blanco. Esto genera un sesgo de <strong>Missing Not At Random (MNAR)</strong> que exhibe una media de $\text{RVSP}$ fuertemente distorsionada de $51.0\text{ mmHg}$, omitiendo por completo el espectro basal saludable.</p>
 
 <hr class="feature-divider">
 
@@ -157,19 +153,19 @@ highlights:
 
 <div class="grid-container">
   <div class="grid-item">
-      <img src="/assets/images/data_management.png" alt="Imagen: Procesamiento de Datos" class="grid-icon">
-      <h3>Procesamiento de Datos</h3>
-      <p>Ejecuta la normalización de dosis diarias (TDD) y la imputación de ruido gaussiano para restaurar la distribución fisiológica real frente al sesgo de datos faltantes.</p>
+      <img src="/assets/images/data_management.png" alt="Icono: Procesamiento de Datos" class="grid-icon">
+      <h3>Extracción & Mitigación de Sesgo</h3>
+      <p>Construcción de un modelo de Imputación Gausiana de 'Normalidad Natural' basado en evidencia utilizando las pautas de la Sociedad Americana de Ecocardiografía para restaurar la verdadera varianza poblacional.</p>
   </div>
   <div class="grid-item">
-      <img src="/assets/images/data_architecture.png" alt="Imagen: Arquitectura Clínica " class="grid-icon">
-      <h3>Arquitectura Clínica</h3>
-      <p>Gobierna la jerarquía de pesos (0.5 a 3.0), priorizando fármacos de alto impacto hemodinámico como diuréticos de asa y vasodilatadores pulmonares.</p>
+      <img src="/assets/images/data_architecture.png" alt="Icono: Arquitectura Clínica" class="grid-icon">
+      <h3>Ingeniería de Esquema 3NF</h3>
+      <p>Diseño y despliegue de una estructura de base de datos MySQL robusta. Las matrices fragmentadas de polifarmacia se normalizaron en un modelo de base de datos estrictamente relacional.</p>
   </div>
   <div class="grid-item">
-      <img src="/assets/images/statistic.png" alt="Imagen: Validación Estadística " class="grid-icon">
-      <h3>Validación Estadística</h3>
-      <p>Genera la lógica de triaje basada en curvas ROC, identificando el punto de corte óptimo ($MBI > 4.0$) para predecir complejidad clínica con precisión.</p>
+      <img src="/assets/images/statistic.png" alt="Icono: Validación Estadística" class="grid-icon">
+      <h3>Mapeo de Residuos OLS</h3>
+      <p>Cálculo de residuos de regresión por Mínimos Cuadrados Ordinarios (OLS) para aislar a los pacientes cuya patología subyacente grave está siendo enmascarada activamente por terapias intensivas.</p>
   </div>
 </div>
 
@@ -199,41 +195,33 @@ highlights:
   </div>
 </div>
 
-<h3 style="text-align: center; margin-top: 3rem;">Protocolo de Decisión: Tabla de referencia para triage</h3>
-<p style="text-align: center; color: #666;">Validación operativa para el personal de recepción:</p>
+<hr class="feature-divider">
 
-<div class="table-container">
-  <table class="mbi-table" style="width: 85%; border: 1px solid #ddd;">
-    <thead>
-      <tr style="background-color: #003152; color: white;">
-        <th style="padding: 15px; border: 1px solid #ddd;">Rango MBI</th>
-        <th style="padding: 15px; border: 1px solid #ddd;">Zona de Triaje</th>
-        <th style="padding: 15px; border: 1px solid #ddd;">Interpretación Clínica</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="background-color: #e8f6ee;">
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">&lt; 2.27</td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Estándar</td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: left;">Cercano al promedio de la cohorte. Probablemente compensado.</td>
-      </tr>
-      <tr style="background-color: #fcf6db;">
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;"><strong>4.0 – 5.25</strong></td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;"><strong>Complejo</strong></td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: left;"><strong>Área óptima de intervención:</strong> Alta probabilidad de complejidad.</td>
-      </tr>
-      <tr style="background-color: #fceceb;">
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">5.25 – 5.5</td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Crítico</td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: left;">85% de Precisión para PH Crítica (RVSP &gt; 60 mmHg).</td>
-      </tr>
-      <tr style="background-color: #fceceb;">
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">&gt; 5.5</td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">¿Paliativo?</td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: left;">Agotamiento farmacológico: Riesgo elevado de intervención futil.</td>
-      </tr>
-    </tbody>
-  </table>
+{% include feature_row id="dashboard" type="center" %}
+
+<div class="mbi-main-plot" style="margin: 3rem 0; text-align: center;">
+  <img src="/assets/images/mbi_dashboard.png" alt="MBI Distribution and Triage Zones" style="width: 45%; max-width: 900px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+</div>
+
+<div class="project-grid">
+  <div class="card">
+    <h3>Distribución de la Cohorte</h3>
+    <span><b>Registro de Distribución de Edad:</b> Un histograma continuo que detalla la composición por edad.</span>
+    <br>
+    <span><b>División por Género (Gráfico de Dona):</b> Permite una auditoría rápida de las variaciones clínicas basadas en el género a través de los grupos de enfermedades.</span>
+  </div>
+  <div class="card">
+    <h3>Encrucijada Patológica</h3>
+    <span><b>Prevalencia de Enfermedades:</b> Mapea las indicaciones clínicas primarias que impulsan la presentación del paciente, completamente codificadas por colores según las Zonas de Triaje de MBI.</span>
+    <br>
+    <span><b>Composición del Índice de Carga de Medicamentos:</b> Deconstruye el MBI a través de distintos grupos de medicamentos.</span>
+  </div>
+  <div class="card">
+    <h3>Tarjetas de KPI de Promedio</h3>
+    <span><b>Índice de Carga de Medicamentos:</b> Proporciona una lectura instantánea de la huella operativa estándar de polifarmacia.</span>
+    <br>
+    <span><b>Presión Sistólica del Ventrículo Derecho (RVSP):</b> Rastrea la línea de base móvil para proporcionar una métrica sin máscara del rendimiento global del corazón derecho.</span>
+  </div>
 </div>
 
 <div class="pull-quote">
@@ -245,7 +233,7 @@ highlights:
 {% include gallery id="highlights" %}
 
 <div class="see-more-button">
-  <a href="https://github.com/enrodri/phl_2025/blob/main/phl_2025.ipynb" class="btn btn--primary">Ver Cuaderno Jupyter Completo</a>
+  <a href="https://github.com/enaromd/Cardio-MBI-Triage-Engine" class="btn btn--primary">Ver repository en GitHub</a>
 </div>
 
 <div class="cta">

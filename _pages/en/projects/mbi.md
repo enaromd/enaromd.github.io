@@ -14,11 +14,14 @@ seo:
   image: "/assets/images/mbi_triage.png"
 # Sections
 approach:
-  - title: "The Architecture: <code>ClinicalConfig</code>"
-  - excerpt: "I developed an analytical engine in Python that translates fragmented medication lists into a Medication Burden Index (MBI). It’s not just code; it’s a digital medical dictionary mapping maximum doses and clinical weights to predict hemodynamic severity before an echocardiogram is even performed."
+  - title: "Project structure"
+  - excerpt: "The pipeline is split into three modular, production-ready stages to preserve strict data lineage and reproducibility:"
 results:
   - title: "The Impact Factor: Predictive Precision"
   - excerpt: "The model validated that an MBI > 5.25 identifies critical pulmonary hypertension with 85% accuracy. This tool enables 'intake triage,' prioritizing patients who would benefit most from intervention and optimizing the mission's scarcest resource: the specialists' time."
+dashboard:
+  - title: Dashboard structure and visualizations
+  - excerpt: "Every visual component functions as an active interactive filter, allowing users to cross-examine sub-cohorts dynamically by simply clicking on specific data segments."
 highlights_title: 
   - title: "Data Analysis and Visualization"
   - excerpt: "From raw data processing to statistical validation: the end-to-end workflow for the 2025 'Project Health for Leon' cardiology mission."
@@ -82,13 +85,6 @@ highlights:
     <strong>Tech Stack:</strong> Object-Oriented Programming (OOP), <code>Pandas</code>, <code>NumPy</code>, <code>Statsmodels</code>, <code>Scikit-learn</code>, <code>Matplotlib/Seaborn</code>
 </div>
 
-<!-- <div style="background-color: #f0f7ff; border-left: 5px solid #003152; padding: 15px; margin: 20px 0; border-radius: 4px;">
-    <h4 style="margin-top: 0; color: #003152;"><i class="fas fa-info-circle"></i> Peer-Review Status</h4>
-    <p style="margin-bottom: 0; font-size: 0.95em;">
-        Currently undergoing preparation for submission in collaboration with specialists from <strong>UNC Chapel Hill Cardiology</strong>, based on the <strong>Project Health for Leon</strong> mission cohort.
-    </p>
-</div> -->
-
 <h2>The Core of the Analysis: What is the 'Medication Burden Index' (MBI)?</h2>
 <p>
   The <strong>MBI</strong> is a weighted index that quantifies the intensity of a patient's pharmacological treatment. Rather than simply counting pills, the MBI evaluates the "effort" the cardiovascular system is making under medical support.
@@ -149,7 +145,7 @@ highlights:
 </div>
 
 <h2>The Challenge: The "Silence of the Normals" (MNAR Bias)</h2>
-<p>In high-volume missions, data is often incomplete: if a heart valve is normal, the cardiologist may not record it. This creates a <strong>Missing Not At Random (MNAR)</strong> bias that invalidates standard statistical models. My primary challenge was implementing a <strong>Natural Normal Imputation</strong> (Gaussian noise) to restore the real physiological distribution of the population ($N=152$).</p>
+<p>In high-volume missions, data is often incomplete: cardiologists focused execution speed on critical pathology, leaving fields for healthy structures entirely blank. This creates a <strong>Missing Not At Random (MNAR)</strong> bias that exhibits a heavily distorted mean $\text{RVSP}$ of $51.0\text{ mmHg}$, omitting the healthy baseline spectrum completely.</p>
 
 <hr class="feature-divider">
 
@@ -158,18 +154,18 @@ highlights:
 <div class="grid-container">
   <div class="grid-item">
       <img src="/assets/images/data_management.png" alt="Icon: Data Processing" class="grid-icon">
-      <h3>Data Processing</h3>
-      <p>Executes Total Daily Dose (TDD) normalization and Gaussian noise imputation to restore real physiological distribution against missing data bias.</p>
+      <h3>Extraction & Bias Mitigation</h3>
+      <p>Built an evidence-based Gaussian 'Natural Normal' Imputation model using American Society of Echocardiography guidelines to restore true population variance.</p>
   </div>
   <div class="grid-item">
       <img src="/assets/images/data_architecture.png" alt="Icon: Clinical Architecture" class="grid-icon">
-      <h3>Clinical Architecture</h3>
-      <p>Governs the weight hierarchy (0.5 to 3.0), prioritizing drugs with high hemodynamic impact like loop diuretics and pulmonary vasodilators.</p>
+      <h3>3NF Schema Engineering</h3>
+      <p>Engineered and deployed a robust MySQL database structure. Fragmented polypharmacy arrays were normalized into a strict, relational database model.</p>
   </div>
   <div class="grid-item">
       <img src="/assets/images/statistic.png" alt="Icon: Statistical Validation" class="grid-icon">
-      <h3>Statistical Validation</h3>
-      <p>Generates triage logic based on ROC curves, identifying the optimal cutoff point ($MBI > 4.0$) to predict clinical complexity with precision.</p>
+      <h3>OLS residual mapping</h3>
+      <p>Calculated Ordinary Least Squares (OLS) regression residuals to isolate patients whose severe underlying disease is actively masked by intensive therapies.</p>
   </div>
 </div>
 
@@ -199,41 +195,33 @@ highlights:
   </div>
 </div>
 
-<h3 style="text-align: center; margin-top: 3rem;">Decision Protocol: Triage Reference Table</h3>
-<p style="text-align: center; color: #666;">Operational validation for intake staff:</p>
+<hr class="feature-divider">
 
-<div class="table-container">
-  <table class="mbi-table" style="width: 85%; border: 1px solid #ddd;">
-    <thead>
-      <tr style="background-color: #003152; color: white;">
-        <th style="padding: 15px; border: 1px solid #ddd;">MBI Range</th>
-        <th style="padding: 15px; border: 1px solid #ddd;">Triage Zone</th>
-        <th style="padding: 15px; border: 1px solid #ddd;">Clinical Interpretation</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="background-color: #e8f6ee;">
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">&lt; 2.27</td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Standard</td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: left;">Close to cohort average. Likely compensated.</td>
-      </tr>
-      <tr style="background-color: #fcf6db;">
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;"><strong>4.0 – 5.25</strong></td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;"><strong>Complex</strong></td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: left;"><strong>Optimal intervention area:</strong> High probability of complexity.</td>
-      </tr>
-      <tr style="background-color: #fceceb;">
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">5.25 – 5.5</td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Critical</td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: left;">85% Precision for Critical PH (RVSP &gt; 60 mmHg).</td>
-      </tr>
-      <tr style="background-color: #fceceb;">
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">&gt; 5.5</td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: center;">Palliative?</td>
-        <td style="padding: 12px; border: 1px solid #ddd; text-align: left;">Pharmacological exhaustion: Elevated risk of futile intervention.</td>
-      </tr>
-    </tbody>
-  </table>
+{% include feature_row id="dashboard" type="center" %}
+
+<div class="mbi-main-plot" style="margin: 3rem 0; text-align: center;">
+  <img src="/assets/images/mbi_dashboard.png" alt="MBI Distribution and Triage Zones" style="width: 45%; max-width: 900px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+</div>
+
+<div class="project-grid">
+  <div class="card">
+    <h3>Cohort Distribution</h3>
+    <span><b>Age Distribution Registry:</b> A continuous histogram detailing the age composition.</span>
+    <br>
+    <span><b>Gender Split (Donut Chart):</b> Enables rapid auditing of gender-based clinical variations across disease groups.</span>
+  </div>
+  <div class="card">
+    <h3>Pathological Crossroads</h3>
+    <span><b>Disease Prevalence:</b> Maps the primary clinical indications driving patient presentation, fully color-coded by MBI Triage Zones.</span>
+    <br>
+    <span><b>Medication Burden Index Composition:</b> Deconstructs the MBI across distinct medication groups.</span>
+  </div>
+  <div class="card">
+    <h3>Average KPI cards</h3>
+    <span><b>Medication Burden Index:</b> Provides an instant read on the standard operational polypharmacy footprint.</span>
+    <br>
+    <span><b>Right Ventricular Systolic Pressure (RVSP):</b> Tracks the running baseline to provide an un-masked metric of global right-heart performance.</span>
+  </div>
 </div>
 
 <div class="pull-quote">
@@ -245,7 +233,7 @@ highlights:
 {% include gallery id="highlights" %}
 
 <div class="see-more-button">
-  <a href="https://github.com/enrodri/phl_2025/blob/main/phl_2025.ipynb" class="btn btn--primary">View Full Jupyter Notebook</a>
+  <a href="https://github.com/enaromd/Cardio-MBI-Triage-Engine" class="btn btn--primary">View GitHub repository</a>
 </div>
 
 <div class="cta">
