@@ -34,7 +34,7 @@ highlights:
     image_path: "/assets/images/mbi_imputation.jpg"
     alt: "Restauración de la Integridad de Datos"
     title: "Uso de Imputación Estocástica Gaussiana para corregir el sesgo de datos faltantes (MNAR) y restaurar la distribución fisiológica natural de la PSAP."
-  - url: "/assets/images/mbi_decomposed.jpg"
+  - url: "/assets/images/mbi_3nf.jpg"
     image_path: "/assets/images/mbi_3nf.jpg"
     alt: "Esquema 3NF"
     title: "La capa de base de datos implementa un Esquema Copo de Nieve (Snowflake Schema) de 5 tablas, garantizando el cumplimiento de la Tercera Forma Normal (3NF) en las tablas principales."

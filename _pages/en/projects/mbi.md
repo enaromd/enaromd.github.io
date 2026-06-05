@@ -34,7 +34,7 @@ highlights:
     image_path: "/assets/images/mbi_imputation.jpg"
     alt: "Restoring Data Integrity"
     title: "Utilizing Stochastic Gaussian Imputation to correct 'Informative Missingness' (MNAR) and restore the natural physiological distribution of RVSP."
-  - url: "/assets/images/mbi_decomposed.jpg"
+  - url: "/assets/images/mbi_3nf.jpg"
     image_path: "/assets/images/mbi_3nf.jpg"
     alt: "3NF schema"
     title: "The database layer implements a 5-table Snowflake Schema, enforcing Third Normal Form (3NF) compliance across core tables"
