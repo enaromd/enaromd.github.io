@@ -1,21 +1,21 @@
 ---
 layout: splash
-title: "Evidence in Septic Shock"
-permalink: portfolio/projects/sepsis/
+title: "Diastolic dysfunction in Hemodialysis"
+permalink: portfolio/projects/lvdd/
 lang: en
 # Social previews
-description: "Synthesizing evidence from major randomized controlled trials (RCTs) to facilitate data-driven consensus in septic shock resuscitation."
+description: "Research Mentorship: Mitigating single-center sample constraints and preserving multivariate regression integrity."
 header:
   teaser: "/assets/images/presentation_sepsis.png"
 # This block communicates directly with the SEO plugin
 seo:
   type: "article"
-  title: "Evidence in Septic Shock" # Repeat title here
+  title: "Diastolic dysfunction in Hemodialysis" # Repeat title here
   image: "/assets/images/presentation_sepsis.png"
 # Sections
 approach:
-  - title: "Methodology: Synthesis and Consensus"
-  - excerpt: "My approach focused on the critical selection of medical literature. Instead of a unilateral presentation, I utilized evidence from major clinical trials to foster technical discussion, allowing the medical team to reach data-driven operational agreements."
+  - title: "Methodological Safeguarding implementation"
+  - excerpt: "Providing strategic consulting to handle data source constraints, establishing an academically defensible structure engineered to handle single-center anomalies, preserve estimator validity, and map true biological interactions."
 results:
   - title: "The Decision Factor: Evidence in Action"
   - excerpt: "Evidence synthesis was not an academic exercise, but a trigger for change. By contrasting major trial findings with the service's operational reality, we successfully distilled the following decision milestones:"
@@ -60,15 +60,15 @@ highlights:
 </style>
 
 <div class="headline">
-    <h1>Sepsis: Translating Clinical Trial Rigor to the Bedside</h1>
-    <p>A case study on how data analysis and clinical evidence synthesis unified criteria in a high-pressure medical service.</p>
+    <h1>Diastolic Dysfunction in Hemodialysis: Mentorship to overcome data distortion</h1>
+    <p>Biostatistical consulting: Safeguarding analytical integrity within constrained cardiorenal cohorts.</p>
 </div>
 <div class="skills-bar">
-    <p><strong>Core Strategies:</strong> Evidence-Based Medicine (EBM), Medical Literature Analysis, Consensus Facilitation</p>
+    <p><strong>Core Strategies:</strong> Sample constraints, Regressions' integrity, Effect size impact</p>
 </div>
 
-<h2>The Challenge: Unifying Criteria Amidst Uncertainty</h2>
-<p>In sepsis management, information overload and high-profile clinical trial results often spark debate on the best course of action. My challenge was to act as a <strong>technical evaluator</strong>, analyzing evidence details to facilitate the medical team’s adoption of standardized practices.</p>
+<h2>The Challenge: Empowering Researchers Against Data Distortion</h2>
+<p>In single-center clinical studies focusing on highly specialized populations, sample volume is inherently restricted, causing standard statistical assumptions to collapse. My challenge was to act as a <strong>biostatistics mentor</strong>, guiding the primary investigator to overcome severe data distortions and establish the mathematical integrity required for academic validation.</p>
 
 <hr class="feature-divider">
 
@@ -77,7 +77,7 @@ highlights:
 <div class="grid-container">
   <div class="grid-item">
       <img src="/assets/images/selection.png" alt="Evidence Selection" class="grid-icon">
-      <h3>Evidence Selection</h3>
+      <h3>Managing Restricted Distributions</h3>
       <p>I synthesized the design and results of randomized clinical trials, extracting critical points for septic patient management.</p>
   </div>
   <div class="grid-item">

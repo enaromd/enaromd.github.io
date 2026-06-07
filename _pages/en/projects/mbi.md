@@ -13,12 +13,12 @@ seo:
   title: "Medication Burden Index (MBI)" # Repeat title here
   image: "/assets/images/mbi_triage.png"
 # Sections
-approach:
-  - title: "Project structure"
-  - excerpt: "The pipeline is split into three modular, production-ready stages to preserve strict data lineage and reproducibility:"
+solution:
+  - title: "Restoring Signal to the Cohort Baseline"
+  - excerpt: "To overcome clinician documentation shorthand, I engineered a clinical data pipeline that restores population variance and extracts hidden physiological indicators across three standalone engineering phases:"
 results:
-  - title: "The Impact Factor: Predictive Precision"
-  - excerpt: "The model validated that an MBI > 5.25 identifies critical pulmonary hypertension with 85% accuracy. This tool enables 'intake triage,' prioritizing patients who would benefit most from intervention and optimizing the mission's scarcest resource: the specialists' time."
+  - title: "MBI-Driven Hemodynamic Triage"
+  - excerpt: "The ultimate output of the data analysis is a non-linear classification framework that successfully stratified <span class='highlight-metric'>25.7% of the patient cohort into high-acuity clinical risk zones</span>. This allows the medical mission to isolate the high-benefit intervention candidates and maximize diagnostic utility under strict field resource constraints."
 dashboard:
   - title: Dashboard structure and visualizations
   - excerpt: "Every visual component functions as an active interactive filter, allowing users to cross-examine sub-cohorts dynamically by simply clicking on specific data segments."
@@ -61,6 +61,11 @@ highlights:
     margin-top: 5rem !important;
 }
 
+.highlight-metric {
+    color: #b80f0a; /* Deep clinical red */
+    font-weight: 600; /* Optional: gives the metric a tiny bit more structural weight */
+}
+
 .mbi-table {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -77,38 +82,61 @@ highlights:
 </style>
 
 <div class="headline">
-    <h1>Quantifying Clinical Gaps: MBI as a Surrogate for Cardiac Remodeling</h1>
-    <p>Data Analysis applied to the 2025 Cardiology Mission in León, Nicaragua.</p>
+  <h1>Hemodynamic Gap: Medication Intensity as a Surrogate for Cardiac Remodeling</h1>
+  <p><strong>The Bottom Line:</strong> The Medication Burden Index successfully stratified <span class="highlight-metric">25.7% of the high-volume clinical cohort into high-acuity risk zones</span>, identifying advanced hemodynamic complexity and critical pulmonary hypertension directly from pharmacological footprints.</p>
 </div>
 
 <div class="skills-bar">
-    <strong>Tech Stack:</strong> Object-Oriented Programming (OOP), <code>Pandas</code>, <code>NumPy</code>, <code>Statsmodels</code>, <code>Scikit-learn</code>, <code>Matplotlib/Seaborn</code>
+  <strong>Tech Stack:</strong> Object-oriented programming (OOP), Pandas, NumPy, Statsmodels, Matplotlib, Seaborn
 </div>
 
-<h2>The Core of the Analysis: What is the 'Medication Burden Index' (MBI)?</h2>
-<p>
-  The <strong>MBI</strong> is a weighted index that quantifies the intensity of a patient's pharmacological treatment. Rather than simply counting pills, the MBI evaluates the "effort" the cardiovascular system is making under medical support.
-</p>
+<h2>The Challenge: High volume in a compressed timeline</h2>
+<p>During a high-stakes 10-day clinical sprint, field teams must rapidly triage an overwhelming influx of patients suffering from complex structural heart conditions. The immediate operational bottleneck lies in patient selection: clinicians must quickly <strong>identify which patients are actively transitioning into critical hemodynamic failure</strong> to fast-track them for resource-intensive Transesophageal Echocardiography (TEE) before their intervention window closes.</p>
+
+<h2>The Data Distortion: Missing Not At Random (MNAR) bias</h2>
+<p>To survive the extreme pace of the medical mission, <strong>cardiologists maximize clinical throughput by documenting only critical pathology—leaving fields for healthy cardiac structures entirely blank.</strong> This clinical shorthand introduces a severe Missing Not At Random (MNAR) bias that aggressively skews the dataset, artificially inflates the cohort's apparent baseline severity, and completely breaks statistical models.</p>
+
+<hr class="feature-divider">
+
+{% include feature_row id="solution" type="center" %}
+
+<div class="grid-container">
+  <div class="grid-item">
+    <img src="/assets/images/data_management.png" alt="Icon: Data Processing" class="grid-icon">
+    <h3>Bias Mitigation</h3>
+    <p>I engineered a <strong>Gaussian Imputation model</strong> aligned with American Society of Echocardiography guidelines. By injecting controlled physiological noise centered on healthy reference parameters, the algorithm recovers the true population variance.</p>
+  </div>
+  <div class="grid-item">
+    <img src="/assets/images/engineering.png" alt="Icon: Data Processing" class="grid-icon">
+    <h3>Feature Engineering</h3>
+    <p>I developed the <strong>Medication Burden Index (MBI)</strong>. This parameter normalizes complex polypharmacy arrays against therapeutic ceilings, converting fragmented medication registries into a single, standardized surrogate metric for cardiac remodeling.</p>
+  </div>
+  <div class="grid-item">
+    <img src="/assets/images/statistic.png" alt="Icon: Data Processing" class="grid-icon">
+    <h3>Statistical Triage</h3>
+    <p>I executed a <strong>Receiver Operating Characteristic (ROC)</strong> curve analysis to map the engineered MBI scores against objective clinical and hemodynamic indicators, establishing an empirical triage cutoff that fast-tracks high-acuity patients with high precision.</p>
+  </div>
+</div>
+
+<hr class="feature-divider">
+
+<h2>Quantifying intensity: How the MBI works</h2>
+<p>Rather than a simple pill count, the Medication Burden Index evaluates the collective "effort" a patient's cardiovascular system undergoes under active medical support. The engine calculates this by evaluating individual medication dosages relative to their globally recognized maximum therapeutic thresholds and applying class-specific clinical weights:</p>
 
 <div class="math-block">
   $$MBI = \sum \left( \text{Weight} \times \frac{\text{TDD}}{\text{Maximum Dose}} \right)$$
 </div>
 
-<p>To achieve this, the engine processes two critical variables:</p>
+<p>To standardize this calculation, the pipeline processes two critical variables:</p>
 
 <ul>
-  <li><strong>Total Daily Dose (TDD):</strong> The total milligrams consumed by the patient in 24 hours. For example, a patient on Furosemide 40mg every 12h has a $TDD = 80mg$.</li>
+  <li><strong>Total Daily Dose (TDD):</strong> The total milligrams consumed by the patient in 24 hours. For example, a patient on Furosemide 40mg every 12h has a $TDD = 80\text{ mg}$.</li>
   <li><strong>Clinical Weights:</strong> The code assigns higher weights (e.g., $3.0$) to loop diuretics and pulmonary vasodilators, and lower weights ($0.5$) to statins or maintenance drugs.</li>
 </ul>
 
-<p>
-  This architecture allows the MBI to act as a <strong>surrogate for hemodynamic severity</strong>, capturing signs of heart failure well before the patient even reaches the echocardiograph.
-</p>
+<p>By consolidating these complex polypharmacy arrays into a single, standardized continuous variable, the index unmasks advanced disease severity well before a patient ever reaches an echocardiograph station.</p>
 
-<h3>Weighting Logic: Clinical Weights</h3>
-<p>
-  The code assigns specific weights based on the severity of the condition being treated, prioritizing signals of cardiac remodeling:
-</p>
+<p>The code assigns specific weights based on the severity of the condition being treated, prioritizing signals of cardiac remodeling:</p>
 
 <div class="table-container">
   <table class="mbi-table" style="width: 65%; border: 1px solid #ddd;">
@@ -144,31 +172,6 @@ highlights:
   </table>
 </div>
 
-<h2>The Challenge: The "Silence of the Normals" (MNAR Bias)</h2>
-<p>In high-volume missions, data is often incomplete: cardiologists focused execution speed on critical pathology, leaving fields for healthy structures entirely blank. This creates a <strong>Missing Not At Random (MNAR)</strong> bias that exhibits a heavily distorted mean $\text{RVSP}$ of $51.0\text{ mmHg}$, omitting the healthy baseline spectrum completely.</p>
-
-<hr class="feature-divider">
-
-{% include feature_row id="approach" type="center" %}
-
-<div class="grid-container">
-  <div class="grid-item">
-      <img src="/assets/images/data_management.png" alt="Icon: Data Processing" class="grid-icon">
-      <h3>Extraction & Bias Mitigation</h3>
-      <p>Built an evidence-based Gaussian 'Natural Normal' Imputation model using American Society of Echocardiography guidelines to restore true population variance.</p>
-  </div>
-  <div class="grid-item">
-      <img src="/assets/images/data_architecture.png" alt="Icon: Clinical Architecture" class="grid-icon">
-      <h3>3NF Schema Engineering</h3>
-      <p>Engineered and deployed a robust MySQL database structure. Fragmented polypharmacy arrays were normalized into a strict, relational database model.</p>
-  </div>
-  <div class="grid-item">
-      <img src="/assets/images/statistic.png" alt="Icon: Statistical Validation" class="grid-icon">
-      <h3>OLS residual mapping</h3>
-      <p>Calculated Ordinary Least Squares (OLS) regression residuals to isolate patients whose severe underlying disease is actively masked by intensive therapies.</p>
-  </div>
-</div>
-
 <hr class="feature-divider">
 
 {% include feature_row id="results" type="center" %}
@@ -182,16 +185,16 @@ highlights:
 
 <div class="project-grid">
   <div class="card">
-    <h3>The Key Zone</h3>
-    <p>Identification of <strong>Zone 2 (MBI 4.0 - 5.5)</strong>: patients with mixed pathology who gain the most benefit from valve replacement.</p>
+    <h3>Cohort Rescue</h3>
+    <p><strong>Prevented the clinical exclusion of 67% of the patient cohort</strong>. By diagnosing Missing Not At Random (MNAR) clinician shorthand entry patterns, the pipeline successfully preserved valuable population data that standard deletion models would have discarded.</p>
   </div>
   <div class="card">
-    <h3>Predictive Power</h3>
-    <p>AUC of <strong>0.73/0.82</strong> for detecting hemodynamic compromise. The MBI acts as a preliminary "Chemical Echocardiogram."</p>
+    <h3>Correcting Overestimation</h3>
+    <p><strong>Eliminated a 34.7% artificial inflation of cohort pathology.</strong> The  "Natural Normal" Imputation lowered the apparent average RVSP from a skewed 51.0 mmHg to a physiologically accurate 33.3 mmHg, stabilizing model assumptions.</p>
   </div>
   <div class="card">
-    <h3>Operational Efficiency</h3>
-    <p>Relieves pressure on diagnostic stations by prioritizing patients in <strong>Pharmacological Exhaustion</strong> (MBI > 5.5).</p>
+    <h3>Unmasking Discordance</h3>
+    <p><strong>Identified a 28.9% clinical discordance rate</strong> across complex profiles. The index pinpointed patients maintaining deceptively "moderate" pressures only through aggressive, unsustainable pharmacological compensation.</p>
   </div>
 </div>
 
@@ -229,6 +232,17 @@ highlights:
 <div class="pull-quote">
   "The MBI transforms a medication list into a <strong>severity metric</strong>, allowing the mission to operate with statistical precision."
 </div>
+
+<h2>Reflections: Context Dictates Structure</h2>
+<p>Building the <em>Cardio-MBI-Triage-Engine</em> solidified a fundamental truth of specialized health informatics: <strong>pure data analysis patterns fail if they are implemented without deep clinical domain literacy.</strong></p>
+
+<blockquote>
+  <strong>Key Takeaway:</strong> An outside data team looking at this missing dataset blindly would have either dropped the incomplete rows entirely (destroying the cohort size) or applied standard, unweighted mean imputations that completely mask the real structural crisis of the field operation.
+</blockquote>
+
+<p>By pairing an intimate understanding of cardiologist behavioral patterns in high-stress clinical environments with robust data structure, this pipeline successfully translated fragmented medication registries into high-fidelity diagnostic targets—maximizing the impact of the mission's absolute scarcest asset: the specialist's time.</p>
+
+<hr class="feature-divider">
 
 {% include feature_row id="highlights_title" type="center" %}
 

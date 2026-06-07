@@ -13,15 +13,15 @@ seo:
   title: "Índice de carga farmacológica" # Repeat title here
   image: "/assets/images/mbi_triage.png"
 # Sections
-approach:
-  - title: "Estructura del proyecto"
-  - excerpt: "El pipeline se divide en tres etapas modulares y listas para producción con el fin de preservar un estricto linaje de datos y reproducibilidad:"
+solution:
+  - title: "Restaurando la Señal en la Línea Base de la Cohorte"
+  - excerpt: "Para superar las anotaciones abreviadas de los médicos, diseñé un pipeline de datos clínicos que restaura la varianza de la población y extrae indicadores fisiológicos ocultos a través de tres fases independientes de ingeniería:"
 results:
-  - title: "El Factor Impacto: Precisión Predictiva"
-  - excerpt: "El modelo validó que un MBI > 5.25 identifica hipertensión pulmonar crítica con un 85% de precisión. Esta herramienta permite un 'triaje de recepción', priorizando a los pacientes con mayor beneficio de intervención y optimizando el recurso más escaso de la misión: el tiempo de los especialistas."
+  - title: "Triaje Hemodinámico Guiado por MBI"
+  - excerpt: "El resultado definitivo del análisis de datos es un marco de clasificación no lineal que estratificó exitosamente al <span class='highlight-metric'>25.7% de la cohorte de pacientes en zonas de riesgo clínico de alta agudeza</span>. Esto permite a la misión médica aislar a los candidatos con mayor beneficio de intervención y maximizar la utilidad diagnóstica bajo estrictas limitaciones de recursos en el trabajo de campo."
 dashboard:
   - title: Estructura del dashboard y visualizaciones
-  - excerpt: "Cada componente visual funciona como un filtro interactivo activo, permitiendo a los usuarios realizar exámenes cruzados de subcohortes de forma dinámica con solo hacer clic en segmentos de datos específicos."
+  - excerpt: "Cada componente visual funciona como un filtro interactivo activo, lo que permite a los usuarios examinar subcohortes de forma dinámica con solo hacer clic en segmentos de datos específicos."
 highlights_title: 
   - title: "Análisis de Datos y Visualización"
   - excerpt: "Del procesamiento de crudos a la validación estadística: el proceso completo de la brigada de cardiología 'Project Health for Leon' 2025."
@@ -61,6 +61,11 @@ highlights:
     margin-top: 5rem !important;
 }
 
+.highlight-metric {
+    color: #b80f0a; /* Deep clinical red */
+    font-weight: 600; /* Optional: gives the metric a tiny bit more structural weight */
+}
+
 .mbi-table {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -77,38 +82,61 @@ highlights:
 </style>
 
 <div class="headline">
-    <h1>Cuantificando las brechas clínicas: MBI como sucedáneo <br>de remodelado cardíaco</h1>
-    <p>Análisis de datos aplicada a la brigada cardiológica 2025 en León, Nicaragua.</p>
+  <h1>Brecha Hemodinámica: La Intensidad de la Medicación como sucedáneo del Remodelado Cardíaco</h1>
+  <p><strong>En Síntesis:</strong> El Índice de carga farmacológica estratificó con éxito al <span class="highlight-metric">25.7% de la cohorte clínica de alto volumen en zonas de riesgo de alta agudeza</span>, identificando la complejidad hemodinámica avanzada y la hipertensión pulmonar crítica directamente a partir de las huellas farmacológicas.</p>
 </div>
 
 <div class="skills-bar">
     <strong>Tech Stack:</strong> Object-Oriented Programming (OOP), <code>Pandas</code>, <code>NumPy</code>, <code>Statsmodels</code>, <code>Scikit-learn</code>, <code>Matplotlib/Seaborn</code>
 </div>
 
-<h2>El corazón del análisis: ¿Qué es el 'Medication Burden Index' (MBI)?</h2>
-<p>
-  El <strong>MBI</strong> es un índice ponderado que cuantifica la intensidad del tratamiento farmacológico de un paciente. En lugar de solo contar cuántas pastillas toma una persona, el MBI evalúa el "esfuerzo" que el sistema cardiovascular está realizando bajo soporte médico.
-</p>
+<h2>El Desafío: Alto volumen en un cronograma comprimido</h2>
+<p>Durante un sprint clínico de alta exigencia de 10 días, los equipos de campo deben clasificar rápidamente a una afluencia abrumadora de pacientes que padecen afecciones cardíacas estructurales complejas. El cuello de botella operacional inmediato radica en la selección de pacientes: los médicos deben <strong>identificar rápidamente qué pacientes están en transición activa hacia una insuficiencia hemodinámica crítica</strong> para agilizarlos hacia una Ecocardiografía Transesofágica (ETE) antes de que se cierre su ventana de intervención.</p>
 
-<div class="math-block">
-  $$MBI = \sum \left( \text{Peso} \times \frac{\text{DTD}}{\text{Dosis Máxima}} \right)$$
+<h2>La Distorsión de los Datos: Sesgo de datos faltantes informativos (MNAR)</h2>
+<p>Para sobrevivir al ritmo extremo de la misión médica, <strong>los cardiólogos maximizan el rendimiento clínico documentando únicamente la patología crítica, dejando completamente en blanco los campos para las estructuras cardíacas sanas.</strong> Esta simplificación clínica introduce un grave sesgo de datos faltantes informativos (MNAR, Missing Not At Random) que desvía agresivamente el conjunto de datos, infla artificialmente la gravedad de la línea base de la cohorte y rompe por completo los modelos estadísticos.</p>
+
+<hr class="feature-divider">
+
+{% include feature_row id="solution" type="center" %}
+
+<div class="grid-container">
+  <div class="grid-item">
+    <img src="/assets/images/data_management.png" alt="Icon: Data Processing" class="grid-icon">
+    <h3>Mitigación del Sesgo</h3>
+    <p>Diseñé un <strong>modelo de Imputación Gausiana</strong> alineado con las directrices de la Sociedad Americana de Ecocardiografía. Al inyectar ruido fisiológico controlado centrado en parámetros de referencia saludables, el algoritmo recupera la verdadera varianza de la población.</p>
+  </div>
+  <div class="grid-item">
+    <img src="/assets/images/engineering.png" alt="Icon: Data Processing" class="grid-icon">
+    <h3>Ingeniería de Características</h3>
+    <p>Desarrollé el <strong>Medication Burden Index (MBI)</strong>. Este parámetro normaliza arreglos complejos de polifarmacia frente a los límites terapéuticos máximos, transformando registros de medicación fragmentados en una métrica subrogada única y estandarizada para el remodelado cardíaco.</p>
+  </div>
+  <div class="grid-item">
+    <img src="/assets/images/statistic.png" alt="Icon: Data Processing" class="grid-icon">
+    <h3>Triaje Estadístico</h3>
+    <p>Ejecuté un análisis de curva <strong>Característica Operativa del Receptor (ROC)</strong> para mapear las puntuaciones de MBI calculadas frente a indicadores clínicos y hemodinámicos objetivos, estableciendo un punto de corte empírico de triaje que prioriza con alta precisión a los pacientes de alta agudeza.</p>
+  </div>
 </div>
 
-<p>Para lograr este cálculo, el motor procesa dos variables críticas:</p>
+<hr class="feature-divider">
+
+<h2>Cuantificación de la intensidad: Cómo funciona el MBI</h2>
+<p>Más que un simple conteo de píldoras, el Medication Burden Index evalúa el "esfuerzo" colectivo que experimenta el sistema cardiovascular de un paciente bajo soporte médico activo. El motor calcula esto evaluando las dosis de medicamentos individuales en relación con sus umbrales terapéuticos máximos reconocidos mundialmente y aplicando pesos clínicos específicos por clase:</p>
+
+<div class="math-block">
+  $$MBI = \sum \left( \text{Peso} \times \frac{\text{DDT}}{\text{Dosis Máxima}} \right)$$
+</div>
+
+<p>Para estandarizar este cálculo, el pipeline procesa dos variables críticas:</p>
 
 <ul>
-  <li><strong>Dosis Total Diaria (DTD):</strong> Es la sumatoria de miligramos que el paciente consume en 24 horas. Por ejemplo, un paciente con Furosemida 40mg cada 12h tiene un $DTD = 80mg$.</li>
-  <li><strong>Pesos Clínicos:</strong> El código asigna pesos mayores (e.j. $3.0$) a diuréticos de asa y vasodilatadores pulmonares, y pesos menores ($0.5$) a estatinas o fármacos de mantenimiento.</li>
+  <li><strong>Dosis Diaria Total (DDT):</strong> Los miligramos totales consumidos por el paciente en 24 horas. Por ejemplo, un paciente que toma Furosemida 40 mg cada 12 horas tiene una $DDT = 80\text{ mg}$.</li>
+  <li><strong>Pesos Clínicos:</strong> El código asigna pesos más altos (por ejemplo, $3.0$) a los diuréticos de asa y vasodilatadores pulmonares, y pesos más bajos ($0.5$) a las estatinas o fármacos de mantenimiento.</li>
 </ul>
 
-<p>
-  Esta arquitectura permite que el MBI actúe como un <strong>sucedáneo de severidad hemodinámica</strong>, capturando la señal de falla cardíaca antes de que el paciente llegue al ecocardiógrafo.
-</p>
+<p>Al consolidar estos complejos arreglos de polifarmacia en una sola variable continua estandarizada, el índice desenmascara la gravedad avanzada de la enfermedad mucho antes de que el paciente llegue a la estación de ecocardiografía.</p>
 
-<h3>Lógica de Ponderación: Pesos clínicos</h3>
-<p>
-  No todos los fármacos indican la misma gravedad. El código asigna un peso específico basado en la severidad de la condición que tratan, priorizando señales de remodelación cardíaca:
-</p>
+<p>El código asigna pesos específicos basados en la gravedad de la patología tratada, priorizando las señales de remodelado cardíaco:</p>
 
 <div class="table-container">
   <table class="mbi-table" style="width: 65%; border: 1px solid #ddd;">
@@ -116,7 +144,7 @@ highlights:
       <tr style="background-color: #003152; color: white;">
         <th style="padding: 12px; border: 1px solid #ddd;">Peso</th>
         <th style="padding: 12px; border: 1px solid #ddd;">Prioridad</th>
-        <th style="padding: 12px; border: 1px solid #ddd;">Clases de Medicación</th>
+        <th style="padding: 12px; border: 1px solid #ddd;">Clases de Medicamentos</th>
       </tr>
     </thead>
     <tbody>
@@ -127,13 +155,13 @@ highlights:
       </tr>
       <tr style="background-color: #f9f9f9;">
         <td style="padding: 10px; border: 1px solid #ddd; text-align: center;"><strong>2.0</strong></td>
-        <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">Alta</td>
-        <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">Inhibidores RAAS, Beta-bloqueadores, SGLT2.</td>
+        <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">Alto</td>
+        <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">Inhibidores del SRAA, Betabloqueadores, SGLT2.</td>
       </tr>
       <tr>
         <td style="padding: 10px; border: 1px solid #ddd; text-align: center;"><strong>1.0</strong></td>
-        <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">Moderada</td>
-        <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">Anticoagulantes, Calcioantagonistas.</td>
+        <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">Moderado</td>
+        <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">Anticoagulantes, Antagonistas de los canales de calcio.</td>
       </tr>
       <tr style="background-color: #f9f9f9;">
         <td style="padding: 10px; border: 1px solid #ddd; text-align: center;"><strong>0.5</strong></td>
@@ -144,54 +172,29 @@ highlights:
   </table>
 </div>
 
-<h2>El Reto: El "Silencio de los Normales" (Sesgo MNAR)</h2>
-<p>En misiones de alto volumen, los datos suelen ser incompletos: los cardiólogos enfocaron la velocidad de ejecución en la patología crítica, dejando los campos para estructuras sanas completamente en blanco. Esto genera un sesgo de <strong>Missing Not At Random (MNAR)</strong> que exhibe una media de $\text{RVSP}$ fuertemente distorsionada de $51.0\text{ mmHg}$, omitiendo por completo el espectro basal saludable.</p>
-
-<hr class="feature-divider">
-
-{% include feature_row id="approach" type="center" %}
-
-<div class="grid-container">
-  <div class="grid-item">
-      <img src="/assets/images/data_management.png" alt="Icono: Procesamiento de Datos" class="grid-icon">
-      <h3>Extracción & Mitigación de Sesgo</h3>
-      <p>Construcción de un modelo de Imputación Gausiana de 'Normalidad Natural' basado en evidencia utilizando las pautas de la Sociedad Americana de Ecocardiografía para restaurar la verdadera varianza poblacional.</p>
-  </div>
-  <div class="grid-item">
-      <img src="/assets/images/data_architecture.png" alt="Icono: Arquitectura Clínica" class="grid-icon">
-      <h3>Ingeniería de Esquema 3NF</h3>
-      <p>Diseño y despliegue de una estructura de base de datos MySQL robusta. Las matrices fragmentadas de polifarmacia se normalizaron en un modelo de base de datos estrictamente relacional.</p>
-  </div>
-  <div class="grid-item">
-      <img src="/assets/images/statistic.png" alt="Icono: Validación Estadística" class="grid-icon">
-      <h3>Mapeo de Residuos OLS</h3>
-      <p>Cálculo de residuos de regresión por Mínimos Cuadrados Ordinarios (OLS) para aislar a los pacientes cuya patología subyacente grave está siendo enmascarada activamente por terapias intensivas.</p>
-  </div>
-</div>
-
 <hr class="feature-divider">
 
 {% include feature_row id="results" type="center" %}
 
 <div class="mbi-main-plot" style="margin: 3rem 0; text-align: center;">
-  <img src="/assets/images/mbi_triage.png" alt="Distribución MBI y Zonas de Triaje" style="width: 100%; max-width: 900px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+  <img src="/assets/images/mbi_triage.png" alt="Distribución de MBI y Zonas de Triaje" style="width: 100%; max-width: 900px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
   <p style="font-style: italic; color: #666; margin-top: 1rem; font-size: 0.9rem;">
-    Figura 1: Correlación entre el MBI y la severidad hemodinámica. Se aprecian las tres zonas operativas de triaje validadas.
+    Figura 1: Correlación entre el MBI y la gravedad hemodinámica. Se muestran las tres zonas operativas de triaje validadas.
   </p>
 </div>
 
 <div class="project-grid">
   <div class="card">
-    <h3>La Zona clave</h3>
-    <p>Identificación de la <strong>Zona 2 (MBI 4.0 - 5.5)</strong>: pacientes con patología mixta que obtienen el mayor beneficio del recambio valvular.</p>
+    <h3>Rescate de la Cohorte</h3>
+    <p><strong>Evitó la exclusión clínica del 67% de la cohorte de pacientes</strong>. Al diagnosticar los patrones de abreviación (MNAR) de los médicos en el ingreso de datos, el pipeline preservó con éxito información valiosa de la población que los modelos estándar de eliminación habrían descartado.</p>
   </div>
   <div class="card">
-    <h3>Poder Predictivo</h3>
-    <p>AUC de <strong>0.73/0.82</strong> para detectar compromiso hemodinámico. El MBI actúa como un "Ecocardiograma Químico" preliminar.</p>
+    <h3>Corrección de Sobreestimación</h3>
+    <p><strong>Eliminó una inflación artificial del 34.7% en la patología de la cohorte.</strong> La imputación "Natural Normal" redujo el promedio aparente de la PSVD de un valor sesgado de 51.0 mmHg a un valor fisiológicamente preciso de 33.3 mmHg, estabilizando los supuestos del modelo.</p>
   </div>
   <div class="card">
-    <h3>Eficiencia Operativa</h3>
-    <p>Reducción de la carga en estaciones de diagnóstico al priorizar pacientes en <strong>Agotamiento Farmacológico</strong> (MBI > 5.5).</p>
+    <h3>Desenmascarando la Discordancia</h3>
+    <p><strong>Identificó una tasa de discordancia clínica del 28.9%</strong> en perfiles complejos. El índice detectó con precisión a pacientes que mantenían presiones engañosamente "moderadas" solo mediante una compensación farmacológica agresiva e insostenible.</p>
   </div>
 </div>
 
@@ -229,6 +232,17 @@ highlights:
 <div class="pull-quote">
   "El MBI transforma una lista de medicamentos en una <strong>métrica de severidad</strong>, permitiendo que la brigada opere con precisión estadística."
 </div>
+
+<h2>Reflexiones: El Contexto Dicta la Estructura</h2>
+<p>El desarrollo de <em>Cardio-MBI-Triage-Engine</em> consolidó una verdad fundamental de la informática médica especializada: <strong>los patrones puros de ingeniería de datos fracasan si se implementan sin un profundo conocimiento del dominio clínico.</strong></p>
+
+<blockquote>
+  <strong>Conclusión Clave:</strong> Un equipo de datos externo que analizara este conjunto de datos a ciegas habría descartado por completo las filas incompletas (destruyendo el tamaño de la cohorte) o habría aplicado imputaciones medias estándar no ponderadas que ocultarían por completo la verdadera crisis estructural de la operación en el terreno.
+</blockquote>
+
+<p>Al combinar una comprensión íntima de los patrones de comportamiento de los cardiólogos en entornos clínicos de alto estrés con una estructura de datos sólida, este pipeline tradujo con éxito registros de medicación fragmentados en objetivos diagnósticos de alta fidelidad, maximizando el impacto del activo más escaso de la misión: el tiempo del especialista.</p>
+
+<hr class="feature-divider">
 
 {% include feature_row id="highlights_title" type="center" %}
 

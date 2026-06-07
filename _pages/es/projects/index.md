@@ -16,7 +16,7 @@ seo:
   title: "Projects" # Repeat title here
   image: "/assets/images/splash-projects.jpg"
 presentations:
-  - title: "Presentaciones"
+  - title: "Presentaciones y mentoría"
 data:
   - title: "Análisis de datos"
 ---

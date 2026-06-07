@@ -64,7 +64,7 @@ highlights:
     <p>Un estudio de caso sobre cómo el análisis de datos y la síntesis de evidencia clínica unificaron criterios en un servicio de alta presión.</p>
 </div>
 <div class="skills-bar">
-    <p><strong>Estrategia Principal:</strong> Medicina Basada en Evidencia (MBE), Análisis de literatura médica y Facilitación de consenso</p>
+    <p><strong>Estrategias Principales:</strong> Medicina Basada en Evidencia (MBE), Análisis de literatura médica y Facilitación de consenso</p>
 </div>
 
 <h2>El Reto: ¿Cómo unificar criterios ante la incertidumbre?</h2>
