@@ -18,7 +18,7 @@ seo:
 presentations:
   - title: "Presentaciones y mentoría"
 data:
-  - title: "Análisis de datos"
+  - title: "Datos y bases de datos"
 ---
 
 <!-- Adds top margin to the feature divider -->
@@ -38,10 +38,10 @@ data:
 <div class="grid-container">
   <div class="grid-item">
     <a href="mbi/">
-      <img src="/assets/images/mbi_triage.png" alt="Proyecto: MBI">
-      <h3>Índice de carga farmacológica e intervenciones cardíacas</h3>
-      <p>Desarrollo de ingeniería de características e imputación "Natural Normal" para corregir sesgos en entornos clínicos de alta presión.</p>
-      <p><strong>Impacto:</strong> 85% de precisión en la detección de remodelación cardíaca avanzada en triaje preclínico</p>
+      <img src="/assets/images/mbi_triage.png" alt="Proyecto: Cardio-MBI-Triage-Engine">
+      <h3>Índice de Carga Farmacológica (MBI)</h3>
+      <p>Diseño de un pipeline de datos clínicos con esquemas 3NF/Snowflake e imputación 'natural normal' para superar la pérdida estructural de datos en una brigada cardiológica de 10 días.</p>
+      <p><strong>Impacto:</strong> Clasifica al 25.7% de los pacientes de alta agudeza en zonas de intervención de alto beneficio bajo severas restricciones de campo.</p>
     </a>
   </div>
   <div class="grid-item">
@@ -59,12 +59,12 @@ data:
 <!-- Projects columns -->
 <div class="grid-container">
   <div class="grid-item">
-  <a href="pharmacovigilance/">
-    <img src="/assets/images/project_pharmacovigilance.png" alt="Proyecto: XV Jornada Científica">
-    <h3>Farmacovigilancia y narrativa clínica</h3>
-    <p>Caracterización de reacciones adversas (RAM) mediante algoritmos de causalidad de la OMS y diseño de narrativa visual.</p>
-    <p><strong>Impacto:</strong> Primer lugar SILAIS 2023 por excelencia en comunicación científica de alto impacto.</p>
-  </a>
+    <a href="lvdd/">
+      <img src="/assets/images/lvdd_plot_pr.png" alt="Proyecto: DDVI en Hemodiálisis">
+      <h3>Disfunción Diastólica en Hemodiálisis de Mantenimiento</h3>
+      <p>Aplcación de regresiones de Poisson multivariadas con estimadores de covarianza robustos de tipo sándwich para neutralizar las limitaciones muestrales.</p>
+      <p><strong>Impacto:</strong> Identificación de la hipertensión arterial crónica (PR: 2.22) como el principal factor impulsor de la falla cardíaca en hemodiálisis.</p>
+    </a>
   </div>
   <div class="grid-item">
   <a href="sepsis/">
@@ -72,6 +72,14 @@ data:
     <h3>Evidencia crítica en Choque Séptico</h3>
     <p>Análisis y síntesis de evidencia crítica basada en ensayos hitos (ANDROMEDA-SHOCK, CLOVERS, SMART) para optimización terapéutica.</p>
     <p><strong>Impacto:</strong> Síntesis de protocolos de vanguardia para el manejo avanzado del choque séptico.</p>
+  </a>
+  </div>
+  <div class="grid-item">
+  <a href="pharmacovigilance/">
+    <img src="/assets/images/project_pharmacovigilance.png" alt="Proyecto: XV Jornada Científica">
+    <h3>Farmacovigilancia y narrativa clínica</h3>
+    <p>Caracterización de reacciones adversas (RAM) mediante algoritmos de causalidad de la OMS y diseño de narrativa visual.</p>
+    <p><strong>Impacto:</strong> Primer lugar SILAIS 2023 por excelencia en comunicación científica de alto impacto.</p>
   </a>
   </div>
 </div>

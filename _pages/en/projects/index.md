@@ -36,10 +36,10 @@ data:
 <div class="grid-container">
   <div class="grid-item">
     <a href="mbi/">
-      <img src="/assets/images/mbi_triage.png" alt="Project: MBI">
-      <h3>Medication Burden Index and Cardiac Interventions</h3>
-      <p>Development of feature engineering and 'Natural Normal' imputation to correct biases in high-pressure clinical settings.</p>
-      <p><strong>Impact:</strong> 85% accuracy in detecting advanced cardiac remodeling in preclinical triage.</p>
+      <img src="/assets/images/mbi_triage.png" alt="Project: Cardio-MBI-Triage-Engine">
+      <h3>Medication Burden Index (MBI)</h3>
+      <p>Engineering a clinical data pipeline with 3NF/Snowflake schemas and 'natural normal' imputation to overcome structural missingness in a 10-day cardiology mission.</p>
+      <p><strong>Impact:</strong> Classifies 25.7% of high-acuity patients into high-benefit intervention zones under severe field constraints.</p>
     </a>
   </div>
   <div class="grid-item">
@@ -55,6 +55,14 @@ data:
 {% include feature_row id="presentations" type="center" %}
 
 <div class="grid-container">
+  <div class="grid-item">
+    <a href="lvdd/">
+      <img src="/assets/images/lvdd_plot_pr.png" alt="Project: LVDD in Hemodialysis">
+      <h3>Diastolic Dysfunction in Maintenance Hemodialysis</h3>
+      <p>Deploying multivariate Poisson regression with robust sandwich covariance estimators to neutralize sample limits.</p>
+      <p><strong>Impact:</strong> Identification of chronic Hypertension (PR: 2.22) as the strongest driver of heart failure in hemodialysis.</p>
+    </a>
+  </div>
   <div class="grid-item">
   <a href="sepsis/">
     <img src="/assets/images/presentation_sepsis.png" alt="Project: Sepsis and Septic Shock">

@@ -102,17 +102,17 @@ highlights:
 
 <div class="grid-container">
   <div class="grid-item">
-    <img src="/assets/images/data_management.png" alt="Icon: Data Processing" class="grid-icon">
+    <img src="/assets/images/data_management.png" alt="Ícono: Administración" class="grid-icon">
     <h3>Bias Mitigation</h3>
     <p>I engineered a <strong>Gaussian Imputation model</strong> aligned with American Society of Echocardiography guidelines. By injecting controlled physiological noise centered on healthy reference parameters, the algorithm recovers the true population variance.</p>
   </div>
   <div class="grid-item">
-    <img src="/assets/images/engineering.png" alt="Icon: Data Processing" class="grid-icon">
+    <img src="/assets/images/engineering.png" alt="Ícono: Ingeniería" class="grid-icon">
     <h3>Feature Engineering</h3>
     <p>I developed the <strong>Medication Burden Index (MBI)</strong>. This parameter normalizes complex polypharmacy arrays against therapeutic ceilings, converting fragmented medication registries into a single, standardized surrogate metric for cardiac remodeling.</p>
   </div>
   <div class="grid-item">
-    <img src="/assets/images/statistic.png" alt="Icon: Data Processing" class="grid-icon">
+    <img src="/assets/images/statistic.png" alt="Ícono: Estadística" class="grid-icon">
     <h3>Statistical Triage</h3>
     <p>I executed a <strong>Receiver Operating Characteristic (ROC)</strong> curve analysis to map the engineered MBI scores against objective clinical and hemodynamic indicators, establishing an empirical triage cutoff that fast-tracks high-acuity patients with high precision.</p>
   </div>
@@ -204,28 +204,25 @@ highlights:
 
 <div class="mbi-main-plot" style="margin: 3rem 0; text-align: center;">
   <a href="https://public.tableau.com/app/profile/enyel.a.rodr.guez.g./viz/MBIstratification/MBIstratification" target="_blank">
-    <img src="/assets/images/mbi_dashboard.png" alt="MBI Distribution and Triage Zones" style="width: 45%; max-width: 900px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+    <img src="/assets/images/mbi_dashboard.png" alt="MBI Dashboard" style="width: 45%; max-width: 900px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
   </a>
 </div>
 
 <div class="project-grid">
   <div class="card">
     <h3>Cohort Distribution</h3>
-    <span><b>Age Distribution Registry:</b> A continuous histogram detailing the age composition.</span>
-    <br>
-    <span><b>Gender Split (Donut Chart):</b> Enables rapid auditing of gender-based clinical variations across disease groups.</span>
+    <p><strong>Age Distribution Registry:</strong> A continuous histogram detailing the baseline age composition of the mission's cohort.</p>
+    <p><strong>Gender Split (Donut Chart):</strong> Enables rapid auditing of gender-based clinical variations across disease groups.</p>
   </div>
   <div class="card">
     <h3>Pathological Crossroads</h3>
-    <span><b>Disease Prevalence:</b> Maps the primary clinical indications driving patient presentation, fully color-coded by MBI Triage Zones.</span>
-    <br>
-    <span><b>Medication Burden Index Composition:</b> Deconstructs the MBI across distinct medication groups.</span>
+    <p><strong>Disease Prevalence Matrix:</strong> Maps primary clinical indications driving patient presentation, color-coded by MBI Triage Zones.</p>
+    <p><strong>Index Composition:</strong> Deconstructs individual Medication Burden components across distinct pharmacological classes.</p>
   </div>
   <div class="card">
-    <h3>Average KPI cards</h3>
-    <span><b>Medication Burden Index:</b> Provides an instant read on the standard operational polypharmacy footprint.</span>
-    <br>
-    <span><b>Right Ventricular Systolic Pressure (RVSP):</b> Tracks the running baseline to provide an un-masked metric of global right-heart performance.</span>
+    <h3>Average KPI Cards</h3>
+    <p><strong>Operational Footprint:</strong> Provides an instant operational read on the running polypharmacy footprint across field sites.</p>
+    <p><strong>Hemodynamic Baseline (RVSP):</strong> Tracks unmasked right-heart performance to validate global clinical triage thresholds.</p>
   </div>
 </div>
 

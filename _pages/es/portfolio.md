@@ -31,10 +31,18 @@ certifications:
 <div class="grid-container">
   <div class="grid-item">
     <a href="projects/mbi/">
-      <img src="/assets/images/mbi_triage.png" alt="Proyecto: MBI">
-      <h3>Índice de carga farmacológica e intervenciones cardíacas</h3>
-      <p>Desarrollo de ingeniería de características e imputación "Natural Normal" para corregir sesgos en entornos clínicos de alta presión.</p>
-      <p><strong>Impacto:</strong> 85% de precisión en la detección de remodelación cardíaca avanzada en triaje preclínico</p>
+      <img src="/assets/images/mbi_triage.png" alt="Proyecto: Cardio-MBI-Triage-Engine">
+      <h3>Índice de Carga Farmacológica (MBI)</h3>
+      <p>Diseño de un pipeline de datos clínicos con esquemas 3NF/Snowflake e imputación 'natural normal' para superar la pérdida estructural de datos en una brigada cardiológica de 10 días.</p>
+      <p><strong>Impacto:</strong> Clasifica al 25.7% de los pacientes de alta agudeza en zonas de intervención de alto beneficio bajo severas restricciones de campo.</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="projects/lvdd/">
+      <img src="/assets/images/lvdd_plot_pr.png" alt="Proyecto: DDVI en Hemodiálisis">
+      <h3>Disfunción Diastólica en Hemodiálisis de Mantenimiento</h3>
+      <p>Aplcación de regresiones de Poisson multivariadas con estimadores de covarianza robustos de tipo sándwich para neutralizar las limitaciones muestrales.</p>
+      <p><strong>Impacto:</strong> Identificación de la hipertensión arterial crónica (PR: 2.22) como el principal factor impulsor de la falla cardíaca en hemodiálisis.</p>
     </a>
   </div>
   <div class="grid-item">
@@ -43,14 +51,6 @@ certifications:
       <h3>Base de Datos Relacional e Integración Python-SQL</h3>
       <p>Ingeniería de un ecosistema 3NF y un puente programático para automatizar operaciones de restaurante complejas.</p>
       <p><strong>Impacto:</strong> 100% de integridad transaccional y eliminación de redundancia mediante procedimientos almacenados.</p>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="projects/sepsis/">
-      <img src="/assets/images/presentation_sepsis.png" alt="Proyecto: Sepsis y choque séptico">
-      <h3>Evidencia crítica en Choque Séptico</h3>
-      <p>Análisis y síntesis de evidencia crítica basada en ensayos hitos (ANDROMEDA-SHOCK, CLOVERS, SMART) para optimización terapéutica.</p>
-      <p><strong>Impacto:</strong> Síntesis de protocolos de vanguardia para el manejo avanzado del choque séptico.</p>
     </a>
   </div>
 </div>

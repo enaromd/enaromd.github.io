@@ -102,17 +102,17 @@ highlights:
 
 <div class="grid-container">
   <div class="grid-item">
-    <img src="/assets/images/data_management.png" alt="Icon: Data Processing" class="grid-icon">
+    <img src="/assets/images/data_management.png" alt="Icon: Management" class="grid-icon">
     <h3>Mitigación del Sesgo</h3>
     <p>Diseñé un <strong>modelo de Imputación Gausiana</strong> alineado con las directrices de la Sociedad Americana de Ecocardiografía. Al inyectar ruido fisiológico controlado centrado en parámetros de referencia saludables, el algoritmo recupera la verdadera varianza de la población.</p>
   </div>
   <div class="grid-item">
-    <img src="/assets/images/engineering.png" alt="Icon: Data Processing" class="grid-icon">
+    <img src="/assets/images/engineering.png" alt="Icon: Engineering" class="grid-icon">
     <h3>Ingeniería de Características</h3>
     <p>Desarrollé el <strong>Medication Burden Index (MBI)</strong>. Este parámetro normaliza arreglos complejos de polifarmacia frente a los límites terapéuticos máximos, transformando registros de medicación fragmentados en una métrica subrogada única y estandarizada para el remodelado cardíaco.</p>
   </div>
   <div class="grid-item">
-    <img src="/assets/images/statistic.png" alt="Icon: Data Processing" class="grid-icon">
+    <img src="/assets/images/statistic.png" alt="Icon: Statistics" class="grid-icon">
     <h3>Triaje Estadístico</h3>
     <p>Ejecuté un análisis de curva <strong>Característica Operativa del Receptor (ROC)</strong> para mapear las puntuaciones de MBI calculadas frente a indicadores clínicos y hemodinámicos objetivos, estableciendo un punto de corte empírico de triaje que prioriza con alta precisión a los pacientes de alta agudeza.</p>
   </div>
@@ -121,7 +121,7 @@ highlights:
 <hr class="feature-divider">
 
 <h2>Cuantificación de la intensidad: Cómo funciona el MBI</h2>
-<p>Más que un simple conteo de píldoras, el Medication Burden Index evalúa el "esfuerzo" colectivo que experimenta el sistema cardiovascular de un paciente bajo soporte médico activo. El motor calcula esto evaluando las dosis de medicamentos individuales en relación con sus umbrales terapéuticos máximos reconocidos mundialmente y aplicando pesos clínicos específicos por clase:</p>
+<p>Más que un simple conteo de píldoras, el Índice de carga farmacológica evalúa el "esfuerzo" colectivo que experimenta el sistema cardiovascular de un paciente bajo soporte médico activo. El motor calcula esto evaluando las dosis de medicamentos individuales en relación con sus umbrales terapéuticos máximos reconocidos mundialmente y aplicando pesos clínicos específicos por clase:</p>
 
 <div class="math-block">
   $$MBI = \sum \left( \text{Peso} \times \frac{\text{DDT}}{\text{Dosis Máxima}} \right)$$
@@ -204,28 +204,25 @@ highlights:
 
 <div class="mbi-main-plot" style="margin: 3rem 0; text-align: center;">
   <a href="https://public.tableau.com/app/profile/enyel.a.rodr.guez.g./viz/MBIstratification/MBIstratification" target="_blank">
-    <img src="/assets/images/mbi_dashboard.png" alt="MBI Distribution and Triage Zones" style="width: 45%; max-width: 900px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+    <img src="/assets/images/mbi_dashboard.png" alt="MBI Dashboard" style="width: 45%; max-width: 900px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
   </a>
 </div>
 
 <div class="project-grid">
   <div class="card">
     <h3>Distribución de la Cohorte</h3>
-    <span><b>Registro de Distribución de Edad:</b> Un histograma continuo que detalla la composición por edad.</span>
-    <br>
-    <span><b>División por Género (Gráfico de Dona):</b> Permite una auditoría rápida de las variaciones clínicas basadas en el género a través de los grupos de enfermedades.</span>
+    <p><strong>Registro de Distribución de Edad:</strong> Un histograma continuo que detalla la composición etaria basal de la cohorte de la misión.</p>
+    <p><strong>Distribución por Género (Gráfico de Dona):</strong> Permite la auditoría rápida de las variaciones clínicas basadas en el género a través de los diferentes grupos de enfermedades.</p>
   </div>
   <div class="card">
     <h3>Encrucijada Patológica</h3>
-    <span><b>Prevalencia de Enfermedades:</b> Mapea las indicaciones clínicas primarias que impulsan la presentación del paciente, completamente codificadas por colores según las Zonas de Triaje de MBI.</span>
-    <br>
-    <span><b>Composición del Índice de Carga de Medicamentos:</b> Deconstruye el MBI a través de distintos grupos de medicamentos.</span>
+    <p><strong>Matriz de Prevalencia de Enfermedades:</strong> Mapea las indicaciones clínicas primarias que guían la presentación del paciente, codificadas por colores según las Zonas de Triaje del MBI.</p>
+    <p><strong>Composición del Índice:</strong> Desglosa los componentes individuales de la carga de medicamentos a través de distintas clases farmacológicas.</p>
   </div>
   <div class="card">
-    <h3>Tarjetas de KPI de Promedio</h3>
-    <span><b>Índice de Carga de Medicamentos:</b> Proporciona una lectura instantánea de la huella operativa estándar de polifarmacia.</span>
-    <br>
-    <span><b>Presión Sistólica del Ventrículo Derecho (RVSP):</b> Rastrea la línea de base móvil para proporcionar una métrica sin máscara del rendimiento global del corazón derecho.</span>
+    <h3>Tarjetas de KPI Promedio</h3>
+    <p><strong>Huella Operacional:</strong> Proporciona una lectura operacional instantánea del impacto de la polifarmacia en tiempo real a lo largo de los sitios de campo.</p>
+    <p><strong>Línea de Base Hemodinámica (PSVD):</strong> Rastrea el rendimiento sin máscara del corazón derecho para validar los umbrales globales de triaje clínico.</p>
   </div>
 </div>
 
