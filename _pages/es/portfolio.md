@@ -46,11 +46,11 @@ certifications:
     </a>
   </div>
   <div class="grid-item">
-    <a href="projects/little-lemon-db/">
-      <img src="/assets/images/database_schema.png" alt="Proyecto: Little Lemon DB">
-      <h3>Base de Datos Relacional e Integración Python-SQL</h3>
-      <p>Ingeniería de un ecosistema 3NF y un puente programático para automatizar operaciones de restaurante complejas.</p>
-      <p><strong>Impacto:</strong> 100% de integridad transaccional y eliminación de redundancia mediante procedimientos almacenados.</p>
+    <a href="projects/sepsis/">
+      <img src="/assets/images/presentation_sepsis.png" alt="Proyecto: Adaptación en Sepsis">
+      <h3>Operacionalización de Evidencia Clínica en Choque Séptico</h3>
+      <p>Desfragmentando datos complejos de ensayos clínicos (ANDROMEDA-SHOCK, CLOVERS, SMART) en flujos de trabajo locales a la cabecera del paciente para minimizar la latencia terapéutica.</p>
+      <p><strong>Impacto:</strong> Reducción de la variabilidad clínica mediante marcos estandarizados de consenso basados en datos para cuidados críticos.</p>
     </a>
   </div>
 </div>

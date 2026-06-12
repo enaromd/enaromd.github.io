@@ -1,24 +1,21 @@
 ---
 layout: splash
-title: "Evidencia en choque séptico"
+title: "Evidencia en Choque Séptico"
 permalink: portfolio/projects/sepsis/
 lang: es
-# Social previews
-description: "Sintetizando evidencia de los principales ensayos clínicos aleatorizados para facilitar un consenso basado en datos en la reanimación del choque séptico."
+description: "Sintetizando evidencia de los principales ensayos clínicos controlados aleatorios para facilitar un consenso institucional basado en datos."
 header:
   teaser: "/assets/images/presentation_sepsis.png"
-# This block communicates directly with the SEO plugin
 seo:
   type: "article"
-  title: "Evidencia en choque séptico" # Repeat title here
+  title: "Evidencia en Choque Séptico"
   image: "/assets/images/presentation_sepsis.png"
-# Sections
 approach:
-  - title: "Metodología: Síntesis y Consenso"
-  - excerpt: "Mi abordaje se centró en la selección crítica de la literatura médica. En lugar de una exposición unilateral, utilicé la evidencia de los grandes ensayos clínicos para fomentar la discusión técnica, permitiendo que el equipo médico llegara a acuerdos operativos basados en datos."
+  - title: "Traducción de Evidencia para Flujos de Trabajo Clínicos"
+  - excerpt: "Desfragmentando datos de ensayos históricos en cuidados críticos para trazar activadores clínicos accionables y de alta visibilidad."
 results:
-  - title: "El Factor Decisión: Evidencia en Acción"
-  - excerpt: "La síntesis de la evidencia no fue un ejercicio académico, sino un gatillo de cambio. Al contrastar los hallazgos de los grandes ensayos clínicos con la realidad operativa del servicio, logramos decantar los siguientes hitos de decisión:"
+  - title: "Operacionalizando la Evidencia Clínica"
+  - excerpt: "Contrastando la metodología de los ensayos con el contexto médico local para extraer hitos de decisión de alto rendimiento."
 highlights_title: 
   - title: "Evidencia visual"
   - excerpt: "Análisis Visual: Una síntesis de la evidencia clínica para la estandarización del manejo de la Sepsis."
@@ -60,15 +57,15 @@ highlights:
 </style>
 
 <div class="headline">
-    <h1>Sepsis: Traduciendo el rigor de los ensayos clínicos <br>a la cabecera del paciente</h1>
-    <p>Un estudio de caso sobre cómo el análisis de datos y la síntesis de evidencia clínica unificaron criterios en un servicio de alta presión.</p>
+    <h1>Sepsis: De la evidencia en ensayos hacia acuerdos clínicos</h1>
+    <p><strong>En Síntesis:</strong> La mejor evidencia científica es inútil si no puede ser adoptada en la primera línea de atención. Esta síntesis tradujo rápidamente <span class="highlight-metric">razones complejas</span> de ANDROMEDA-SHOCK y CLOVERS <span class="highlight-metric">en acuerdos operacionales estandarizados e inmediatos.</span></p>
 </div>
 <div class="skills-bar">
-    <p><strong>Estrategias Principales:</strong> Medicina Basada en Evidencia (MBE), Análisis de literatura médica y Facilitación de consenso</p>
+    <p><strong>Estrategias Clave:</strong> Medicina Basada en Evidencias (MBE), Síntesis de Ensayos Clínicos, Alineación de Flujos de Trabajo</p>
 </div>
 
-<h2>El Reto: ¿Cómo unificar criterios ante la incertidumbre?</h2>
-<p>En el manejo de la sepsis, la saturación de información y los resultados de ensayos clínicos de alto perfil suelen generar debates sobre la mejor conducta a seguir. Mi reto fue actuar como <strong>evaluador técnico</strong>, analizando los detalles de la evidencia para facilitar que el equipo médico adoptara prácticas estandarizadas.</p>
+<h2>El Reto: Brechas entre los Últimos Ensayos y la Práctica Clínica</h2>
+<p>En el entorno de alta presión de los cuidados críticos, la <strong>brecha entre la publicación de un ensayo mayor y su implementación en el flujo de trabajo puede costar vidas</strong>. Mi objetivo fue comprimir eficazmente este cronograma sintetizando los puntos de datos precisos necesarios para la adopción inmediata de flujos de trabajo clínicos.</p>
 
 <hr class="feature-divider">
 
@@ -78,17 +75,17 @@ highlights:
   <div class="grid-item">
       <img src="/assets/images/selection.png" alt="Selección de Evidencia" class="grid-icon">
       <h3>Selección de Evidencia</h3>
-      <p>Sinteticé el diseño y resultados de ensayos clínicos aleatorizados, extrayendo los puntos críticos para el manejo del paciente séptico.</p>
+      <p>Sintetizé el diseño y los resultados de ensayos clínicos aleatorios, extrayendo los endpoints clínicos más críticos para la implementación a la cabecera del paciente.</p>
   </div>
   <div class="grid-item">
       <img src="/assets/images/analysis.png" alt="Análisis Crítico" class="grid-icon">
-      <h3>Análisis Crítico</h3>
-      <p>Desglosé la evidencia científica para identificar intervenciones con impacto real en la morbimortalidad.</p>
+      <h3>Alineación Operacional</h3>
+      <p>Logré una rápida alineación clínica al involucrar a los protagonistas clínicos mediante jerarquías visuales claras y guiadas por la evidencia que redujeron la carga cognitiva.</p>
   </div>
   <div class="grid-item">
       <img src="/assets/images/communication.png" alt="Facilitación Técnica" class="grid-icon">
-      <h3>Facilitación Técnica</h3>
-      <p>Fomenté un entorno de discusión donde la presentación de datos objetivos permitió alinear las conductas del equipo médico.</p>
+      <h3>Restricciones por Comorbilidades</h3>
+      <p>Contabilicé las restricciones fisiopatológicas superpuestas, aislando los puntos de inflexión donde la titulación de fluidos debe ajustarse para evitar la sobrecarga de volumen.</p>
   </div>
 </div>
 
@@ -98,21 +95,21 @@ highlights:
 
 <div class="project-grid">
   <div class="card">
-    <h3>Análisis de Evidencia</h3>
-    <p>Revisión detallada de los ensayos <strong>ANDROMEDA-SHOCK, CLOVERS y SMART</strong>. El análisis permitió comprender que la clave de la supervivencia radica en la <strong>identificación temprana</strong> y la reanimación oportuna, más allá de protocolos rígidos.</p>
+    <h3>Alineación Estratificada</h3>
+    <p><strong>Traduje endpoints de múltiples ensayos en señales clínicas de alto rendimiento</strong>, tendiendo un puente entre la fisiología fundamental para internos y la metodología avanzada de ensayos para subespecialistas durante una revisión institucional conjunta de 17 miembros.</p>
   </div>
   <div class="card">
-    <h3>Pautas clínicas (MBE)</h3>
-    <p>Definición de pautas basadas en evidencia: reanimación hídrica guiada por <strong>llenado capilar y lactato</strong>, inicio temprano de <strong>vasopresores</strong> y el uso estratégico de <strong>corticoides</strong> en escenarios de choque refractario.</p>
+    <h3>Guías Clínicas basadas en Evidencia</h3>
+    <p>Flujos de trabajo a la cabecera del paciente <strong>específicos del contexto y guiados por la evidencia</strong> para la reanimación hídrica guiada por llenado capilar y lactato, la iniciación temprana de vasopresores y el uso estratégico de corticosteroides.</p>
   </div>
   <div class="card">
-    <h3>Valor del Analista</h3>
-    <p>Reducción de la variabilidad clínica. Demostré que mi valor reside en la capacidad de <strong>decantar conocimiento complejo</strong> y convertirlo en una base sólida para la toma de decisiones colectiva en el servicio.</p>
+    <h3>El Valor del Analista</h3>
+    <p>Minimización de la variabilidad clínica y la latencia de implementación mediante la <strong>destilación de datos dimensionales complejos de ensayos en marcos estructurados de cabecera</strong> para una ejecución rápida y estandarizada.</p>
   </div>
 </div>
 
 <div class="pull-quote">
-  "La mejor evidencia científica es inútil si no puede ser <strong>interpretada y adoptada</strong> colectivamente por el equipo en la primera línea."
+  "La generación de evidencia es solo la mitad de la batalla. La <strong>implementación estratégica en los flujos de trabajo clínicos</strong> es lo que finalmente salva vidas."
 </div>
 
 {% include feature_row id="highlights_title" type="center" %}

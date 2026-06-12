@@ -65,10 +65,10 @@ data:
   </div>
   <div class="grid-item">
   <a href="sepsis/">
-    <img src="/assets/images/presentation_sepsis.png" alt="Project: Sepsis and Septic Shock">
-    <h3>Critical Evidence in Septic Shock</h3>
-    <p>Analysis and synthesis of critical evidence based on landmark trials (ANDROMEDA-SHOCK, CLOVERS, SMART) for therapeutic optimization.</p>
-    <p><strong>Impact:</strong> Synthesis of cutting-edge protocols for the advanced management of septic shock.</p>
+    <img src="/assets/images/presentation_sepsis.png" alt="Project: Sepsis Adaptation">
+    <h3>Septic Shock Clinical Evidence Operationalization</h3>
+    <p>Deconstructing high-dimensional trial data (ANDROMEDA-SHOCK, CLOVERS, SMART) into actionable, localized bedside workflows.</p>
+    <p><strong>Impact:</strong> Reduction of clinical variability through standardized, data-driven critical care consensus frameworks.</p>
   </a>
   </div>
   <div class="grid-item">

@@ -130,11 +130,11 @@ projects:
     </a>
   </div>
   <div class="grid-item">
-    <a href="portfolio/projects/little-lemon-db/">
-      <img src="/assets/images/database_schema.png" alt="Project: Little Lemon">
-      <h3>Relational Database and MySQL-Python integration</h3>
-      <p>Engineering a 3NF ecosystem and a programmatic bridge to automate complex restaurant operations.</p>
-      <p><strong>Impact:</strong> 100% transaction integrity and elimination of data redundancy through stored procedures.</p>
+    <a href="portfolio/projects/sepsis/">
+      <img src="/assets/images/presentation_sepsis.png" alt="Project: Sepsis Adaptation">
+      <h3>Septic Shock Clinical Evidence Operationalization</h3>
+      <p>Deconstructing high-dimensional trial data (ANDROMEDA-SHOCK, CLOVERS, SMART) into actionable, localized bedside workflows.</p>
+      <p><strong>Impact:</strong> Reduction of clinical variability through standardized, data-driven critical care consensus frameworks.</p>
     </a>
   </div>
 </div>

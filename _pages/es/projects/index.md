@@ -67,20 +67,20 @@ data:
     </a>
   </div>
   <div class="grid-item">
-  <a href="sepsis/">
-    <img src="/assets/images/presentation_sepsis.png" alt="Proyecto: Sepsis y choque séptico">
-    <h3>Evidencia crítica en Choque Séptico</h3>
-    <p>Análisis y síntesis de evidencia crítica basada en ensayos hitos (ANDROMEDA-SHOCK, CLOVERS, SMART) para optimización terapéutica.</p>
-    <p><strong>Impacto:</strong> Síntesis de protocolos de vanguardia para el manejo avanzado del choque séptico.</p>
-  </a>
+    <a href="sepsis/">
+      <img src="/assets/images/presentation_sepsis.png" alt="Proyecto: Adaptación en Sepsis">
+      <h3>Operacionalización de Evidencia Clínica en Choque Séptico</h3>
+      <p>Desfragmentando datos complejos de ensayos clínicos (ANDROMEDA-SHOCK, CLOVERS, SMART) en flujos de trabajo locales a la cabecera del paciente para minimizar la latencia terapéutica.</p>
+      <p><strong>Impacto:</strong> Reducción de la variabilidad clínica mediante marcos estandarizados de consenso basados en datos para cuidados críticos.</p>
+    </a>
   </div>
   <div class="grid-item">
-  <a href="pharmacovigilance/">
-    <img src="/assets/images/project_pharmacovigilance.png" alt="Proyecto: XV Jornada Científica">
-    <h3>Farmacovigilancia y narrativa clínica</h3>
-    <p>Caracterización de reacciones adversas (RAM) mediante algoritmos de causalidad de la OMS y diseño de narrativa visual.</p>
-    <p><strong>Impacto:</strong> Primer lugar SILAIS 2023 por excelencia en comunicación científica de alto impacto.</p>
-  </a>
+    <a href="pharmacovigilance/">
+      <img src="/assets/images/project_pharmacovigilance.png" alt="Proyecto: XV Jornada Científica">
+      <h3>Farmacovigilancia y narrativa clínica</h3>
+      <p>Caracterización de reacciones adversas (RAM) mediante algoritmos de causalidad de la OMS y diseño de narrativa visual.</p>
+      <p><strong>Impacto:</strong> Primer lugar SILAIS 2023 por excelencia en comunicación científica de alto impacto.</p>
+    </a>
   </div>
 </div>
 

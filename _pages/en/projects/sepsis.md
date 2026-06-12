@@ -4,7 +4,7 @@ title: "Evidence in Septic Shock"
 permalink: portfolio/projects/sepsis/
 lang: en
 # Social previews
-description: "Synthesizing evidence from major randomized controlled trials (RCTs) to facilitate data-driven consensus in septic shock resuscitation."
+description: "Synthesizing evidence from major randomized controlled trials to facilitate data-driven consensus."
 header:
   teaser: "/assets/images/presentation_sepsis.png"
 # This block communicates directly with the SEO plugin
@@ -14,11 +14,11 @@ seo:
   image: "/assets/images/presentation_sepsis.png"
 # Sections
 approach:
-  - title: "Methodology: Synthesis and Consensus"
-  - excerpt: "My approach focused on the critical selection of medical literature. Instead of a unilateral presentation, I utilized evidence from major clinical trials to foster technical discussion, allowing the medical team to reach data-driven operational agreements."
+  - title: "Evidence Translation for Clinical Workflows"
+  - excerpt: "Deconstructing data from landmark critical care trials to map out actionable, high-visibility clinical triggers."
 results:
-  - title: "The Decision Factor: Evidence in Action"
-  - excerpt: "Evidence synthesis was not an academic exercise, but a trigger for change. By contrasting major trial findings with the service's operational reality, we successfully distilled the following decision milestones:"
+  - title: "Operationalizing Clinical Evidence"
+  - excerpt: "Contrasting trial methodology with localized medical context to extract high-yield decision milestones."
 highlights_title: 
   - title: "Visual Evidence"
   - excerpt: "Visual Analysis: A synthesis of clinical evidence for the standardization of Sepsis management."
@@ -57,18 +57,23 @@ highlights:
 .cta {
   margin-top: 5rem !important;
 }
+
+.highlight-metric {
+    color: #b80f0a; /* Deep clinical red */
+    font-weight: 600; /* Optional: gives the metric a tiny bit more structural weight */
+}
 </style>
 
 <div class="headline">
-    <h1>Sepsis: Translating Clinical Trial Rigor to the Bedside</h1>
-    <p>A case study on how data analysis and clinical evidence synthesis unified criteria in a high-pressure medical service.</p>
+    <h1>Sepsis: From evidence in trials towards clinical agreements</h1>
+    <p><strong>The Bottom Line:</strong> The best scientific evidence is useless if it cannot be adopted by the front line. This synthesis rapidly translated <span class="highlight-metric">complex ratios</span> from ANDROMEDA-SHOCK and CLOVERS <span class="highlight-metric">into immediate, standardized operational agreements.</span></p>
 </div>
 <div class="skills-bar">
-    <p><strong>Core Strategies:</strong> Evidence-Based Medicine (EBM), Medical Literature Analysis, Consensus Facilitation</p>
+    <p><strong>Core Strategies:</strong> Evidence-Based Medicine (EBM), Trial Synthesis, Workflows Alignment</p>
 </div>
 
-<h2>The Challenge: Unifying Criteria Amidst Uncertainty</h2>
-<p>In sepsis management, information overload and high-profile clinical trial results often spark debate on the best course of action. My challenge was to act as a <strong>technical evaluator</strong>, analyzing evidence details to facilitate the medical team’s adoption of standardized practices.</p>
+<h2>The Challenge: Gaps Between Latest Trials and Clinical Bedside</h2>
+<p>In the high-pressure environment of critical care, the <strong>gap between the publication of a major trial and its workflow implementation can cost lives</strong>. My objective was to effectively compress this timeline by synthesizing the precise data points needed for immediate clinical workflow adoption.</p>
 
 <hr class="feature-divider">
 
@@ -78,17 +83,17 @@ highlights:
   <div class="grid-item">
       <img src="/assets/images/selection.png" alt="Evidence Selection" class="grid-icon">
       <h3>Evidence Selection</h3>
-      <p>I synthesized the design and results of randomized clinical trials, extracting critical points for septic patient management.</p>
+      <p>I synthesized the design and results of randomized clinical trials, extracting the most important clinical endpoints for bedside implementation.</p>
   </div>
   <div class="grid-item">
       <img src="/assets/images/analysis.png" alt="Critical Analysis" class="grid-icon">
-      <h3>Critical Analysis</h3>
-      <p>I broke down scientific evidence to identify interventions with a tangible impact on morbidity and mortality.</p>
+      <h3>Operational Alignment</h3>
+      <p>I achieved swift clinical alignment by engaging stakeholders with clear, evidence-driven visual hierarchies that reduced cognitive load.</p>
   </div>
   <div class="grid-item">
       <img src="/assets/images/communication.png" alt="Technical Facilitation" class="grid-icon">
-      <h3>Technical Facilitation</h3>
-      <p>I fostered a discussion-driven environment where objective data presentation aligned the medical team’s clinical behaviors.</p>
+      <h3>Comorbidity-Driven Constraints</h3>
+      <p>I accounted for overlapping pathophysiological constraints, isolating inflection points where fluid titration must pivot to avoid volume overload.</p>
   </div>
 </div>
 
@@ -98,21 +103,21 @@ highlights:
 
 <div class="project-grid">
   <div class="card">
-    <h3>Evidence Analysis</h3>
-    <p>Detailed review of the <strong>ANDROMEDA-SHOCK, CLOVERS, and SMART</strong> trials. The analysis clarified that the key to survival lies in <strong>early identification</strong> and timely resuscitation, beyond rigid protocols.</p>
+    <h3>Stratified Alignment</h3>
+    <p><strong>Translated multi-trial endpoints into clinical signals</strong>, bridging foundational physiology for interns and advanced trial methodology for subspecialists during a joint institutional review.</p>
   </div>
   <div class="card">
     <h3>EBM Clinical Guidelines</h3>
-    <p>Definition of evidence-based guidelines: fluid resuscitation guided by <strong>capillary refill and lactate</strong>, early initiation of <strong>vasopressors</strong>, and strategic use of <strong>corticosteroids</strong> in refractory shock scenarios.</p>
+    <p>Evidence-driven, <strong>context-specific bedside workflows</strong> for fluid resuscitation guidance by capillary refill and lactate, early initiation of vasopressors, and strategic use of corticosteroids.</p>
   </div>
   <div class="card">
     <h3>The Analyst’s Value</h3>
-    <p>Reduction of clinical variability. I demonstrated that my value lies in the ability to <strong>distill complex knowledge</strong> into a solid foundation for collective decision-making in the service.</p>
+    <p>Minimizing clinical variance and implementation latency by <strong>distilling high-dimensional trial data into structured bedside frameworks</strong> for rapid, standardized execution.</p>
   </div>
 </div>
 
 <div class="pull-quote">
-  "The best scientific evidence is useless if it cannot be <strong>interpreted and adopted</strong> collectively by the team on the front line."
+  "Evidence generation is only half the battle. <strong>Strategic deployment into clinical workflows</strong> is what ultimately saves lives."
 </div>
 
 {% include feature_row id="highlights_title" type="center" %}

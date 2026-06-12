@@ -62,6 +62,11 @@ highlights:
 .cta {
   margin-top: 4rem !important;
 }
+
+.highlight-metric {
+    color: #b80f0a; /* Deep clinical red */
+    font-weight: 600; /* Optional: gives the metric a tiny bit more structural weight */
+}
 </style>
 
 <div class="headline">
@@ -141,3 +146,99 @@ highlights:
     <a href="contact/" class="btn btn--primary">Get in Touch</a>
   </div>
 </div>
+
+<!-- ---
+layout: splash
+title: "Pharmacovigilance & Clinical Narrative"
+permalink: portfolio/projects/pharmacovigilance/
+lang: en
+description: "Transforming complex pharmacovigilance data into a high-impact clinical narrative."
+header:
+  teaser: "/assets/images/project_pharmacovigilance.png"
+seo:
+  type: "article"
+  title: "Pharmacovigilance & Clinical Narrative"
+  image: "/assets/images/project_pharmacovigilance.png"
+approach:
+  - title: "Methodology: Visualizing Systemic Failure"
+  - excerpt: "The challenge was making the audience 'see' the invisible 50% treatment dropout risk."
+victory:
+  - title: "The Victory Factor: Behavioral Shifts"
+  - excerpt: "This strategy allowed scientific evidence to shift from a static report to a behavioral trigger."
+highlights_title: 
+  - title: "Visual Evidence"
+  - excerpt: "Visual Analysis: An immersion into the communication strategy."
+highlights:
+  - url: "/assets/images/xv-jornada-01.jpg"
+    image_path: "/assets/images/xv-jornada-01.jpg"
+    alt: "Clinical Urgency"
+    title: "Clinical Urgency: Visual hierarchy designed to transform cold figures into a call to action."
+  - url: "/assets/images/xv-jornada-02.jpg"
+    image_path: "/assets/images/xv-jornada-02.jpg"
+    alt: "Strategic Trigger"
+    title: "Strategic Trigger: Highlighting the link between adverse drug reactions and therapeutic failure."
+---
+<style>
+.feature-divider { margin-top: 5rem; margin-bottom: 2rem; }
+.story-divider { margin-top: 5rem; margin-bottom: 4rem; }
+.cta { margin-top: 4rem !important; }
+.highlight-metric { color: #b80f0a; font-weight: 600; }
+</style>
+
+<div class="headline">
+    <h1>The Economics of Choice: Visualizing Therapeutic Failure</h1>
+    <p><strong>The Bottom Line:</strong> Data is powerless if it cannot convince. By reframing so-called 'mild' side effects as the primary behavioral driver behind a 50% therapeutic dropout rate, this narrative successfully aligned pure scientific evidence with real-world clinical urgency.</p>
+</div>
+
+<div class="skills-bar">
+    <p><strong>Core Strategy:</strong> Behavioral Persuasion, Information Architecture, Clinical Impact</p>
+</div>
+
+<h2>The Challenge: The Danger of "Mild"</h2>
+<p>When 57.1% of adverse drug reactions are classified as "mild," the systemic threat is easily ignored by healthcare providers. This cognitive heuristic leads to a catastrophic <strong>50% therapeutic dropout rate</strong> in chronic patients. The goal was to prove that "mild" reactions still cost lives.</p>
+
+<hr class="feature-divider">
+
+{% include feature_row id="approach" type="center" %}
+
+<div class="grid-container">
+  <div class="grid-item">
+      <img src="/assets/images/timeline.png" alt="Icon: Message Architecture" class="grid-icon">
+      <h3>Reframing the Metric</h3>
+      <p>Used strategic information design to elevate "mild" side effects into severe indicators of failure.</p>
+  </div>
+  <div class="grid-item">
+      <img src="/assets/images/view.png" alt="Icon: Cognitive Optimization" class="grid-icon">
+      <h3>Systemic Synthesis</h3>
+      <p>Connected individual patient reactions to the broader institutional impact of non-adherence.</p>
+  </div>
+</div>
+
+<hr class="story-divider">
+
+{% include feature_row id="victory" type="center" %}
+
+<div class="project-grid">
+  <div class="card">
+    <h3>Technical Outcome</h3>
+    <p>Methodological validation of <strong>95.2% causality</strong> (WHO Algorithm) presented as an undeniable visual map.</p>
+  </div>
+  <div class="card">
+    <h3>Strategic Value</h3>
+    <p>Translation of severity (<strong>57.1% mild ADRs</strong>) into a retention strategy, demonstrating that low-severity events drastically impact adherence.</p>
+  </div>
+</div>
+
+<div class="pull-quote">
+  "I don't just present data; I architect it to ensure <strong>evidence overcomes established beliefs</strong>."
+</div>
+
+{% include feature_row id="highlights_title" type="center" %}
+{% include gallery id="highlights" %}
+
+<div class="cta">
+  <div style="text-align: center;">
+    <h3>Let's Turn Your Ideas into Action</h3>
+    <a href="contact/" class="btn btn--primary">Get in Touch</a>
+  </div>
+</div> -->

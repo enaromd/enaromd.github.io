@@ -3,33 +3,31 @@ layout: splash
 title: "About Me"
 permalink: about/
 lang: en
-# Social previews
-description: "For me, personal development is a journey of continuous learning, where integrating diverse skills and experiences allows me to approach challenges from multiple perspectives."
+description: "Bridging the gap between front-line clinical mechanics, advanced biostatistics, and database engineering."
 header:
   teaser: "/assets/images/hero_preview.png"
-# This block communicates directly with the SEO plugin
 seo:
   type: "article"
-  title: "About Me" # Repeat title here
+  title: "About Me"
   image: "/assets/images/hero_preview.png"    
 story-1: 
   - image_path: /assets/images/about_story-1.jpeg
     alt: "Photo: Award ceremony of the XV SILAIS Granada Scientific Conference"
     title: "The Art of Persuading with Evidence"
-    excerpt: "This award for **First Place in the XV SILAIS Granada Scientific Conference** is much more than a simple prize for my research. I consider it a tangible validation of **my ability to transform complex data into compelling narratives** that resonate with people.<br><br>This recognition proves that the real impact of science lies not only in its rigor but in the power to communicate it persuasively to inspire safer, evidence-based clinical decisions."
+    excerpt: "Winning **First Place at the XV SILAIS Granada Scientific Conference** validated a core thesis of my work: rigorous methodology only succeeds when paired with clear communication. This award recognized the translation of dense statistical distributions into a structured narrative that gave public health decision-makers immediate clarity and actionable insights."
 story-2: 
   - image_path: /assets/images/about_story-2.jpeg
     alt: "Photo: Cardiology Brigade, Project Health for Leon"
-    title: "Bridging Passions for Heart Health"
-    excerpt: 'My experience with the **"Project Health for Leon"** cardiology brigade was not just a medical mission; it was a life lesson I will always treasure. It showed me that uniting talents is the way to humanize healthcare, achieving a profound impact on the lives of patients and their families.<br><br>It was precisely in this high-pressure environment where, after an initial database exploration, a question arose: Is there an index or indicator that allows us to perform timely triage in resource-limited settings? From that need to turn uncertainty into precision, the **Medication Burden Index** was born.'
+    title: "Field Demands Drive Structure"
+    excerpt: "Operating within the high-pressure environment of the **'Project Health for Leon'** cardiology brigade exposed a critical workflow vulnerability: how to safely triage an overwhelming patient volume under tight time constraints. This exact operational bottleneck drove me to develop the **Medication Burden Index (MBI)**, converting messy polypharmacy registries into a precise surrogate metric for cardiac remodeling."
 story-3: 
   - image_path: /assets/images/about_story-3.jpeg
     alt: "Photo: Discussion on Antiphospholipid Syndrome in Pregnancy"
-    title: "From Data to On-Stage Dialogue"
-    excerpt: 'At the **First Western Congress "Strengthening Maternal and Neonatal Health in the West,"** the value of science did not stay in reports; it was found in its ability to be discussed. This experience gave me the opportunity to translate **complex information into a practical and purposeful conversation**, something I consider fundamental to the success of any health initiative.<br><br>It showed me that scientific knowledge is most valuable when it becomes a story that has the power to resonate with people and influence decision-making.'
+    title: "Translating Complexity into Strategy"
+    excerpt: "Participating in the technical discussion session at the **First Western Congress on Maternal and Neonatal Health** highlighted the necessity of cross-functional dialogue. My role focused on navigating complex immunological frameworks during interdisciplinary panels to establish practical, purposeful clarity regarding Antiphospholipid Syndrome in Pregnancy."
 books:
-  - title: "The Curiosity That Defines Me"
-  - excerpt: "My work is fueled by curiosity and multidisciplinarity. These works have helped me understand the complexity of medicine, economics, and human psychology—skills I consider crucial for anyone seeking to generate a real and lasting impact."
+  - title: "The Ideation Framework"
+  - excerpt: "My approach to health data is intentionally multidisciplinary, heavily influenced by systems thinking, behavioral economics, and clinical realities. These readings help shape how I analyze complex data and design human-centric workflows:"
 ---
 <style>
 .feature-divider {
@@ -60,13 +58,16 @@ books:
 <hr class="feature-divider">
 
 <div class="about-values">
-    <h1>Values that reflect my personal and professional approach</h1>
-    <h2>Strength in Unity: Multiplying achievements through teamwork</h2>
-    <p>The potential for synergy generated by joining efforts is invaluable. I believe in the diversity of opinions and skills, and I know that by collaborating with others, we can overcome any obstacle and achieve exceptional results.</p>
-    <h2>Ego as a Barrier to Growth</h2>
-    <p>For me, ego represents a key obstacle to personal and professional growth. By practicing humility and staying receptive to feedback and learning, we can overcome our self-imposed limitations and reach new heights in our careers.</p>
-    <h2>Evidence over Intuition: The key to critical thinking</h2>
-    <p>I recognize the inherent subjectivity of opinions, but I firmly believe in the importance of grounding our beliefs in concrete data and verifiable evidence. My commitment to rigorous analysis of available evidence fosters a mindset of critical thinking and objectivity, essential for discerning truth in a world full of diverging opinions.</p>
+    <h1>Core Principles & Analytical Philosophy</h1>
+    
+    <h2>Interdisciplinary Synergy</h2>
+    <p>The most dangerous data lapses occur between technical engineers and clinical end-users. True insight is generated at the intersection of disciplines. By pairing deep clinical domain expertise with advanced data architecture, I build models that aim to reflect true pathophysiological realities rather than superficial statistical patterns.</p>
+    
+    <h2>Intellectual Humility & Data Integrity</h2>
+    <p>Ego and rigid clinical intuition are significant barriers to optimization. I approach datasets with the humility required to let objective data challenge established dogmas, ensuring that missing values, selection biases, and anomalous distributions are audited transparently before drawing conclusions.</p>
+    
+    <h2>Evidence Over Heuristics</h2>
+    <p>While clinical heuristics are vital for survival in a fast-paced emergency room, long-term strategic decisions demand rigorous verification. My commitment lies in grounding workflow protocols in verifiable, reproducible statistical evidence rather than anecdotal trends or unadjusted aggregate summaries.</p>
 </div>
 
 <hr class="story-divider">
@@ -84,35 +85,33 @@ books:
       <a href="https://www.amazon.com/Complications-Surgeons-Notes-Imperfect-Science/dp/0312421702">
         <img src="/assets/images/books_en_complications.jpg" alt="Book: Complications, Atul Gawande">
         <br>
-        <p>This book has taught me that human psychology—both the physician's and the patient's—plays a critical role in clinical outcomes. Through its pages, I understood how heuristics can save lives or lead to error, underlining the importance of systems that support human judgment.</p>
+        <p><strong>Complications (Atul Gawande):</strong> An examination of human error, heuristics, and imperfection in medicine. It underscores why data structures should aim to account for the high-stress, real-world human behaviors that generate clinical records in the first place.</p>
       </a>
   </div>
   <div class="grid-item">
       <a href="https://www.amazon.com/Why-Nations-Fail-Origins-Prosperity/dp/0307719227">
         <img src="/assets/images/books_en_failure.jpg" alt="Book: Why Nations Fail">
          <br>
-         <p>It has taught me that social and health challenges are too systemic for oversimplified solutions. Understanding the complexity of institutions and economics is vital for designing solutions that are not just patches, but structural changes.</p>
+         <p><strong>Why Nations Fail (Acemoglu & Robinson):</strong> A study in institutional structure and systemic incentives. It serves as a reminder that institutional challenges are rarely isolated incidents; they require structural, data-driven system changes.</p>
       </a>
   </div>
   <div class="grid-item">
       <a href="https://www.amazon.com/Influence-New-Expanded-Psychology-Persuasion/dp/0062937650">
         <img src="/assets/images/books_en_influence.jpg" alt="Book: Influence. The Psychology of Persuasion">
         <br>
-        <p>Through Cialdini, I delved into how human psychology can be suggestive when attempting to ease cognitive load and take shortcuts in decision-making. It is an essential guide for using persuasion ethically in healthcare and understanding the mechanisms behind our choices.</p>
+        <p><strong>Influence (Robert Cialdini):</strong> A framework for understanding how humans handle cognitive load and use shortcuts to make decisions. It serves as an ethical guide for designing clinical workflows and evidence-based protocols that teams can easily adopt.</p>
       </a>
   </div>
 </div>
 
 <div class="cta">
   <div>
-    <h3>Let's transform your ideas into actions</h3>
+    <h3>Let's Build Validated Healthcare Solutions</h3>
     <p>
-      I firmly believe that <strong>great discoveries are born from collaboration and shared vision</strong>. 
-      Due to my commitment to technical precision, I accept a limited number of challenges in parallel, 
-      ensuring that each project receives the rigor and depth it deserves.
+      I collaborate with clinical research organizations, epidemiologists, and engineering teams to convert unrefined health data into secure, standardized, and high-impact statistical models.
     </p>
     <p>
-      <strong>If you are ready to turn data into actions, I would love to hear your proposal.</strong>
+      <strong>If your team requires an analyst who understands both the clinical syntax of the bedside and the mathematical rigor of the backend, let's talk.</strong>
     </p>
     <a href="contact/" class="btn btn--primary">Get in touch</a>
   </div>
