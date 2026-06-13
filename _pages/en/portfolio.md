@@ -45,11 +45,11 @@ certifications:
     </a>
   </div>
   <div class="grid-item">
-    <a href="projects/sepsis/">
-      <img src="/assets/images/presentation_sepsis.png" alt="Project: Sepsis Adaptation">
-      <h3>Septic Shock Clinical Evidence Operationalization</h3>
-      <p>Deconstructing high-dimensional trial data (ANDROMEDA-SHOCK, CLOVERS, SMART) into actionable, localized bedside workflows.</p>
-      <p><strong>Impact:</strong> Reduction of clinical variability through standardized, data-driven critical care consensus frameworks.</p>
+    <a href="projects/pharmacovigilance/">
+      <img src="/assets/images/project_pharmacovigilance.png" alt="Project: XV Scientific Conference">
+      <h3>Award-Winning Visual Strategy: Pharmacovigilance</h3>
+      <p>Reframing raw adverse drug reactions through strict WHO causality algorithms and high-impact information structuring.</p>
+      <p><strong>Impact:</strong> First Place at the XV Scientific Conference for disrupting traditional clinical reporting.</p>
     </a>
   </div>
 </div>

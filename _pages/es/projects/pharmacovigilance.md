@@ -1,52 +1,52 @@
 ---
 layout: splash
-title: "Farmacovigilancia y narrativa clínica"
+title: "Farmacovigilancia: Causalidad y Narrativa Clínica"
 permalink: portfolio/projects/pharmacovigilance/
 lang: es
 # Social previews
-description: "Transformando datos complejos de farmacovigilancia en una narrativa clínica de alto impacto que convirtió una causalidad del 95.2% en una llamada a la acción."
+description: "Traduciendo la causalidad algorítmica en un disparador conductual para prevenir el fracaso terapéutico."
 header:
   teaser: "/assets/images/project_pharmacovigilance.png"
 # This block communicates directly with the SEO plugin
 seo:
   type: "article"
-  title: "Farmacovigilancia y narrativa clínica" # Repeat title here
+  title: "Farmacovigilancia y Narrativa Clínica"
   image: "/assets/images/project_pharmacovigilance.png"
 # Sections
 approach:
-  - title: "Metodología: Del Dato a la Decisión"
-  - excerpt: "Mi metodología transformó datos áridos de farmacovigilancia en una hoja de ruta clínica. El desafío no fue solo presentar el Algoritmo de la OMS, sino hacer que la audiencia 'viera' el riesgo del 50% de abandono del tratamiento a través de una <strong>jerarquía visual estratégica</strong>."
+  - title: "De los Datos a la Estandarización Algorítmica"
+  - excerpt: "Aplicación del Algoritmo de Causalidad de la OMS para validar señales, evitando que los datos sean descartados como ruido clínico."
 victory:
-  - title: "El Factor Victoria: Evidencia en acción"
-  - excerpt: "El éxito de esta presentación radicó en la transformación de hallazgos farmacoepidemiológicos complejos en disparadores de decisión clínica. Esta estrategia permitió que la evidencia científica dejara de ser un reporte estático y se convirtiera en una narrativa de impacto que justificó la necesidad de implementar protocolos de farmacovigilancia activa."
+  - title: "El Factor de la Victoria: Destacar"
+  - excerpt: "En un campo competitivo de 17 presentaciones científicas, esta jerarquía visual orientada al comportamiento sacó a la luz que las reacciones adversas aparentemente menores desencadenan directamente un abandono terapéutico masivo."
 highlights_title: 
-  - title: "Evidencia visual"
+  - title: "Evidencia Visual"
   - excerpt: "Análisis Visual: Una inmersión en la estrategia de comunicación que obtuvo el Primer Lugar en la XV Jornada Científica."
 highlights:
   - url: "/assets/images/xv-jornada-01.jpg"
     image_path: "/assets/images/xv-jornada-01.jpg"
-    alt: "Urgencia clínica"
-    title: "Urgencia Clínica: Jerarquía visual diseñada para transformar cifras frías en un llamado a la acción ante la alta morbimortalidad cardiovascular."
+    alt: "Urgencia Clínica"
+    title: "Urgencia Clínica: Jerarquía visual diseñada para transformar cifras frías en un llamado a la acción con respecto a la alta morbimortalidad cardiovascular."
   - url: "/assets/images/xv-jornada-02.jpg"
     image_path: "/assets/images/xv-jornada-02.jpg"
-    alt: "Gatillo estratégico"
-    title: "Gatillo Estratégico: Diseño orientado a destacar el vínculo directo entre la reacción adversa y el fracaso terapéutico en la farmacovigilancia activa."
+    alt: "Disparador Estratégico"
+    title: "Disparador Estratégico: Diseño orientado a resaltar el vínculo directo entre las reacciones adversas a medicamentos (RAM) y el fracaso terapéutico en la farmacovigilancia activa."
   - url: "/assets/images/xv-jornada-03.jpg"
     image_path: "/assets/images/xv-jornada-03.jpg"
-    alt: "Misión analítica"
-    title: "Misión Analítica: Superposición de texto sobre imagen institucional para anclar el rigor científico al contexto académico del Campus Médico."
+    alt: "Misión Analítica"
+    title: "Misión Analítica: Superposición de texto en imágenes institucionales para anclar el rigor científico dentro del contexto académico del Campus Médico."
   - url: "/assets/images/xv-jornada-04.jpg"
     image_path: "/assets/images/xv-jornada-04.jpg"
-    alt: "Desglose metodológico"
-    title: "Desglose metodológico: Uso de iconografía minimalista para guiar al jurado a través de las fases de identificación, prevalencia y gravedad de las RAM."
+    alt: "Methodological Breakdown"
+    title: "Desglose Metodológico: Iconografía minimalista utilizada para guiar al jurado a través de las fases de identificación, prevalencia y gravedad de las RAM."
   - url: "/assets/images/xv-jornada-05.jpg"
     image_path: "/assets/images/xv-jornada-05.jpg"
-    alt: "Contexto humano"
-    title: "Contexto Humano: Segmentación demográfica que permite entender el entorno socioeconómico donde se manifiestan las reacciones adversas."
+    alt: "Human Context"
+    title: "Contexto Humano: Segmentación demográfica que permite comprender el entorno socioeconómico donde se manifiestan las reacciones adversas."
   - url: "/assets/images/xv-jornada-06.jpg"
     image_path: "/assets/images/xv-jornada-06.jpg"
-    alt: "Análisis de frecuencia"
-    title: "Análisis de Frecuencia: Visualización de síntomas (<i>n=13</i>) que permite priorizar los eventos adversos de mayor impacto en la calidad de vida del paciente."
+    alt: "Frequency Analysis"
+    title: "Análisis de Frecuencia: Visualización de síntomas (<i>n=13</i>) que permite priorizar los eventos adversos con mayor impacto en la calidad de vida del paciente."
 ---
 <style>
 .feature-divider {
@@ -62,21 +62,24 @@ highlights:
 .cta {
   margin-top: 4rem !important;
 }
+
+.highlight-metric {
+    color: #b80f0a; /* Deep clinical red */
+    font-weight: 600;
+}
 </style>
 
 <div class="headline">
-    <h1>El arte de la influencia: Cómo persuadir con datos en el sector salud</h1>
-    <p>Un estudio de caso sobre cómo la narrativa visual y el rigor metodológico se unieron para obtener el primer lugar en una jornada científica de alto nivel.</p>
+    <h1>La Economía de la Elección: Visualizando el Fracaso Terapéutico</h1>
+    <p><strong>En Síntesis:</strong> En la XV Jornada Científica, 17 presentaciones clínicas entregaron datos estáticos. Este proyecto tomó un camino diferente. Al fusionar los algoritmos estrictos de causalidad de la OMS con el replanteamiento del riesgo conductual, expusimos cómo los llamados <span class="highlight-metric">efectos secundarios 'leves' impulsan en secreto una tasa de abandono del tratamiento del 50%.</span></p>
 </div>
 
 <div class="skills-bar">
-    <p><strong>Estrategia principal:</strong> Narrativa científica, Diseño de Información y Comunicación de Alto Impacto</p>
+    <p><strong>Estrategia Central:</strong> Causalidad Algorítmica, Narrativa Persuasiva, Jerarquía Visual</p>
 </div>
 
-<div>
-  <h2>El Reto: ¿Cómo lograr que el dato importe?</h2>
-  <p>En la XV Jornada Científica, mi investigación reveló un punto crítico: <strong>el 50% de los pacientes abandonan su tratamiento antihipertensivo debido a reacciones adversas (RAM)</strong>. El reto no era el dato en sí, sino romper la saturación académica para generar una alerta real en los tomadores de decisiones.</p>
-</div>
+<h2>El Desafío: La Trampa Cognitiva de los Datos "Leves"</h2>
+<p>En farmacovigilancia, los datos a menudo se ignoran si carecen de una gravedad catastrófica. Nuestro análisis de registro reveló que el <strong>57.1% de las reacciones adversas a medicamentos se clasificaron como "leves"</strong>. Para los clínicos de primera línea, esto activa una heurística cognitiva: leve significa inofensivo. Sin embargo, esta exacta fricción "inofensiva" es <strong>responsable de una tasa de abandono terapéutico del 50%</strong> en pacientes hipertensos crónicos. El objetivo fue estructurar una presentación que rompiera este sesgo cognitivo.</p>
 
 <hr class="feature-divider">
 
@@ -84,19 +87,19 @@ highlights:
 
 <div class="grid-container">
   <div class="grid-item">
-      <img src="/assets/images/event.png" alt="Imagen: Análisis de Audiencia" class="grid-icon">
-      <h3>Análisis de Audiencia</h3>
-      <p>Estructuré la narrativa alrededor de las necesidades del jurado, transformando cifras en urgencia clínica.</p>
+      <img src="/assets/images/data_management.png" alt="Icono: Estandarización de Términos" class="grid-icon">
+      <h3>Estandarización de Términos</h3>
+      <p>Mapeo de problemas médicos activos utilizando el índice CIE-10 y categorización de todos los medicamentos consumidos de acuerdo con el marco de la Química Terapéutica Anatómica (ATC).</p>
   </div>
   <div class="grid-item">
-      <img src="/assets/images/timeline.png" alt="Imagen: Arquitectura de Mensaje" class="grid-icon">
-      <h3>Arquitectura del mensaje</h3>
-      <p>Utilicé un hilo conductor de principio a fin para mantener el interés y facilitar la retención de la evidencia.</p>
+      <img src="/assets/images/selection.png" alt="Icono: Causalidad Algorítmica" class="grid-icon">
+      <h3>Causalidad Algorítmica</h3>
+      <p>Procesamiento de datos brutos de síntomas a través del Algoritmo de Evaluación de Causalidad de la OMS para verificar objetivamente la relación entre la exposición al fármaco y los eventos adversos.</p>
   </div>
   <div class="grid-item">
-      <img src="/assets/images/view.png" alt="Imagen: Optimización cognitiva" class="grid-icon">
-        <h3>Optimización cognitiva</h3>
-      <p>Diseño visual minimalista planificado para dirigir la atención hacia los hallazgos de mayor peso clínico.</p>
+      <img src="/assets/images/risk.png" alt="Icono: Estratificación del Riesgo" class="grid-icon">
+      <h3>Estratificación del Riesgo</h3>
+      <p>Aplicación del sistema de clasificación modificado de Rawlins y Thompson para diferenciar entre reacciones predecibles y dependientes de la dosis y anomalías impredecibles.</p>
   </div>
 </div>
 
@@ -105,40 +108,35 @@ highlights:
 {% include feature_row id="victory" type="center" %}
 
 <div class="project-grid">
-  <div class="card">
-    <h3>Resultado técnico</h3>
-    <p>Validación metodológica del <strong>95.2% de causalidad</strong> (Algoritmo OMS). La exposición de la clasificación <strong>Rawlins y Thompson</strong> permitió al jurado validar la prevención en el 71.4% de los casos (Tipo A).</p>
+ <div class="card">
+    <h3>El Umbral del Abandono</h3>
+    <p>Identificación de que exactamente el <strong>50% de los pacientes</strong> que presentaron una reacción adversa a los medicamentos antihipertensivos suspendieron por completo su consumo.</p>
   </div>
   <div class="card">
-    <h3>Impacto clínico</h3>
-    <p>Detección del <strong>50% de abandono terapéutico</strong>. Este hallazgo impulsó la recomendación directa de establecer sistemas de farmacovigilancia activa para mitigar riesgos en la salud pública.</p>
+    <h3>La Realidad de la Prevención</h3>
+    <p>Descubrimiento de que el <strong>71.4% de las reacciones documentadas eran de Tipo A</strong> según Rawlins y Thompson, demostrando que la gran mayoría de los fracasos terapéuticos eran esperados y prevenibles.</p>
   </div>
   <div class="card">
-    <h3>Valor estratégico</h3>
-    <p>Traducción de severidad (<strong>57.1% RAM leves</strong>) en estrategia de retención. Demostré que incluso eventos de baja gravedad impactan drásticamente la adherencia al tratamiento crónico.</p>
+    <h3>La Paradoja de lo "Leve"</h3>
+    <p>Verificación de una <strong>tasa de causalidad "Posible" del 95.2%</strong>, al tiempo que se resalta que el <strong>57.1% de las reacciones eran clínicamente "Leves"</strong>, pero aun así lo suficientemente disruptivas como para arruinar la adherencia al tratamiento.</p>
   </div>
 </div>
 
 <div class="pull-quote">
-  "Mi valor estratégico reside en ser el <strong>catalizador del cambio clínico</strong>, traduciendo evidencia compleja en decisiones que salvan vidas."
+  "No solo presento datos; los estructuro para garantizar que la <strong>evidencia supere las heurísticas conductuales establecidas</strong>."
 </div>
 
 {% include feature_row id="highlights_title" type="center" %}
 
 {% include gallery id="highlights" %}
 
-<div class="see-more-button">
-  <a href="/es/portfolio/projects/" class="btn btn--primary">Ver todas las láminas</a>
-</div>
-
-  <!-- CTA section -->
 <div class="cta">
   <div style="text-align: center;">
-    <h3>Transformemos tus ideas en acciones</h3>
+    <h3>Transformemos tus Ideas en Acción</h3>
     <p>
-      Los grandes descubrimientos nacen de la colaboración. Debido a mi compromiso con la precisión técnica y el storytelling de impacto, acepto un número limitado de proyectos para asegurar el rigor que cada desafío merece.
+      Los grandes avances nacen de la colaboración. Debido a mi compromiso con la precisión técnica y la narrativa de alto impacto, acepto un número limitado de proyectos para garantizar el rigor que merece cada desafío.
     </p>
-    <p><strong>Si buscas convertir evidencia compleja en decisiones estratégicas, hablemos.</strong></p>
-    <a href="/es/contact/" class="btn btn--primary">Contáctame</a>
+    <p><strong>Si busca convertir evidencia compleja en decisiones estratégicas, hablemos.</strong></p>
+    <a href="contact/" class="btn btn--primary">Ponerse en Contacto</a>
   </div>
 </div>

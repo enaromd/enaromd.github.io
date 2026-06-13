@@ -72,12 +72,12 @@ data:
   </a>
   </div>
   <div class="grid-item">
-  <a href="pharmacovigilance/">
-    <img src="/assets/images/project_pharmacovigilance.png" alt="Project: XV Scientific Conference">
-    <h3>Pharmacovigilance and Clinical Narrative</h3>
-    <p>Characterization of adverse drug reactions (ADR) using WHO causality algorithms and visual narrative design.</p>
-    <p><strong>Impact:</strong> First place SILAIS 2023 for excellence in high-impact scientific communication.</p>
-  </a>
+    <a href="pharmacovigilance/">
+      <img src="/assets/images/project_pharmacovigilance.png" alt="Project: XV Scientific Conference">
+      <h3>Award-Winning Visual Strategy: Pharmacovigilance</h3>
+      <p>Reframing raw adverse drug reactions through strict WHO causality algorithms and high-impact information structuring.</p>
+      <p><strong>Impact:</strong> First Place at the XV Scientific Conference for disrupting traditional clinical reporting.</p>
+    </a>
   </div>
 </div>
 

@@ -131,11 +131,11 @@ projects:
     </a>
   </div>
   <div class="grid-item">
-    <a href="portfolio/projects/sepsis/">
-      <img src="/assets/images/presentation_sepsis.png" alt="Proyecto: Adaptación en Sepsis">
-      <h3>Operacionalización de Evidencia Clínica en Choque Séptico</h3>
-      <p>Desfragmentando datos complejos de ensayos clínicos (ANDROMEDA-SHOCK, CLOVERS, SMART) en flujos de trabajo locales a la cabecera del paciente para minimizar la latencia terapéutica.</p>
-      <p><strong>Impacto:</strong> Reducción de la variabilidad clínica mediante marcos estandarizados de consenso basados en datos para cuidados críticos.</p>
+    <a href="portfolio/projects/pharmacovigilance/">
+      <img src="/assets/images/project_pharmacovigilance.png" alt="Proyecto: XV Jornada Científica">
+      <h3>Estrategia Visual Premiada: Farmacovigilancia</h3>
+      <p>Reencuadrando reacciones adversas mediante algoritmos de causalidad de la OMS y estructuración de información de alto impacto.</p>
+      <p><strong>Impacto:</strong> Primer Lugar en la XV Jornada Científica (SILAIS - Granada) por transformar el reporte clínico tradicional.</p>
     </a>
   </div>
 </div>

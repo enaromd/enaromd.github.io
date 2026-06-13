@@ -58,17 +58,17 @@ results:
 <div class="grid-container">
   <div class="grid-item">
     <img src="/assets/images/statistic.png" alt="Ícono: Visualización" class="grid-icon">
-    <h3>Visualizando la varianza oculta</h3>
-    <p>Coacheé al equipo para desplegar <strong>visualizaciones de distribución</strong> con el fin de desenmascarar un patrón crítico que ninguna tabla de resumen podría revelar: una severa varianza de cola sesgada a la derecha con múltiples valores atípicos no controlados que alcanzaban hasta el 10% de HbA1c.</p> 
+    <h3>Visualizando la Varianza oculta</h3>
+    <p>Guié al equipo para desplegar <strong>visualizaciones de distribución</strong> con el fin de desenmascarar un patrón crítico que ninguna tabla de resumen podría revelar: una severa varianza de cola sesgada a la derecha con múltiples valores atípicos no controlados que alcanzaban hasta el 10% de HbA1c.</p> 
   </div>
   <div class="grid-item">
     <img src="/assets/images/selection.png" alt="'Ícono: Análisis" class="grid-icon">
-    <h3>Pivote analítico</h3>
+    <h3>Pivote Analítico</h3>
     <p>Guié al equipo de investigación hacia un <strong>modelo de regresión de Poisson con varianza robusta</strong>, lo que les permitió calcular razones de prevalencia (RP) sin inflación que traducen con mayor precisión la magnitud clínica del riesgo.</p>
   </div>
   <div class="grid-item">
-    <img src="/assets/images/analysis.png" alt="Ícono: Secuencia" class="grid-icon">
-    <h3>Regresiones secuenciales</h3>
+    <img src="/assets/images/timeline.png" alt="Ícono: Secuencia" class="grid-icon">
+    <h3>Regresiones Secuenciales</h3>
     <p>Estructuré una <strong>matriz de regresión multivariada de tres fases</strong>: modelos ajustados por demografía basal (edad/sexo), ruido nutricional/metabólico (IMC/albúmina) y una fase final de integración multisistémica.</p>
   </div>
 </div>

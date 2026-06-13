@@ -77,9 +77,9 @@ data:
   <div class="grid-item">
     <a href="pharmacovigilance/">
       <img src="/assets/images/project_pharmacovigilance.png" alt="Proyecto: XV Jornada Científica">
-      <h3>Farmacovigilancia y narrativa clínica</h3>
-      <p>Caracterización de reacciones adversas (RAM) mediante algoritmos de causalidad de la OMS y diseño de narrativa visual.</p>
-      <p><strong>Impacto:</strong> Primer lugar SILAIS 2023 por excelencia en comunicación científica de alto impacto.</p>
+      <h3>Estrategia Visual Premiada: Farmacovigilancia</h3>
+      <p>Reencuadrando reacciones adversas mediante algoritmos de causalidad de la OMS y estructuración de información de alto impacto.</p>
+      <p><strong>Impacto:</strong> Primer Lugar en la XV Jornada Científica (SILAIS - Granada) por transformar el reporte clínico tradicional.</p>
     </a>
   </div>
 </div>

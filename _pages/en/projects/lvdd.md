@@ -67,7 +67,7 @@ results:
     <p>I guided the investigative team toward a <strong>Poisson Regression model with robust variance</strong>, which allowed them to calculate uninflated Prevalence Ratios (PR) that more accurately translate the clinical magnitude of the risk.</p>
   </div>
   <div class="grid-item">
-    <img src="/assets/images/analysis.png" alt="Icon: Sequence" class="grid-icon">
+    <img src="/assets/images/timeline.png" alt="Icon: Sequence" class="grid-icon">
     <h3>Sequential Regressions</h3>
     <p>I structured a <strong>three-phase multi-variate regression matrix</strong>: models adjusted for baseline demographics (age/sex), nutritional/metabolic noise (BMI/Albumin), and a final multi-system integration phase.</p>
   </div>

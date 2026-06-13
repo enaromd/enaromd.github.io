@@ -1,10 +1,10 @@
 ---
 layout: splash
-title: "Pharmacovigilance & Clinical Narrative"
+title: "Pharmacovigilance: Causality & Clinical Narrative"
 permalink: portfolio/projects/pharmacovigilance/
 lang: en
 # Social previews
-description: "Transforming complex pharmacovigilance data into a high-impact clinical narrative that turned 95.2% causality into a call to action."
+description: "Translating algorithmic causality into a behavioral trigger to prevent therapeutic failure."
 header:
   teaser: "/assets/images/project_pharmacovigilance.png"
 # This block communicates directly with the SEO plugin
@@ -14,11 +14,11 @@ seo:
   image: "/assets/images/project_pharmacovigilance.png"
 # Sections
 approach:
-  - title: "Methodology: From Data to Decision"
-  - excerpt: "My methodology transformed dry pharmacovigilance data into a clinical roadmap. The challenge wasn't just presenting the WHO Algorithm, but making the audience 'see' the 50% treatment dropout risk through a <strong>strategic visual hierarchy</strong>."
+  - title: "From Data to Algorithmic Standarization"
+  - excerpt: "Applying the WHO Causality Algorithm to validate signals, preventing data from being dismissed as clinical noise."
 victory:
-  - title: "The Victory Factor: Evidence in Action"
-  - excerpt: "The success of this presentation lay in transforming complex pharmacoepidemiological findings into clinical decision triggers. This strategy allowed scientific evidence to shift from a static report to an impactful narrative that justified the need for active pharmacovigilance protocols."
+  - title: "The Victory Factor: Standing Out"
+  - excerpt: "In a crowded field of 17 scientific presentations, this behavioral-first visual hierarchy brought to light that seemingly minor adverse reactions directly trigger massive therapeutic abandonment."
 highlights_title: 
   - title: "Visual Evidence"
   - excerpt: "Visual Analysis: An immersion into the communication strategy that earned First Place at the XV Scientific Conference."
@@ -70,18 +70,16 @@ highlights:
 </style>
 
 <div class="headline">
-    <h1>The Art of Influence: Persuading with Data in Healthcare</h1>
-    <p>A case study on how visual narrative and methodological rigor combined to earn first place in a high-level scientific conference.</p>
+    <h1>The Economics of Choice: Visualizing Therapeutic Failure</h1>
+    <p><strong>The Bottom Line:</strong> At the XV Scientific Fair, 17 clinical presentations delivered static data. This project took a different path. By fusing strict WHO causality algorithms with behavioral risk-reframing, we exposed how so-called <span class="highlight-metric">'mild' side effects secretly drive a 50% treatment dropout rate.</span></p>
 </div>
 
 <div class="skills-bar">
-    <p><strong>Core Strategy:</strong> Scientific Storytelling, Information Design, High-Impact Communication</p>
+    <p><strong>Core Strategy:</strong> Algorithmic Causality, Persuasive Storytelling, Visual Hierarchy</p>
 </div>
 
-<div>
-  <h2>The Challenge: How to Make Data Matter?</h2>
-  <p>At the XV Scientific Conference, my research revealed a critical point: <strong>50% of patients abandon their antihypertensive treatment due to adverse drug reactions (ADRs)</strong>. The challenge wasn't the data itself, but breaking through academic saturation to generate a real alert for decision-makers.</p>
-</div>
+<h2>The Challenge: The Cognitive Trap of "Mild" Data</h2>
+<p>In pharmacovigilance, data is often ignored if it lacks catastrophic severity. Our registry analysis revealed that <strong>57.1% of adverse drug reactions were classified as "mild"</strong>. For front-line clinicians, this triggers a cognitive heuristic: mild means harmless. However, this exact "harmless" friction is <strong>responsible for a 50% therapeutic dropout rate</strong> in chronic hypertensive patients. The objective was to structure a presentation that shattered this cognitive bias.</p>
 
 <hr class="feature-divider">
 
@@ -89,19 +87,19 @@ highlights:
 
 <div class="grid-container">
   <div class="grid-item">
-      <img src="/assets/images/event.png" alt="Icon: Audience Analysis" class="grid-icon">
-      <h3>Audience Analysis</h3>
-      <p>I structured the narrative around the jury's needs, transforming statistics into clinical urgency.</p>
+      <img src="/assets/images/data_management.png" alt="Icon: Term Standardization" class="grid-icon">
+      <h3>Terms Standardization</h3>
+      <p>Mapped active medical problems using the CIE-10 index and categorized all consumed medications according to the Anatomical Therapeutical Chemistry (ATC) framework.</p>
   </div>
   <div class="grid-item">
-      <img src="/assets/images/timeline.png" alt="Icon: Message Architecture" class="grid-icon">
-      <h3>Message Architecture</h3>
-      <p>I used a cohesive thread from start to finish to maintain engagement and facilitate the retention of evidence.</p>
+      <img src="/assets/images/selection.png" alt="Icon: Algorithmic Causality" class="grid-icon">
+      <h3>Algorithmic Causality</h3>
+      <p>Processed raw symptom data through the WHO Causality Assessment Algorithm to objectively verify the relationship between drug exposure and adverse events.</p>
   </div>
   <div class="grid-item">
-      <img src="/assets/images/view.png" alt="Icon: Cognitive Optimization" class="grid-icon">
-        <h3>Cognitive Optimization</h3>
-      <p>Minimalist visual design planned to direct attention toward the findings with the highest clinical weight.</p>
+      <img src="/assets/images/risk.png" alt="Icon: Risk Stratification" class="grid-icon">
+      <h3>Risk Stratification</h3>
+      <p>Applied the modified Rawlins & Thompson classification system to differentiate between predictable, dose-dependent reactions and unpredictable anomalies.</p>
   </div>
 </div>
 
@@ -110,31 +108,27 @@ highlights:
 {% include feature_row id="victory" type="center" %}
 
 <div class="project-grid">
-  <div class="card">
-    <h3>Technical Outcome</h3>
-    <p>Methodological validation of <strong>95.2% causality</strong> (WHO Algorithm). Presenting the <strong>Rawlins & Thompson</strong> classification allowed the jury to validate preventability in 71.4% of cases (Type A).</p>
+ <div class="card">
+    <h3>The Abandonment Threshold</h3>
+    <p>Identified that exactly <strong>50% of patients</strong> who presented an adverse reaction to antihypertensive medications entirely suspended their consumption.</p>
   </div>
   <div class="card">
-    <h3>Clinical Impact</h3>
-    <p>Detection of a <strong>50% therapeutic dropout rate</strong>. This finding drove a direct recommendation to establish active pharmacovigilance systems to mitigate public health risks.</p>
+    <h3>The Reality of Prevention</h3>
+    <p>Discovered that <strong>71.4% of documented reactions were Type A</strong> according to Rawlins & Thompson, proving the vast majority of therapeutic failures were expected and preventable.</p>
   </div>
   <div class="card">
-    <h3>Strategic Value</h3>
-    <p>Translation of severity (<strong>57.1% mild ADRs</strong>) into a retention strategy. I demonstrated that even low-severity events drastically impact adherence to chronic treatment.</p>
+    <h3>The "Mild" Paradox</h3>
+    <p>Verified a <strong>95.2% "Possible" causality rate</strong>, while highlighting that <strong>57.1% of reactions were clinically "Mild"</strong>—yet still disruptive enough to ruin treatment adherence.</p>
   </div>
 </div>
 
 <div class="pull-quote">
-  "My strategic value lies in being the <strong>catalyst for clinical change</strong>, translating complex evidence into life-saving decisions."
+  "I don't just present data; I structure it to ensure <strong>evidence overcomes established behavioral heuristics</strong>."
 </div>
 
 {% include feature_row id="highlights_title" type="center" %}
 
 {% include gallery id="highlights" %}
-
-<div class="see-more-button">
-  <a href="portfolio/projects/" class="btn btn--primary">View All Slides</a>
-</div>
 
   <div class="cta">
   <div style="text-align: center;">
@@ -146,99 +140,3 @@ highlights:
     <a href="contact/" class="btn btn--primary">Get in Touch</a>
   </div>
 </div>
-
-<!-- ---
-layout: splash
-title: "Pharmacovigilance & Clinical Narrative"
-permalink: portfolio/projects/pharmacovigilance/
-lang: en
-description: "Transforming complex pharmacovigilance data into a high-impact clinical narrative."
-header:
-  teaser: "/assets/images/project_pharmacovigilance.png"
-seo:
-  type: "article"
-  title: "Pharmacovigilance & Clinical Narrative"
-  image: "/assets/images/project_pharmacovigilance.png"
-approach:
-  - title: "Methodology: Visualizing Systemic Failure"
-  - excerpt: "The challenge was making the audience 'see' the invisible 50% treatment dropout risk."
-victory:
-  - title: "The Victory Factor: Behavioral Shifts"
-  - excerpt: "This strategy allowed scientific evidence to shift from a static report to a behavioral trigger."
-highlights_title: 
-  - title: "Visual Evidence"
-  - excerpt: "Visual Analysis: An immersion into the communication strategy."
-highlights:
-  - url: "/assets/images/xv-jornada-01.jpg"
-    image_path: "/assets/images/xv-jornada-01.jpg"
-    alt: "Clinical Urgency"
-    title: "Clinical Urgency: Visual hierarchy designed to transform cold figures into a call to action."
-  - url: "/assets/images/xv-jornada-02.jpg"
-    image_path: "/assets/images/xv-jornada-02.jpg"
-    alt: "Strategic Trigger"
-    title: "Strategic Trigger: Highlighting the link between adverse drug reactions and therapeutic failure."
----
-<style>
-.feature-divider { margin-top: 5rem; margin-bottom: 2rem; }
-.story-divider { margin-top: 5rem; margin-bottom: 4rem; }
-.cta { margin-top: 4rem !important; }
-.highlight-metric { color: #b80f0a; font-weight: 600; }
-</style>
-
-<div class="headline">
-    <h1>The Economics of Choice: Visualizing Therapeutic Failure</h1>
-    <p><strong>The Bottom Line:</strong> Data is powerless if it cannot convince. By reframing so-called 'mild' side effects as the primary behavioral driver behind a 50% therapeutic dropout rate, this narrative successfully aligned pure scientific evidence with real-world clinical urgency.</p>
-</div>
-
-<div class="skills-bar">
-    <p><strong>Core Strategy:</strong> Behavioral Persuasion, Information Architecture, Clinical Impact</p>
-</div>
-
-<h2>The Challenge: The Danger of "Mild"</h2>
-<p>When 57.1% of adverse drug reactions are classified as "mild," the systemic threat is easily ignored by healthcare providers. This cognitive heuristic leads to a catastrophic <strong>50% therapeutic dropout rate</strong> in chronic patients. The goal was to prove that "mild" reactions still cost lives.</p>
-
-<hr class="feature-divider">
-
-{% include feature_row id="approach" type="center" %}
-
-<div class="grid-container">
-  <div class="grid-item">
-      <img src="/assets/images/timeline.png" alt="Icon: Message Architecture" class="grid-icon">
-      <h3>Reframing the Metric</h3>
-      <p>Used strategic information design to elevate "mild" side effects into severe indicators of failure.</p>
-  </div>
-  <div class="grid-item">
-      <img src="/assets/images/view.png" alt="Icon: Cognitive Optimization" class="grid-icon">
-      <h3>Systemic Synthesis</h3>
-      <p>Connected individual patient reactions to the broader institutional impact of non-adherence.</p>
-  </div>
-</div>
-
-<hr class="story-divider">
-
-{% include feature_row id="victory" type="center" %}
-
-<div class="project-grid">
-  <div class="card">
-    <h3>Technical Outcome</h3>
-    <p>Methodological validation of <strong>95.2% causality</strong> (WHO Algorithm) presented as an undeniable visual map.</p>
-  </div>
-  <div class="card">
-    <h3>Strategic Value</h3>
-    <p>Translation of severity (<strong>57.1% mild ADRs</strong>) into a retention strategy, demonstrating that low-severity events drastically impact adherence.</p>
-  </div>
-</div>
-
-<div class="pull-quote">
-  "I don't just present data; I architect it to ensure <strong>evidence overcomes established beliefs</strong>."
-</div>
-
-{% include feature_row id="highlights_title" type="center" %}
-{% include gallery id="highlights" %}
-
-<div class="cta">
-  <div style="text-align: center;">
-    <h3>Let's Turn Your Ideas into Action</h3>
-    <a href="contact/" class="btn btn--primary">Get in Touch</a>
-  </div>
-</div> -->
