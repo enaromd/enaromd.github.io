@@ -15,7 +15,7 @@ seo:
 # Sections
 approach:
   - title: "The Engineering Workflow"
-  - excerpt: "My proposal centered on a three-phase workflow: Forward Engineering a robust schema, Automated Population via Python, and Logic Layering through SQL stored procedures. By implementing <strong>3rd Normal Form (3NF)</strong>, I engineered a relational ecosystem where data redundancy is eliminated."
+  - excerpt: "Decomposing operational models into specialized relational tables to guarantee transactional consistency."
 results:
   - title: "The Execution Factor: From Storage to Strategy"
   - excerpt: "The success of this structure lies in its ability to convert a static database into a dynamic operational asset. By bridging Python automation with SQL logic, I established a system where data is not just stored, but actively managed to ensure 100% transaction integrity"
@@ -71,19 +71,27 @@ highlights:
     overflow-x: auto;
     white-space: nowrap;
 }
+
+.highlight-metric {
+    color: #b80f0a; /* Deep clinical red */
+    font-weight: 600; /* Optional: gives the metric a tiny bit more structural weight */
+}
 </style>
 
 <div class="headline">
-    <h1>From Faker to Tableau: An End-to-End MySQL Engineering Pipeline</h1>
-    <p>A case study on engineering a relational ecosystem from synthetic data generation to interactive business intelligence</p>
+    <h1>End-to-End MySQL Engineering: Synthetic Data to Validated Reporting</h1>
+    <p><strong>The Bottom Line:</strong> Before data can be safely analyzed, it must be relational. This project demonstrates the <span class="highlight-metric">end-to-end engineering of a clean relational database</span>—from Faker-driven synthetic generation to strict 3NF normalization and programmatic Python ETL bridging.</p>
 </div>
 
 <div class="skills-bar">
-    <p><strong>Tech Stack:</strong> 3NF Relational Modeling, <code>MySQL</code>, Stored Procedures, <code>MySQL Connector/Python</code>, <code>Tableau</code></p>
+    <p><strong>Tech Stack:</strong> 3NF Relational Modeling, MySQL, Stored Procedures, MySQL Connector/Python, Tableau, Faker</p>
 </div>
 
-<h2>The Challenge: Building for Scale and Integrity</h2>
-<p>In a high-traffic business environment, data fragmentation is the enemy of efficiency. The core problem was the lack of a centralized system to handle simultaneous bookings and menu updates. The goal was to transform disparate requirements into a <strong>single source of truth</strong> that ensures data consistency and prevents performance bottlenecks.</p>
+<h2>The Root Problem: Relational Fragmentation</h2>
+<p>In transactional systems, poor table organization and a lack of explicit constraints introduce massive operational vulnerabilities. Relying on non-normalized structures creates an environment where a single update can trigger cascading data anomalies, destroying the database's reliability before any analytical tool can even connect to it.</p>
+
+<h2>The Structural Risk: Cascading Redundancy</h2>
+<p>When database schema boundaries are blurred, duplication scales exponentially. Without server-side validation to block conflicting inputs or overlapping booking states, the underlying system quietly corrupts its own records. For any downstream business intelligence platform or dashboard, this is fatal: visualizing un-normalized tables results in flawed metrics and distorted operational logic.</p>
 
 <hr class="feature-divider">
 
@@ -92,18 +100,18 @@ highlights:
 <div class="grid-container">
   <div class="grid-item">
       <img src="/assets/images/data_schema.png" alt="Icon: Schema Design" class="grid-icon">
-      <h3>Schema Design</h3>
-      <p>Engineering a <strong>Third Normal Form (3NF)</strong> relational model to eliminate data redundancy.</p>
+      <h3>Schema Engineering</h3>
+      <p>Designing a <strong>Third Normal Form (3NF) relational model</strong> to mathematically eliminate data redundancy.</p>
   </div>
   <div class="grid-item">
       <img src="/assets/images/data_population.png" alt="Icon: Data Processing" class="grid-icon">
-      <h3>Faker Population</h3>
-      <p>Moving beyond static entry by utilizing the <strong>Python Faker library</strong> to generate unique datasets, simulating production-ready variance and probabilistic logic.</p>
+      <h3>Probabilistic Generation</h3>
+      <p>Deploying <strong>Python's Faker library to simulate</strong> production-ready datasets that mirror <strong>real-world variance.</strong></p>
   </div>
   <div class="grid-item">
       <img src="/assets/images/data_transaction.png" alt="Icon: Transaction Security" class="grid-icon">
       <h3>Transaction Security</h3>
-      <p>Implementation of <strong>Stored Procedures</strong> to automate inventory checks and secure transaction processing against data corruption.</p>
+      <p>Deploying <strong>Stored Procedures to</strong> automate logic checks and <strong>secure transactions</strong> against data corruption.</p>
   </div>
 </div>
 
@@ -120,22 +128,31 @@ highlights:
 
 <div class="project-grid">
   <div class="card">
-    <h3>Operational integrity</h3>
-    <p>Successfully deployed a suite of procedures for consistent booking management, reducing manual entry errors and preventing double-booking conflicts through SQL <strong>stored procedures</strong></p>
+    <h3>Zero Redundancy</h3>
+    <p>Validated a complete <strong>3NF schema deployment</strong>, entirely removing update anomalies across all tables.</p>
   </div>
   <div class="card">
-    <h3>MySQL-Python bridge</h3>
-    <p>Executed workflows via <strong>MySQL Connector/Python</strong>, demonstrating how backend procedures can be called programmatically to manage restaurant functions.</p>
+    <h3>Procedural Immunity</h3>
+    <p>Enforced <strong>ACID-compliant stored procedures</strong>, neutralizing simultaneous transaction conflicts at the server layer.</p>
   </div>
   <div class="card">
     <h3>Intelligence translation</h3>
-    <p>Transformed normalized relational data into a interactive <strong>Tableau dashboard</strong>, providing a clear view of sales trends and menu popularity.</p>
+    <p>Served perfectly clean, <strong>normalized query outputs to Tableau</strong>, creating an accurate single source of truth.</p>
   </div>
 </div>
 
 <div class="pull-quote">
   "A database is more than a container; it is the <strong>structural integrity</strong> that allows data to transition into actionable intelligence."
 </div>
+
+<h2>Reflections: The Relational Imperative</h2>
+<p>While this project models commercial transactions, the technical execution directly maps to the rigorous standards required in health informatics and Real-World Evidence (RWE): <strong>data tables must remain structurally sound to prevent the upstream duplication errors that frequently compromise observational study cohorts.</strong></p>
+
+<blockquote>
+  <strong>Key Takeaway:</strong> The exact same 3NF constraints implemented here to prevent a transactional double-booking are the operational mechanisms required to eliminate duplicate patient enrollment identifiers within clean analytical registries.
+</blockquote>
+
+<p>Although relying on Python's <code>Faker</code> engine successfully provided high-volume inputs to stress-test these schema limits, synthetic distributions naturally lack the messy, erratic data anomalies common to organic entry. A valuable next iteration will intentionally inject edge-case malformations into the generation script to test the database's automated rejection mechanisms under hostile, unpredictable transactional loads.</p>
 
 {% include feature_row id="highlights_title" type="center" %}
 
