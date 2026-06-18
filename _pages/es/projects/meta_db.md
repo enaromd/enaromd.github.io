@@ -88,10 +88,10 @@ highlights:
 </div>
 
 <h2>El problema de raíz: Fragmentación relacional</h2>
-<p>En los sistemas transaccionales, una mala organización de las tablas y la falta de restricciones explícitas introducen vulnerabilidades operativas masivas. Depender de estructuras no normalizadas crea un entorno donde una sola actualización puede desencadenar anomalías de datos en cascada, destruyendo la confiabilidad de la base de datos antes de que cualquier herramienta analítica pueda siquiera conectarse a ella.</p>
+<p>En los sistemas transaccionales, <strong>una mala organización de las tablas y la falta de restricciones explícitas introducen vulnerabilidades operativas masivas</strong>. Depender de estructuras no normalizadas crea un entorno donde una sola actualización puede desencadenar anomalías de datos en cascada, destruyendo la confiabilidad de la base de datos antes de que cualquier herramienta analítica pueda siquiera conectarse a ella.</p>
 
 <h2>El riesgo estructural: Redundancia en cascada</h2>
-<p>Cuando los límites del esquema de la base de datos se desdibujan, la duplicación escala exponencialmente. Sin una validación en el lado del servidor que bloquee entradas en conflicto o estados de reserva superpuestos, el sistema subyacente corrompe silenciosamente sus propios registros. Para cualquier plataforma o dashboard de inteligencia de negocios downstream, esto es fatal: la visualización de tablas no normalizadas da como resultado métricas erróneas y una lógica operativa distorsionada.</p>
+<p>Cuando los límites del esquema de la base de datos se desdibujan, la duplicación escala exponencialmente. <strong>Sin una validación en el lado del servidor</strong> que bloquee entradas en conflicto o estados de reserva superpuestos, <strong>el sistema subyacente corrompe silenciosamente sus propios registros</strong>. Para cualquier plataforma o dashboard de inteligencia de negocios downstream, esto es fatal: la visualización de tablas no normalizadas da como resultado métricas erróneas y una lógica operativa distorsionada.</p>
 
 <hr class="feature-divider">
 
@@ -153,6 +153,8 @@ highlights:
 </blockquote>
 
 <p>Aunque depender del motor <code>Faker</code> de Python proporcionó con éxito entradas de gran volumen para poner a prueba los límites del esquema, las distribuciones sintéticas carecen naturalmente de las anomalías de datos desordenadas y erráticas comunes en la entrada orgánica. Una próxima iteración valiosa inyectará intencionalmente malformaciones de casos extremos en el script de generación para evaluar los mecanismos de rechazo automatizados de la base de datos bajo cargas transaccionales hostiles e impredecibles.</p>
+
+<hr class="feature-divider">
 
 {% include feature_row id="highlights_title" type="center" %}
 

@@ -88,10 +88,10 @@ highlights:
 </div>
 
 <h2>The Root Problem: Relational Fragmentation</h2>
-<p>In transactional systems, poor table organization and a lack of explicit constraints introduce massive operational vulnerabilities. Relying on non-normalized structures creates an environment where a single update can trigger cascading data anomalies, destroying the database's reliability before any analytical tool can even connect to it.</p>
+<p>In transactional systems, <strong>poor table organization and a lack of explicit constraints introduce massive operational vulnerabilities</strong>. Relying on non-normalized structures creates an environment where a single update can trigger cascading data anomalies, destroying the database's reliability before any analytical tool can even connect to it.</p>
 
 <h2>The Structural Risk: Cascading Redundancy</h2>
-<p>When database schema boundaries are blurred, duplication scales exponentially. Without server-side validation to block conflicting inputs or overlapping booking states, the underlying system quietly corrupts its own records. For any downstream business intelligence platform or dashboard, this is fatal: visualizing un-normalized tables results in flawed metrics and distorted operational logic.</p>
+<p>When database schema boundaries are blurred, duplication scales exponentially. <strong>Without server-side validation</strong> to block conflicting inputs or overlapping booking states, <strong>the underlying system quietly corrupts its own records</strong>. For any downstream business intelligence platform or dashboard, this is fatal: visualizing un-normalized tables results in flawed metrics and distorted operational logic.</p>
 
 <hr class="feature-divider">
 
@@ -153,6 +153,8 @@ highlights:
 </blockquote>
 
 <p>Although relying on Python's <code>Faker</code> engine successfully provided high-volume inputs to stress-test these schema limits, synthetic distributions naturally lack the messy, erratic data anomalies common to organic entry. A valuable next iteration will intentionally inject edge-case malformations into the generation script to test the database's automated rejection mechanisms under hostile, unpredictable transactional loads.</p>
+
+<hr class="feature-divider">
 
 {% include feature_row id="highlights_title" type="center" %}
 
