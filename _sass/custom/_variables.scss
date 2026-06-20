@@ -485,6 +485,8 @@ a.site-title {
   padding: 2.5rem;
   flex-grow: 1;
   width: 100%;
+  max-width: 1280px; /* Constrains the content. Match this to your theme's max-width (e.g., 1400px) */
+  margin: 0 auto;    /* Centers the constrained content block */
 
   @media (max-width: 1100px) {
     flex-direction: column; // Mobile Stack: Picture > Text
@@ -932,10 +934,14 @@ a.site-title {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  
-  // Layout and styling
+
+  display: flex;             /* Required for gap and flex-wrap to work */
+  flex-direction: column;    /* Stacks the text vertically */
+  align-items: center;       /* Centers the children horizontally */
+  justify-content: center;   /* Centers the children vertically */
+
   text-align: center;
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 3rem;
   box-sizing: border-box;
   flex-wrap: wrap;
@@ -951,15 +957,15 @@ a.site-title {
 .cta p {
   color: #ffffff;
   margin-top: 0 !important;
+  max-width: 1280px; /* Prevents text from stretching too wide on large screens */
+  width: 100%;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  line-height: 1.6; /* Optional: Improves readability for centered paragraphs */
 }
 
 .cta h3 {
   font-size: 1.7rem;
-}
-
-.cta p {
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
 }
 
 .headline {
