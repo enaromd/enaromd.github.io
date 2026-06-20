@@ -6,7 +6,7 @@ lang: en
 # Social previews
 description: "Overcoming sample constraints in End-Stage Renal disease."
 header:
-  teaser: "/assets/images/presentation_sepsis.png"
+  teaser: "/assets/images/lvdd_plot_pr.png"
 # This block communicates directly with the SEO plugin
 seo:
   type: "article"

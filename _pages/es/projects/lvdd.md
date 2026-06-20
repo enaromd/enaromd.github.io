@@ -6,7 +6,7 @@ lang: es
 # Social previews
 description: "Superando las limitaciones muestrales en la enfermedad renal crónica terminal."
 header:
-  teaser: "/assets/images/presentation_sepsis.png"
+  teaser: "/assets/images/lvdd_plot_pr.png"
 # This block communicates directly with the SEO plugin
 seo:
   type: "article"
