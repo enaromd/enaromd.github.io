@@ -123,19 +123,19 @@ projects:
     </a>
   </div>
   <div class="grid-item">
+    <a href="/portfolio/projects/nhanes_obesity/">
+      <img src="/assets/images/plot_framework_sankey.png" alt="Proyecto: NHANES y Obesidad">
+      <h3>Obesidad Clínica y METS-IR en NHANES 2021–2023</h3>
+      <p>Operacionalización del marco de Obesidad Clínica de The Lancet mediante modelos de Poisson con GEE ponderados por encuesta en submuestras complejas en ayunas de NHANES.</p>
+      <p><strong>Impacto:</strong> Revela un incremento de riesgo de 3.6x en adultos con IMC normal y obesidad periférica no detectados por el tamizaje estándar.</p>
+    </a>
+  </div>
+  <div class="grid-item">
     <a href="portfolio/projects/lvdd/">
       <img src="/assets/images/lvdd_plot_pr.png" alt="Proyecto: DDVI en Hemodiálisis">
       <h3>Disfunción Diastólica en Hemodiálisis de Mantenimiento</h3>
       <p>Aplcación de regresiones de Poisson multivariadas con estimadores de covarianza robustos de tipo sándwich para neutralizar las limitaciones muestrales.</p>
       <p><strong>Impacto:</strong> Identificación de la hipertensión arterial crónica (PR: 2.22) como el principal factor impulsor de la falla cardíaca en hemodiálisis.</p>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="portfolio/projects/pharmacovigilance/">
-      <img src="/assets/images/project_pharmacovigilance.png" alt="Proyecto: XV Jornada Científica">
-      <h3>Estrategia Visual Premiada: Farmacovigilancia</h3>
-      <p>Reencuadrando reacciones adversas mediante algoritmos de causalidad de la OMS y estructuración de información de alto impacto.</p>
-      <p><strong>Impacto:</strong> Primer Lugar en la XV Jornada Científica (SILAIS - Granada) por transformar el reporte clínico tradicional.</p>
     </a>
   </div>
 </div>
@@ -160,14 +160,9 @@ projects:
 <div class="cta">
   <div>
     <h3>Transformemos tus ideas en acciones</h3>
-    <p>
-      Creo firmemente que <strong>los grandes descubrimientos nacen de la colaboración y la visión compartida</strong>. 
-      Debido a mi compromiso con la precisión técnica, acepto un número limitado de desafíos en paralelo, 
-      asegurando que cada proyecto reciba el rigor y la profundidad que merece.
-    </p>
-    <p>
-      <strong>Si estás listo para convertir datos en acciones, me encantaría escuchar tu propuesta.</strong>
-    </p>
+    <p>Creo firmemente que <strong>los grandes descubrimientos nacen de la colaboración y la visión compartida</strong>. 
+    Debido a mi compromiso con la precisión técnica, acepto un número limitado de desafíos en paralelo, asegurando que cada proyecto reciba el rigor y la profundidad que merece.</p>
+    <p><strong>Si estás listo para convertir datos en acciones, me encantaría escuchar tu propuesta.</strong></p>
     <a href="/es/contact/" class="btn btn--primary">Contáctame</a>
   </div>
 </div>

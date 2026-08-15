@@ -43,6 +43,14 @@ data:
     </a>
   </div>
   <div class="grid-item">
+    <a href="portfolio/projects/nhanes_obesity/">
+      <img src="/assets/images/plot_framework_sankey.png" alt="Project: NHANES and Obesity">
+      <h3>Clinical Obesity & METS-IR in NHANES 2021–2023</h3>
+      <p>Operationalizing The Lancet’s Clinical Obesity Framework using survey-weighted GEE Poisson models across complex NHANES fasting subsamples.</p>
+      <p><strong>Impact:</strong> Uncovers a 3.6x risk surge in normal-BMI adults with peripheral obesity missed by standard screening.</p>
+    </a>
+  </div>
+  <div class="grid-item">
     <a href="little-lemon-db/">
       <img src="/assets/images/database_schema.png" alt="Project: Little Lemon">
       <h3>Relational Database and MySQL-Python integration</h3>
@@ -93,6 +101,6 @@ data:
     <p>
       <strong>If you are ready to turn data into action, I would love to hear your proposal.</strong>
     </p>
-    <a href="contact/" class="btn btn--primary">Get in Touch</a>
+    <a href="/contact/" class="btn btn--primary">Get in Touch</a>
   </div>
 </div>

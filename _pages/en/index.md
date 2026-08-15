@@ -122,19 +122,19 @@ projects:
     </a>
   </div>
   <div class="grid-item">
+    <a href="portfolio/projects/nhanes_obesity/">
+      <img src="/assets/images/plot_framework_sankey.png" alt="Project: NHANES and Obesity">
+      <h3>Clinical Obesity & METS-IR in NHANES 2021–2023</h3>
+      <p>Operationalizing The Lancet’s Clinical Obesity Framework using survey-weighted GEE Poisson models across complex NHANES fasting subsamples.</p>
+      <p><strong>Impact:</strong> Uncovers a 3.6x risk surge in normal-BMI adults with peripheral obesity missed by standard screening.</p>
+    </a>
+  </div>
+  <div class="grid-item">
     <a href="portfolio/projects/lvdd/">
       <img src="/assets/images/lvdd_plot_pr.png" alt="Project: LVDD in Hemodialysis">
       <h3>Diastolic Dysfunction in Maintenance Hemodialysis</h3>
       <p>Deploying multivariate Poisson regression with robust sandwich covariance estimators to neutralize sample limits.</p>
-      <p><strong>Impact:</strong> Identification of chronic Hypertension (PR: 2.22) as the strongest driver of heart failure in hemodialysis.</p>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="portfolio/projects/pharmacovigilance/">
-      <img src="/assets/images/project_pharmacovigilance.png" alt="Project: XV Scientific Conference">
-      <h3>Award-Winning Visual Strategy: Pharmacovigilance</h3>
-      <p>Reframing raw adverse drug reactions through strict WHO causality algorithms and high-impact information structuring.</p>
-      <p><strong>Impact:</strong> First Place at the XV Scientific Conference for disrupting traditional clinical reporting.</p>
+      <p><strong>Impact:</strong> Identifies chronic Hypertension (PR: 2.22) as the strongest driver of heart failure in hemodialysis.</p>
     </a>
   </div>
 </div>
@@ -165,6 +165,6 @@ projects:
     <p>
       <strong>If you are ready to turn data into actions, I would love to hear your proposal.</strong>
     </p>
-    <a href="contact/" class="btn btn--primary">Get in touch</a>
+    <a href="/contact/" class="btn btn--primary">Get in touch</a>
   </div>
 </div>

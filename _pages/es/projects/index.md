@@ -45,6 +45,14 @@ data:
     </a>
   </div>
   <div class="grid-item">
+    <a href="/portfolio/projects/nhanes_obesity/">
+      <img src="/assets/images/plot_framework_sankey.png" alt="Proyecto: NHANES y Obesidad">
+      <h3>Obesidad Clínica y METS-IR en NHANES 2021–2023</h3>
+      <p>Operacionalización del marco de Obesidad Clínica de The Lancet mediante modelos de Poisson con GEE ponderados por encuesta en submuestras complejas en ayunas de NHANES.</p>
+      <p><strong>Impacto:</strong> Revela un incremento de riesgo de 3.6x en adultos con IMC normal y obesidad periférica no detectados por el tamizaje estándar.</p>
+    </a>
+  </div>
+  <div class="grid-item">
     <a href="little-lemon-db/">
       <img src="/assets/images/database_schema.png" alt="Proyecto: Little Lemon DB">
       <h3>Base de Datos Relacional e Integración Python-SQL</h3>

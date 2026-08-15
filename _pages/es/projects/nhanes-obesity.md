@@ -9,7 +9,7 @@ header:
 seo:
   type: "article"
   title: "Marco de Obesidad Clínica (NHANES 2021–2023)"
-  image: "/assets/images/obesity_teaser.png"
+  image: "/assets/images/plot_framework_sankey.png"
 approach:
   - title: "Filtrado de Cohorte, Ingeniería de Riesgo y Modelado GEE"
   - excerpt: "Ejecución de un flujo bioestadístico de extremo a extremo: desde el filtrado estructurado de la cohorte (N = 1,816) hasta el cálculo de índices compuestos y la estimación de Razones de Riesgo ponderadas por encuesta."

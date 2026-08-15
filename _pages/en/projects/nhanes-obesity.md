@@ -9,7 +9,7 @@ header:
 seo:
   type: "article"
   title: "Clinical Obesity framework (NHANES 2021–2023)"
-  image: "/assets/images/obesity_teaser.png"
+  image: "/assets/images/plot_framework_sankey.png"
 approach:
   - title: "Cohort Filtration, Risk Engineering & GEE Modeling"
   - excerpt: "Executing an end-to-end biostatistical pipeline—from structured cohort attrition (N = 1,816) to composite index calculation and survey-weighted Risk Ratio estimation."
@@ -266,7 +266,9 @@ sankey:
 <div class="cta">
   <div style="text-align: center;">
     <h3>Leveraging Data for High-Impact Decisions</h3>
-    <p>From data processing to predictive model validation, I transform complex variables into operational clarity. If you are looking for a data analyst who understands the strategic value of technical precision, let's talk.</p>
+    <p>
+    From data processing to predictive model validation, I transform complex variables into operational clarity. If you are looking for a data analyst who understands the strategic value of technical precision, let's talk.
+    </p>
     <a href="contact/" class="btn btn--primary">Get in Touch</a>
   </div>
 </div>
