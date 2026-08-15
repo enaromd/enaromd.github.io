@@ -102,17 +102,17 @@ highlights:
 
 <div class="grid-container">
   <div class="grid-item">
-    <img src="/assets/images/data_management.png" alt="Ícono: Administración" class="grid-icon">
+    <img src="/assets/images/data_management.png" alt="Icon: Administration" class="grid-icon">
     <h3>Bias Mitigation</h3>
     <p>I engineered a <strong>Gaussian Imputation model</strong> aligned with American Society of Echocardiography guidelines. By injecting controlled physiological noise centered on healthy reference parameters, the algorithm recovers the true population variance.</p>
   </div>
   <div class="grid-item">
-    <img src="/assets/images/engineering.png" alt="Ícono: Ingeniería" class="grid-icon">
+    <img src="/assets/images/engineering.png" alt="Icon: Engineering" class="grid-icon">
     <h3>Feature Engineering</h3>
     <p>I developed the <strong>Medication Burden Index (MBI)</strong>. This parameter normalizes complex polypharmacy arrays against therapeutic ceilings, converting fragmented medication registries into a single, standardized surrogate metric for cardiac remodeling.</p>
   </div>
   <div class="grid-item">
-    <img src="/assets/images/statistic.png" alt="Ícono: Estadística" class="grid-icon">
+    <img src="/assets/images/statistic.png" alt="Icon: Statistics" class="grid-icon">
     <h3>Statistical Triage</h3>
     <p>I executed a <strong>Receiver Operating Characteristic (ROC)</strong> curve analysis to map the engineered MBI scores against objective clinical and hemodynamic indicators, establishing an empirical triage cutoff that fast-tracks high-acuity patients with high precision.</p>
   </div>
