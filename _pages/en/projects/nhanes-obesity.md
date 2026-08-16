@@ -258,7 +258,7 @@ sankey:
 <p>Our findings challenge the long-standing reliance on BMI as a sole diagnostic gatekeeper: two individuals with similar anthropometric measurements can harbor radically different trajectories of subclinical organ strain.</p>
 
 <blockquote>
-    <strong>Key Takeaway:</strong> Metabolic health cannot be inferred from body mass alone. Within normal-BMI adults classified into the Peripheral Obesity phenotype, crossing the high METS-IR threshold triggers a <strong>3.60-fold relative risk surge</strong> for FibroScan-confirmed hepatic fibrosis, demonstrating that subclinical insulin resistance drives tissue damage long before overt clinical obesity manifests.
+    <strong>Key Takeaway:</strong> Metabolic health cannot be inferred from body mass alone. Within normal-BMI adults classified into the Peripheral Obesity phenotype, <strong>crossing the high METS-IR threshold triggers a 3.60-fold relative risk surge for FibroScan-confirmed hepatic fibrosis</strong>, demonstrating that subclinical insulin resistance drives tissue damage long before overt clinical obesity manifests.
 </blockquote>
 
 <p>Translating these biostatistical insights into real-world care requires embedding automation of risk indices—such as METS-IR, FIB-4, and FLI—directly into electronic health record (EHR) pipelines. Automating these calculations from routine laboratory panels creates a fundamental paradigm shift: moving healthcare away from reactive, late-stage disease management toward proactive, algorithmically guided subclinical intervention.</p>
