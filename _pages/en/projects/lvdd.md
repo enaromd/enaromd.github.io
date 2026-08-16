@@ -128,6 +128,6 @@ results:
       Great breakthroughs are born from collaboration. Due to my commitment to technical precision and impactful storytelling, I accept a limited number of projects to ensure the rigor each challenge deserves.
     </p>
     <p><strong>If you are looking to convert complex evidence into strategic decisions, let's talk.</strong></p>
-    <a href="contact/" class="btn btn--primary">Get in Touch</a>
+    <a href="/contact/" class="btn btn--primary">Get in Touch</a>
   </div>
 </div>

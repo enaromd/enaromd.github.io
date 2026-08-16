@@ -136,7 +136,7 @@ projects:
 <!-- Projects columns -->
 <div class="grid-container">
   <div class="grid-item">
-    <a href="/es/portfolio/projects/mbi/">
+    <a href="portfolio/projects/mbi/">
       <img src="/assets/images/mbi_triage.png" alt="Proyecto: Cardio-MBI-Triage-Engine">
       <h3>Índice de Carga Farmacológica (MBI)</h3>
       <p>Diseño de un pipeline de datos clínicos con esquemas 3NF/Snowflake e imputación 'natural normal' para superar la pérdida estructural de datos en una brigada cardiológica de 10 días.</p>
@@ -144,19 +144,19 @@ projects:
     </a>
   </div>
   <div class="grid-item">
-    <a href="/es/portfolio/projects/lvdd/">
+    <a href="/portfolio/projects/nhanes_obesity/">
+      <img src="/assets/images/plot_framework_sankey.png" alt="Proyecto: NHANES y Obesidad">
+      <h3>Obesidad Clínica y METS-IR en NHANES 2021–2023</h3>
+      <p>Operacionalización del marco de Obesidad Clínica de The Lancet mediante modelos de Poisson con GEE ponderados por encuesta en submuestras complejas en ayunas de NHANES.</p>
+      <p><strong>Impacto:</strong> Revela un incremento de riesgo de 3.6x en adultos con IMC normal y obesidad periférica no detectados por el tamizaje estándar.</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="portfolio/projects/lvdd/">
       <img src="/assets/images/lvdd_plot_pr.png" alt="Proyecto: DDVI en Hemodiálisis">
       <h3>Disfunción Diastólica en Hemodiálisis de Mantenimiento</h3>
       <p>Aplcación de regresiones de Poisson multivariadas con estimadores de covarianza robustos de tipo sándwich para neutralizar las limitaciones muestrales.</p>
       <p><strong>Impacto:</strong> Identificación de la hipertensión arterial crónica (PR: 2.22) como el principal factor impulsor de la falla cardíaca en hemodiálisis.</p>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="/es/portfolio/projects/little-lemon-db/">
-      <img src="/assets/images/database_schema.png" alt="Proyecto: Little Lemon DB">
-      <h3>Base de Datos Relacional e Integración Python-SQL</h3>
-      <p>Ingeniería de un ecosistema 3NF y un puente programático para automatizar operaciones de restaurante complejas.</p>
-      <p><strong>Impacto:</strong> 100% de integridad transaccional y eliminación de redundancia mediante procedimientos almacenados.</p>
     </a>
   </div>
 </div>

@@ -113,6 +113,6 @@ books:
     <p>
       <strong>If your team requires an analyst who understands both the clinical syntax of the bedside and the mathematical rigor of the backend, let's talk.</strong>
     </p>
-    <a href="contact/" class="btn btn--primary">Get in touch</a>
+    <a href="/contact/" class="btn btn--primary">Get in touch</a>
   </div>
 </div>

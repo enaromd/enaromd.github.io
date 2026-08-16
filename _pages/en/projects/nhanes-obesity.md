@@ -269,6 +269,6 @@ sankey:
     <p>
     From data processing to predictive model validation, I transform complex variables into operational clarity. If you are looking for a data analyst who understands the strategic value of technical precision, let's talk.
     </p>
-    <a href="contact/" class="btn btn--primary">Get in Touch</a>
+    <a href="/contact/" class="btn btn--primary">Get in Touch</a>
   </div>
 </div>

@@ -168,6 +168,6 @@ highlights:
   <div style="text-align: center;">
     <h3>Let's Build Your Data Foundation</h3>
     <p>Whether it is clinical research or business operations, a project is only as strong as its database. I specialize in building the bridges that keep your data clean, fast, and accessible.</p>
-    <a href="contact/" class="btn btn--primary">Get in Touch</a>
+    <a href="/contact/" class="btn btn--primary">Get in Touch</a>
   </div>
 </div>

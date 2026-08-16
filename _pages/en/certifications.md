@@ -161,6 +161,6 @@ other_skills:
     <p>
       <strong>If you are ready to turn data into action, I would love to hear your proposal.</strong>
     </p>
-    <a href="contact/" class="btn btn--primary">Get in Touch</a>
+    <a href="/contact/" class="btn btn--primary">Get in Touch</a>
   </div>
 </div>
