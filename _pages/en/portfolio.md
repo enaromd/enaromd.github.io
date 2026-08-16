@@ -29,7 +29,7 @@ certifications:
 
 <div class="grid-container">
   <div class="grid-item">
-    <a href="portfolio/projects/mbi/">
+    <a href="projects/mbi/">
       <img src="/assets/images/mbi_triage.png" alt="Project: Cardio-MBI-Triage-Engine">
       <h3>Medication Burden Index (MBI)</h3>
       <p>Engineering a clinical data pipeline with 3NF/Snowflake schemas and 'natural normal' imputation to overcome structural missingness in a 10-day cardiology mission.</p>
@@ -37,7 +37,7 @@ certifications:
     </a>
   </div>
   <div class="grid-item">
-    <a href="portfolio/projects/nhanes_obesity/">
+    <a href="projects/nhanes_obesity/">
       <img src="/assets/images/plot_framework_sankey.png" alt="Project: NHANES and Obesity">
       <h3>Clinical Obesity & METS-IR in NHANES 2021–2023</h3>
       <p>Operationalizing The Lancet’s Clinical Obesity Framework using survey-weighted GEE Poisson models across complex NHANES fasting subsamples.</p>
@@ -45,7 +45,7 @@ certifications:
     </a>
   </div>
   <div class="grid-item">
-    <a href="portfolio/projects/lvdd/">
+    <a href="projects/lvdd/">
       <img src="/assets/images/lvdd_plot_pr.png" alt="Project: LVDD in Hemodialysis">
       <h3>Diastolic Dysfunction in Maintenance Hemodialysis</h3>
       <p>Deploying multivariate Poisson regression with robust sandwich covariance estimators to neutralize sample limits.</p>

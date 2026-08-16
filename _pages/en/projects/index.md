@@ -43,7 +43,7 @@ data:
     </a>
   </div>
   <div class="grid-item">
-    <a href="portfolio/projects/nhanes_obesity/">
+    <a href="nhanes_obesity/">
       <img src="/assets/images/plot_framework_sankey.png" alt="Project: NHANES and Obesity">
       <h3>Clinical Obesity & METS-IR in NHANES 2021–2023</h3>
       <p>Operationalizing The Lancet’s Clinical Obesity Framework using survey-weighted GEE Poisson models across complex NHANES fasting subsamples.</p>
