@@ -40,10 +40,10 @@ projects:
         </a>
         <!-- <a href="https://www.credly.com/badges/b87a61e6-0b8d-41ff-b8a5-f52833fca99f" target="_blank">
           <img src="/assets/images/badge-tableau-analytics.png" alt="Tableau Data Analyst" class="cert-badge">
-        </a>
-        <a href="https://www.credly.com/badges/b87a61e6-0b8d-41ff-b8a5-f52833fca99f" target="_blank">
-          <img src="/assets/images/badge-google-analytics.png" alt="Google Data Analyst" class="cert-badge">
         </a> -->
+        <a href="https://www.credly.com/badges/5d5f46ce-cd86-4966-9dc2-115d5568d9b1" target="_blank">
+          <img src="/assets/images/badge-google-analytics.png" alt="Google Data Analyst" class="cert-badge">
+        </a>
       </div>
     </div>
   </div>
