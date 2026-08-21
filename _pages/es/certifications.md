@@ -35,6 +35,46 @@ other_skills:
 }
 </style>
 
+{% include feature_row id="statistics_and_data" type="center" %}
+
+<!-- Statistics and data columns -->
+<div class="grid-container">
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/professional-cert/6WYNGZ2YUTNB">
+      <img src="/assets/images/certification_data_analytics.png" alt="Certificación: Google Data Analytics">
+      <h3>Google Data Analytics</h3>
+      <p>Google</p>
+      <p>Limpieza de datos, visualización en Tableau y análisis exploratorio impulsado por Python.</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/professional-cert/TE1VSZSPDZ56">
+      <img src="/assets/images/certification_database_engineer.jpg" alt="Certificación: Ingeniero de Bases de Datos de Meta">
+      <h3>Ingeniero de Bases de Datos</h3>
+      <p>Meta</p>
+      <p>Diseño de esquemas relacionales, optimización avanzada de MySQL y desarrollo de pipelines ETL en Python.</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
+      <img src="/assets/images/certification_statistics-python.jpg" alt="Certificación: Estadística con Python">
+      <h3>Estadística con Python</h3>
+      <p>University of Michigan</p>
+      <p>Modelos multinivel, pesos de muestreo y ajuste de regresión logística/lineal.</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/SJXAGC3NQHCC">
+      <img src="/assets/images/certification_excel.jpg" alt="Certificación: Excel de todos los días">
+      <h3>Excel de todos los días</h3>
+      <p>University of Colorado Boulder</p>
+      <p>Funciones lógicas avanzadas, validación de datos´y tablas dinámicas</p>
+    </a>
+  </div>
+</div>
+
+<hr class="feature-divider">
+
 {% include feature_row id="research_and_public-health" type="center" %}
 
 <!-- Research and public health columns -->
@@ -64,38 +104,6 @@ other_skills:
     </a>
   </div>
   </div>
-
-<hr class="feature-divider">
-
-{% include feature_row id="statistics_and_data" type="center" %}
-
-<!-- Statistics and data columns -->
-<div class="grid-container">
-  <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/professional-cert/TE1VSZSPDZ56">
-      <img src="/assets/images/certification_database_engineer.jpg" alt="Certificación: Ingeniero de Bases de Datos de Meta">
-      <h3>Ingeniero de Bases de Datos</h3>
-      <p>Meta</p>
-      <p>Diseño de esquemas relacionales, optimización avanzada de MySQL y desarrollo de pipelines ETL en Python.</p>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
-      <img src="/assets/images/certification_statistics-python.jpg" alt="Certificación: Estadística con Python">
-      <h3>Estadística con Python</h3>
-      <p>University of Michigan</p>
-      <p>Modelos multinivel, pesos de muestreo y ajuste de regresión logística/lineal.</p>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/specialization/SJXAGC3NQHCC">
-      <img src="/assets/images/certification_excel.jpg" alt="Certificación: Excel de todos los días">
-      <h3>Excel de todos los días</h3>
-      <p>University of Colorado Boulder</p>
-      <p>Funciones lógicas avanzadas, validación de datos´y tablas dinámicas</p>
-    </a>
-  </div>
-</div>
 
 <hr class="feature-divider">
 

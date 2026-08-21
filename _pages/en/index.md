@@ -75,41 +75,6 @@ projects:
 
 <hr class="feature-divider">
 
-{% include feature_row id="certifications" type="center" %}
-
-<div class="grid-container">
-  <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/professional-cert/TE1VSZSPDZ56">
-      <img src="/assets/images/certification_database_engineer.jpg" alt="Certification: Meta Database Engineer">
-      <h3>Meta Database Engineer</h3>
-      <p>Meta</p>
-      <p>Relational schema design, advanced MySQL optimization, and Python-driven ETL pipeline development.</p>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
-      <img src="/assets/images/certification_biostatistics.jpg" alt="Certification: Biostatistics in Public Health">
-      <h3>Biostatistics in Public Health</h3>
-      <p>Johns Hopkins University</p>
-      <p>Statistical inference, regression methods, and survival analysis.</p>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
-      <img src="/assets/images/certification_statistics-python.jpg" alt="Certification: Statistics with Python">
-      <h3>Statistics with Python</h3>
-      <p>University of Michigan</p>
-      <p>Multilevel models, sampling weights, and logistic/linear regression adjustment.</p>
-    </a>
-  </div>
-</div>
-
-<div class="see-more-button">
-  <a href="portfolio/certifications/" class="btn btn--primary">See more certifications</a>
-</div>
-
-<hr class="feature-divider">
-
 {% include feature_row id="projects" type="center" %}
 
 <div class="grid-container">
@@ -145,8 +110,43 @@ projects:
 
 <hr class="feature-divider">
 
+{% include feature_row id="certifications" type="center" %}
+
+<div class="grid-container">
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
+      <img src="/assets/images/certification_biostatistics.jpg" alt="Certification: Biostatistics in Public Health">
+      <h3>Biostatistics in Public Health</h3>
+      <p>Johns Hopkins University</p>
+      <p>Statistical inference, regression methods, and survival analysis.</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
+      <img src="/assets/images/certification_statistics-python.jpg" alt="Certification: Statistics with Python">
+      <h3>Statistics with Python</h3>
+      <p>University of Michigan</p>
+      <p>Multilevel models, sampling weights, and logistic/linear regression adjustment.</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/verify/PR8EM6PJTQ9F">
+      <img src="/assets/images/certification_meta-analysis.png" alt="Certification: Introduction to Systematic Review and Meta-Analysis">
+      <h3>Introduction to Systematic Review and Meta-Analysis</h3>
+      <p>Johns Hopkins University</p>
+      <p>Systematic reviews, meta-analysis, and bias assessment.</p>
+    </a>
+  </div>
+</div>
+
+<div class="see-more-button">
+  <a href="portfolio/certifications/" class="btn btn--primary">See more certifications</a>
+</div>
+
+<hr class="feature-divider">
+
 <div class="about-hero">
-  <img src="/assets/images/web_hero-about.png" alt="About me">
+  <img src="/assets/images/web_hero_about_en.png" alt="About me">
   <div>
     <h1>About Me</h1>
     <p>As a practicing physician, I have spent years listening to hearts, stabilizing critical patients under acute stress, and running municipal emergency departments. But I realized that the greatest barrier to modern patient care isn’t clinical capacity—it is the integrity of the data that shapes clinical protocols.</p>

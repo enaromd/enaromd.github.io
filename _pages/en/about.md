@@ -46,7 +46,7 @@ books:
 </style>
 
 <div class="about-hero">
-  <img src="/assets/images/web_hero-about.png" alt="About me">
+  <img src="/assets/images/web_hero_about_en.png" alt="About me">
   <div>
     <h1>Behind the Stethoscope:<br>Engineered Data. Human Realities.</h1>
     <hr>

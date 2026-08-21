@@ -50,7 +50,7 @@ books:
 <!-- About section -->
 
 <div class="about-hero">
-  <img src="/assets/images/web_hero-about.png" alt="Acerca de mí">
+  <img src="/assets/images/web_hero_about_es.png" alt="Acerca de mí">
   <div>
     <h1>Detrás del estetoscopio:<br>Datos procesados. Realidades humanas.</h1>
     <hr>

@@ -66,6 +66,14 @@ certifications:
 <!-- Certifications columns -->
 <div class="grid-container">
   <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/professional-cert/6WYNGZ2YUTNB">
+      <img src="/assets/images/certification_data_analytics.png" alt="Certificación: Google Data Analytics">
+      <h3>Google Data Analytics</h3>
+      <p>Google</p>
+      <p>Limpieza de datos, visualización en Tableau y análisis exploratorio impulsado por Python.</p>
+    </a>
+  </div>
+  <div class="grid-item">
     <a href="https://www.coursera.org/account/accomplishments/professional-cert/TE1VSZSPDZ56">
       <img src="/assets/images/certification_database_engineer.jpg" alt="Certificación: Ingeniero de Bases de Datos de Meta">
       <h3>Ingeniero de Bases de Datos</h3>
@@ -95,14 +103,6 @@ certifications:
       <h3>Introducción a revisión sistemática y metaanálisis</h3>
       <p>Johns Hopkins University</p>
       <p>Revisiones sistemáticas, metaanálisis y evaluación de sesgos</p>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/specialization/SJXAGC3NQHCC">
-      <img src="/assets/images/certification_excel.jpg" alt="Certificación: Excel de todos los días">
-      <h3>Excel de todos los días</h3>
-      <p>University of Colorado Boulder</p>
-      <p>Funciones lógicas avanzadas, validación de datos´y tablas dinámicas</p>
     </a>
   </div>
   <div class="grid-item">

@@ -35,6 +35,45 @@ other_skills:
 }
 </style>
 
+{% include feature_row id="statistics_and_data" type="center" %}
+
+<div class="grid-container">
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/professional-cert/6WYNGZ2YUTNB">
+      <img src="/assets/images/certification_data_analytics.png" alt="Certification: Google Data Analytics">
+      <h3>Google Data Analytics</h3>
+      <p>Google</p>
+      <p>Data cleaning, Tableau visualization, and Python-driven exploratory analysis.</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/professional-cert/TE1VSZSPDZ56">
+      <img src="/assets/images/certification_database_engineer.jpg" alt="Certification: Meta Database Engineer">
+      <h3>Meta Database Engineer</h3>
+      <p>Meta</p>
+      <p>Relational schema design, advanced MySQL optimization, and Python-driven ETL pipeline development.</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
+      <img src="/assets/images/certification_statistics-python.jpg" alt="Certification: Statistics with Python">
+      <h3>Statistics with Python</h3>
+      <p>University of Michigan</p>
+      <p>Multilevel models, sampling weights, and logistic/linear regression adjustment.</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/SJXAGC3NQHCC">
+      <img src="/assets/images/certification_excel.jpg" alt="Certification: Everyday Excel">
+      <h3>Everyday Excel</h3>
+      <p>University of Colorado Boulder</p>
+      <p>Advanced logical functions, data validation, and pivot tables.</p>
+    </a>
+  </div>
+</div>
+
+<hr class="feature-divider">
+
 {% include feature_row id="research_and_public-health" type="center" %}
 
 <div class="grid-container">
@@ -63,37 +102,6 @@ other_skills:
     </a>
   </div>
   </div>
-
-<hr class="feature-divider">
-
-{% include feature_row id="statistics_and_data" type="center" %}
-
-<div class="grid-container">
-  <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/professional-cert/TE1VSZSPDZ56">
-      <img src="/assets/images/certification_database_engineer.jpg" alt="Certification: Meta Database Engineer">
-      <h3>Meta Database Engineer</h3>
-      <p>Meta</p>
-      <p>Relational schema design, advanced MySQL optimization, and Python-driven ETL pipeline development.</p>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
-      <img src="/assets/images/certification_statistics-python.jpg" alt="Certification: Statistics with Python">
-      <h3>Statistics with Python</h3>
-      <p>University of Michigan</p>
-      <p>Multilevel models, sampling weights, and logistic/linear regression adjustment.</p>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/specialization/SJXAGC3NQHCC">
-      <img src="/assets/images/certification_excel.jpg" alt="Certification: Everyday Excel">
-      <h3>Everyday Excel</h3>
-      <p>University of Colorado Boulder</p>
-      <p>Advanced logical functions, data validation, and pivot tables.</p>
-    </a>
-  </div>
-</div>
 
 <hr class="feature-divider">
 

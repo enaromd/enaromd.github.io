@@ -74,42 +74,6 @@ projects:
 
 <hr class="feature-divider">
 
-{% include feature_row id="certifications" type="center" %}
-
-<!-- Certifications columns -->
-<div class="grid-container">
-  <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/professional-cert/TE1VSZSPDZ56">
-      <img src="/assets/images/certification_database_engineer.jpg" alt="Certificación: Ingeniero de Bases de Datos de Meta">
-      <h3>Ingeniero de Bases de Datos</h3>
-      <p>Meta</p>
-      <p>Diseño de esquemas relacionales, optimización avanzada de MySQL y desarrollo de pipelines ETL en Python.</p>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
-      <img src="/assets/images/certification_biostatistics.jpg" alt="Certificación: Bioestadística en salud pública">
-      <h3>Bioestadística en salud pública</h3>
-      <p>Johns Hopkins University</p>
-      <p>Inferencia estadística, métodos de regresión y análisis de supervivencia.</p>
-    </a>
-  </div>
-  <div class="grid-item">
-    <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
-      <img src="/assets/images/certification_statistics-python.jpg" alt="Certificación: Estadística con Python">
-      <h3>Estadística con Python</h3>
-      <p>University of Michigan</p>
-      <p>Modelos multinivel, pesos de muestreo y ajuste de regresión logística/lineal.</p>
-    </a>
-  </div>
-</div>
-
-<div class="see-more-button">
-  <a href="/es/portfolio/certifications/" class="btn btn--primary">Ver más certificaciones</a>
-</div>
-
-<hr class="feature-divider">
-
 {% include feature_row id="projects" type="center" %}
 
 <!-- Projects columns -->
@@ -146,9 +110,45 @@ projects:
 
 <hr class="feature-divider">
 
+{% include feature_row id="certifications" type="center" %}
+
+<!-- Certifications columns -->
+<div class="grid-container">
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/ZRXSQLDMFXPR">
+      <img src="/assets/images/certification_biostatistics.jpg" alt="Certificación: Bioestadística en salud pública">
+      <h3>Bioestadística en salud pública</h3>
+      <p>Johns Hopkins University</p>
+      <p>Inferencia estadística, métodos de regresión y análisis de supervivencia.</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/specialization/PJX2HNZZYYJD">
+      <img src="/assets/images/certification_statistics-python.jpg" alt="Certificación: Estadística con Python">
+      <h3>Estadística con Python</h3>
+      <p>University of Michigan</p>
+      <p>Modelos multinivel, pesos de muestreo y ajuste de regresión logística/lineal.</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="https://www.coursera.org/account/accomplishments/verify/PR8EM6PJTQ9F">
+      <img src="/assets/images/certification_meta-analysis.png" alt="Certificación: Introducción a revisión sistemática y metaanálisis">
+      <h3>Introducción a revisión sistemática y metaanálisis</h3>
+      <p>Johns Hopkins University</p>
+      <p>Revisiones sistemáticas, metaanálisis y evaluación de sesgos</p>
+    </a>
+  </div>
+</div>
+
+<div class="see-more-button">
+  <a href="/es/portfolio/certifications/" class="btn btn--primary">Ver más certificaciones</a>
+</div>
+
+<hr class="feature-divider">
+
 <!-- About section -->
 <div class="about-hero">
-  <img src="/assets/images/web_hero-about.png" alt="Acerca de mí">
+  <img src="/assets/images/web_hero_about_es.png" alt="Acerca de mí">
   <div>
     <h1>Acerca de mí</h1>
     <p>Como médico en ejercicio, he pasado años escuchando corazones, estabilizando a pacientes críticos bajo estrés agudo y dirigiendo departamentos de emergencia municipales. Sin embargo, me di cuenta de que la mayor barrera para la atención médica moderna no es la capacidad clínica, sino la integridad de los datos que dan forma a los protocolos clínicos.</p>
