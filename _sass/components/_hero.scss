@@ -1,0 +1,111 @@
+.hero-clean-section {
+  width: 100%;
+  padding: 4rem 1.5rem;
+  background-size: cover;
+  background-position: center;
+
+  .hero-title {
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .hero-description {
+    color: #cbd5e1;
+    line-height: 1.65;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 0.75rem;
+
+    .button.is-primary-btn {
+      background-color: #b80f0a;
+      border-color: #b80f0a;
+      color: #ffffff;
+      font-weight: 600;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        background-color: #960c08;
+      }
+    }
+
+    .button.is-outlined-btn {
+      background-color: transparent;
+      border-color: #ffffff;
+      color: #ffffff;
+      font-weight: 600;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        background-color: #ffffff;
+        color: #003152;
+      }
+    }
+  }
+
+  .hero-portrait-wrapper {
+    position: relative;
+    max-width: 450px;
+    margin: 0 auto;
+
+    .hero-portrait-img {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 24px;
+      object-fit: cover;
+    }
+  }
+
+  // Bottom Badge Section
+  .hero-bottom-badges {
+    padding-top: 1rem;
+    text-align: center;
+
+    .badges-header {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #94a3b8;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .badge-chips-flex {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; 
+      gap: 1.5rem;
+
+      .white-badge-card {
+        background-color: #ffffff;
+        border-radius: 14px;
+        padding: 1rem 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+        img {
+          max-height: 90px;
+          object-fit: contain;
+        }
+
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+        }
+      }
+    }
+  }
+}

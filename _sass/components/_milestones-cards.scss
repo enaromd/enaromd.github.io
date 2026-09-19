@@ -1,0 +1,88 @@
+// Section Wrapper with Custom Background Color
+.milestones-cards-section {
+  background-color: #fafafa; // Custom section background color
+  padding-top: 6rem !important;
+  padding-bottom: 7rem !important;
+
+  .milestones-heading {
+    color: #003152; // Target title color
+  }
+
+  .milestones-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    // Anchors action buttons to the bottom regardless of description length
+    .buttons {
+      margin-top: auto;
+      padding-top: 0.75rem;
+      gap: 0.5rem;
+
+      // Custom Solid Button
+      .button.is-primary-btn {
+        background-color: #b80f0a;
+        border-color: #b80f0a;
+        color: #ffffff;
+
+        &:hover {
+          transform: translateY(-1px);
+        }
+      }
+
+      // Custom Outlined Button
+      .button.is-outlined-btn {
+        background-color: transparent;
+        border-color: #003152;
+        color: #003152;
+
+        &:hover {
+          transform: translateY(-1px);
+        }
+      }
+    }
+
+    // Rounded Image Container
+    .milestones-card-image {
+      position: relative;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 16px;
+      overflow: hidden;
+      background-color: #f1f5f9;
+
+      figure {
+        margin: 0;
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      &:hover img {
+        transform: scale(1.03);
+      }
+    }
+
+    // Card Content Block
+    .milestones-card-body {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      padding-top: 0.75rem;
+
+      .title {
+        color: #ffffff;
+        line-height: 1.3;
+      }
+
+      .subtitle {
+        color: #ffffff !important;
+        line-height: 1.55;
+        font-weight: 400;
+      }
+    }
+  }
+}

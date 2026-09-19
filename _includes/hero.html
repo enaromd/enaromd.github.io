@@ -1,0 +1,72 @@
+{% assign hero = page.hero %}
+
+<section class="hero-clean-section" style="background-image: linear-gradient(rgba(0, 49, 82, 0.95), rgba(0, 49, 82, 0.95)), url('{{ hero.bg_image | relative_url }}');">
+  <div class="container">
+    
+    <!-- Top Split Section -->
+    <div class="columns is-vcentered hero-main-split">
+      
+      <!-- Left Column: Narrative Copy & CTAs -->
+      <div class="column is-6-desktop">
+        {% if hero.title %}
+          <h1 class="title is-2 hero-title">
+            {{ hero.title }}
+          </h1>
+        {% endif %}
+
+        {% if hero.description %}
+          <p class="subtitle is-5 hero-description mt-3">
+            {{ hero.description }}
+          </p>
+        {% endif %}
+
+        {% if hero.primary_cta or hero.secondary_cta %}
+          <div class="buttons mt-5">
+            {% if hero.primary_cta %}
+              <a href="{{ hero.primary_cta.url | relative_url }}" class="button is-primary-btn">
+                <span class="icon is-small">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </span>
+                <span>{{ hero.primary_cta.text }}</span>
+              </a>
+            {% endif %}
+            {% if hero.secondary_cta %}
+              <a href="{{ hero.secondary_cta.url | relative_url }}" class="button is-outlined-btn">
+                <span class="icon is-small">
+                  <i class="fa-solid fa-folder-open"></i>
+                </span>
+                <span>{{ hero.secondary_cta.text }}</span>
+              </a>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+
+      <!-- Right Column: Portrait -->
+      <div class="column is-5-desktop is-offset-1-desktop">
+        <div class="hero-portrait-wrapper">
+          {% if hero.image %}
+            <img src="{{ hero.image | relative_url }}" alt="{{ hero.image_alt | default: page.title }}" class="hero-portrait-img" />
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Spanning Section: Image-Only Badge Cards -->
+    {% if hero.badges %}
+      <div class="hero-bottom-badges mt-5">
+        <p class="badges-header">CERTIFICATION BADGES</p>
+
+        <div class="badge-chips-flex">
+          {% for badge in hero.badges %}
+            <a href="{{ badge.url }}" target="_blank" rel="noopener noreferrer" class="white-badge-card" aria-label="{{ badge.alt | default: 'Certification Badge' }}">
+              <img src="{{ badge.image | relative_url }}" alt="{{ badge.alt | default: 'Certification Badge' }}" />
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+  </div>
+</section>

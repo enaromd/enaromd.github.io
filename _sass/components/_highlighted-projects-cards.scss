@@ -1,0 +1,83 @@
+// Section Wrapper with Custom Background Color
+.highlighted-projects-cards-section {
+  background-color: #003152; // Custom section background color
+  border-radius: 28px; // Large outer corner radius
+  padding: 3rem !important; // Internal breathing room for headers and grid
+  margin: 2rem;
+  // padding-top: 6rem !important;
+  // padding-bottom: 7rem !important;
+
+  .highlighted-projects-heading {
+    color: #ffffff; // Target title color
+  }
+
+  .highlighted-projects-description{
+    color: #ffffff; // Target description color
+  }
+
+  .highlighted-project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    // Rounded Image Container
+    .highlighted-project-card-image {
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      overflow: hidden;
+      background-color: #f1f5f9;
+
+      figure {
+        margin: 0;
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      &:hover img {
+        transform: scale(1.03);
+      }
+    }
+
+    // Card Content Block
+    .highlighted-project-card-body {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      padding-top: 0.75rem;
+
+      .title {
+        color: #ffffff;
+        line-height: 1.3;
+      }
+
+      .subtitle {
+        color: #ffffff !important;
+        line-height: 1.55;
+        font-weight: 400;
+      }
+
+      // Anchors action buttons to the bottom regardless of description length
+      .buttons {
+        margin-top: auto;
+        padding-top: 0.75rem;
+        gap: 0.5rem;
+
+        .button {
+          border-radius: 8px;
+          font-weight: 500;
+          transition: background-color 0.2s ease, transform 0.15s ease;
+
+          &:hover {
+            transform: translateY(-1px);
+          }
+        }
+      }
+    }
+  }
+}

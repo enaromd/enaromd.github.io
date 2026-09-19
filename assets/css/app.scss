@@ -1,0 +1,29 @@
+---
+---
+$primary: #003152;
+
+// Remove top/bottom padding and max-width limits from the theme's outer wrapper
+body > section.section {
+  padding: 0 !important;
+
+  > .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+
+    > .columns > main#main-content {
+      padding: 0 !important;
+
+      > .content {
+        margin: 0 !important;
+      }
+    }
+  }
+}
+
+// Import Main CSS file from theme
+@import "components/hero";
+@import "components/skill-cards";
+@import "components/highlighted-projects-cards";
+@import "components/milestones-cards";
+@import "main";
