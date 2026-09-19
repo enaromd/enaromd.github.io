@@ -2,25 +2,36 @@
 layout: page
 title: "Enyel Rodríguez"
 hide_hero: true
+
 hero:
   bg_image: "/assets/images/hero-bg.png"
   title: "Beyond the stethoscope:<br>Evidence with data"
   description: "I am Enyel Rodríguez, MD and Clinical Data Analyst. I bridge the critical gap between front-line clinical workflows and rigorous biostatistics, engineering validated clinical indices into Real-World Data pipelines for evidence-based outcomes."
+
   primary_cta:
     text: "Get in touch"
     url: "#contact"
   secondary_cta:
     text: "View Projects"
     url: "#projects"
-  image: "/assets/images/hero_profile_en.png"
+  
+  image: "/assets/images/hero_squared.png"
   image_alt: "Dr. Enyel Rodríguez"
+
+  languages:
+    - flag_svg: "/assets/images/flags/us.svg"
+      text: "EN (C2)"
+    - flag_svg: "/assets/images/flags/es.svg"
+      text: "ES (Native)"
 
   badges_heading: "CERTIFICATION BADGES"
   badges:
     - image: "/assets/images/badge-meta-database-engineer.png"
       url: "https://www.credly.com/badges/b87a61e6-0b8d-41ff-b8a5-f52833fca99f"
+      alt: "Meta Database Engineer Certificate"
     - image: "/assets/images/badge-google-analytics.png"
       url: "https://www.credly.com/badges/5d5f46ce-cd86-4966-9dc2-115d5568d9b1"
+      alt: "Google Data Analytics Certificate"
 
 skills_heading: "Core Competencies"
 skills_description: "Bridging clinical medicine with biostatistics and data engineering to build actionable health insights."

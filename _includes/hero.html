@@ -1,72 +1,80 @@
 {% assign hero = page.hero %}
 
-<section class="hero-clean-section" style="background-image: linear-gradient(rgba(0, 49, 82, 0.95), rgba(0, 49, 82, 0.95)), url('{{ hero.bg_image | relative_url }}');">
+<section class="hero" style="background-image: linear-gradient(rgba(0, 49, 82, 0.92), rgba(0, 49, 82, 0.92)), url('{{ hero.bg_image | relative_url }}');">
   <div class="container">
-    
-    <!-- Top Split Section -->
-    <div class="columns is-vcentered hero-main-split">
+    <div class="columns is-vcentered">
       
-      <!-- Left Column: Narrative Copy & CTAs -->
+      <!-- Left Column: Copy, CTAs, and Credential Bar -->
       <div class="column is-6-desktop">
+        {% if hero.tagline %}
+          <span class="hero-tagline">{{ hero.tagline }}</span>
+        {% endif %}
+
         {% if hero.title %}
-          <h1 class="title is-2 hero-title">
-            {{ hero.title }}
-          </h1>
+          <h1 class="hero-title">{{ hero.title }}</h1>
         {% endif %}
 
         {% if hero.description %}
-          <p class="subtitle is-5 hero-description mt-3">
-            {{ hero.description }}
-          </p>
+          <p class="hero-description">{{ hero.description }}</p>
         {% endif %}
 
+        <!-- CTA Buttons -->
         {% if hero.primary_cta or hero.secondary_cta %}
-          <div class="buttons mt-5">
+          <div class="hero-actions">
             {% if hero.primary_cta %}
-              <a href="{{ hero.primary_cta.url | relative_url }}" class="button is-primary-btn">
-                <span class="icon is-small">
-                  <i class="fa-solid fa-paper-plane"></i>
-                </span>
-                <span>{{ hero.primary_cta.text }}</span>
-              </a>
+              <a href="{{ hero.primary_cta.url | relative_url }}" class="btn btn-primary">{{ hero.primary_cta.text }}</a>
             {% endif %}
             {% if hero.secondary_cta %}
-              <a href="{{ hero.secondary_cta.url | relative_url }}" class="button is-outlined-btn">
-                <span class="icon is-small">
-                  <i class="fa-solid fa-folder-open"></i>
-                </span>
-                <span>{{ hero.secondary_cta.text }}</span>
-              </a>
+              <a href="{{ hero.secondary_cta.url | relative_url }}" class="btn btn-secondary">{{ hero.secondary_cta.text }}</a>
             {% endif %}
+          </div>
+        {% endif %}
+
+        <!-- Integrated Content Column Badges -->
+        {% if hero.badges %}
+          <div class="content-badge-strip">
+            {% if hero.badges_heading %}
+              <span class="strip-label">{{ hero.badges_heading }}</span>
+            {% endif %}
+            <div class="badge-row">
+              {% for badge in hero.badges %}
+                <div class="badge-card">
+                  {% if badge.url %}
+                    <a href="{{ badge.url }}" target="_blank" rel="noopener noreferrer">
+                      <img src="{{ badge.image | relative_url }}" alt="{{ badge.alt | default: 'Certification Badge' }}" />
+                    </a>
+                  {% else %}
+                    <img src="{{ badge.image | relative_url }}" alt="{{ badge.alt | default: 'Certification Badge' }}" />
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
           </div>
         {% endif %}
       </div>
 
-      <!-- Right Column: Portrait -->
+      <!-- Right Column: Framed Card Portrait -->
       <div class="column is-5-desktop is-offset-1-desktop">
-        <div class="hero-portrait-wrapper">
+        <div class="image-card">
           {% if hero.image %}
-            <img src="{{ hero.image | relative_url }}" alt="{{ hero.image_alt | default: page.title }}" class="hero-portrait-img" />
+            <img src="{{ hero.image | relative_url }}" alt="{{ hero.image_alt | default: page.title }}" class="card-portrait" />
+          {% endif %}
+          
+          {% if hero.languages %}
+            <div class="floating-lang-tag">
+              {% for lang in hero.languages %}
+                <div class="lang-item">
+                  {% if lang.flag_svg %}
+                    <img src="{{ lang.flag_svg | relative_url }}" alt="" class="flag-icon" />
+                  {% endif %}
+                  <span>{{ lang.text }}</span>
+                </div>
+              {% endfor %}
+            </div>
           {% endif %}
         </div>
       </div>
 
     </div>
-
-    <!-- Bottom Spanning Section: Image-Only Badge Cards -->
-    {% if hero.badges %}
-      <div class="hero-bottom-badges mt-5">
-        <p class="badges-header">CERTIFICATION BADGES</p>
-
-        <div class="badge-chips-flex">
-          {% for badge in hero.badges %}
-            <a href="{{ badge.url }}" target="_blank" rel="noopener noreferrer" class="white-badge-card" aria-label="{{ badge.alt | default: 'Certification Badge' }}">
-              <img src="{{ badge.image | relative_url }}" alt="{{ badge.alt | default: 'Certification Badge' }}" />
-            </a>
-          {% endfor %}
-        </div>
-      </div>
-    {% endif %}
-
   </div>
 </section>
