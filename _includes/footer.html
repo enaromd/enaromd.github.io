@@ -1,0 +1,129 @@
+{% assign current_lang = 'en' %}
+{% if page.lang == 'es' or page.url contains '/es/' %}
+  {% assign current_lang = 'es' %}
+{% endif %}
+
+{% assign tagline_key = 'tagline_' | append: current_lang %}
+{% assign copyright_key = 'copyright_' | append: current_lang %}
+
+<footer class="custom-footer">
+  <div class="container px-4">
+    
+    <!-- Main columns grid -->
+    <div class="columns is-desktop is-variable is-6 mb-5">
+      
+      <!-- Column 1: Branding (Pushed to left) -->
+      <div class="column is-5-desktop is-12-tablet footer-brand-col">
+        {% if site.data.footer.branding.logo %}
+          <img src="{{ site.data.footer.branding.logo | relative_url }}" 
+               alt="{{ site.data.footer.branding.title }}" 
+               class="footer-logo mb-3">
+        {% endif %}
+        <h3 class="footer-brand-title mb-2">{{ site.data.footer.branding.title }}</h3>
+        <p class="footer-tagline">{{ site.data.footer.branding[tagline_key] | default: site.data.footer.branding.tagline_en }}</p>
+      </div>
+
+      <!-- Content Columns: Portfolio & Standalone About (Clustered towards right) -->
+      {% for col in site.data.footer.columns %}
+        {% assign col_title_key = 'title_' | append: current_lang %}
+        {% assign col_title = col[col_title_key] | default: col.title_en %}
+
+        <div class="column is-2-desktop is-6-tablet is-12-mobile">
+          <h4 class="footer-col-title mb-3">
+            {% if col.link %}
+              <a href="{{ col.link | relative_url }}" class="footer-title-link">{{ col_title }}</a>
+            {% else %}
+              {{ col_title }}
+            {% endif %}
+          </h4>
+
+          {% if col.links and col.links.size > 0 %}
+            <ul class="footer-links-list">
+              {% for link in col.links %}
+                {% assign link_name_key = 'name_' | append: current_lang %}
+                {% assign link_name = link[link_name_key] | default: link.name_en %}
+                <li>
+                  <a href="{{ link.url | relative_url }}">{{ link_name }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      {% endfor %}
+
+      <!-- Column 4: CTA & Language Switcher (Right Edge) -->
+      <div class="column is-3-desktop is-12-tablet footer-action-col">
+        <div class="footer-lang-switcher">
+          <span class="footer-col-title is-block mb-2">
+            {% if current_lang == 'es' %}Idioma{% else %}Language{% endif %}
+          </span>
+          <div class="lang-buttons">
+            <!-- English Button -->
+            <a href="#" 
+               class="lang-btn lang-opt {% if current_lang == 'en' %}is-active{% endif %}" 
+               data-lang="en">
+              <img src="{{ '/assets/images/flags/en.svg' | relative_url }}" 
+                   alt="EN" 
+                   class="flag-icon mr-2">
+              <span>EN</span>
+            </a>
+
+            <!-- Spanish Button -->
+            <a href="#" 
+               class="lang-btn lang-opt {% if current_lang == 'es' %}is-active{% endif %}" 
+               data-lang="es">
+              <img src="{{ '/assets/images/flags/es.svg' | relative_url }}" 
+                   alt="ES" 
+                   class="flag-icon mr-2">
+              <span>ES</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright Row (Outside columns) -->
+    <div class="footer-bottom">
+      {% assign current_year = 'now' | date: '%Y' %}
+      {% assign raw_copyright = site.data.footer[copyright_key] | default: site.data.footer.copyright_en %}
+      
+      <p class="footer-copyright">
+        {{ raw_copyright | replace: '%Y', current_year }}
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  // Shared Client-Side Language Switcher Handler
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.footer-lang-switcher .lang-opt').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetLang = this.getAttribute('data-lang');
+        const currentUrl = window.location.pathname;
+        let newUrl;
+
+        if (targetLang === 'en') {
+          if (currentUrl === '/es' || currentUrl === '/es/') {
+            newUrl = '/';
+          } else {
+            newUrl = currentUrl.replace('/es/', '/');
+          }
+        } else {
+          if (currentUrl.includes('/es/') || currentUrl === '/es') {
+            newUrl = currentUrl;
+          } else if (currentUrl === '/') {
+            newUrl = '/es/';
+          } else {
+            newUrl = '/es' + currentUrl;
+          }
+        }
+
+        window.location.href = newUrl.replace(/\/+/g, '/');
+      });
+    });
+  });
+</script>

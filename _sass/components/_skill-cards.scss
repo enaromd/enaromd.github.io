@@ -1,12 +1,11 @@
 // Section Wrapper with Custom Background Color
 .skill-cards-section {
-  // background-color: #f2f2f2; // Custom section background color
   padding: 4rem 1.5rem;
-  padding-top: 7rem !important;
-  padding-bottom: 6rem !important;
+  padding-bottom: 4rem !important;
+  margin-top: 4rem;
 
   .skills-heading {
-    color: #003152; // Target title color
+    color: #003152;
   }
 }
 
@@ -26,16 +25,29 @@
   }
 }
 
-// Avatar Styles & Gradients
-.icon {
+// Avatar Container (Handles both FontAwesome and PNGs)
+.card-icon-avatar {
   width: 110px;
   height: 110px;
   border-radius: 50%;
   margin: 0 auto;
+  background-color: #ffffff; // White background behind avatar/icon
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 
-  // If using real images instead of gradients, uncomment below:
-  // img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+  // Font Awesome icon style
+  i {
+    color: #003152; // Matches primary brand heading color
+  }
+
+  // Custom PNG image style
+  img {
+    height: 50%;
+    object-fit: cover; // Use 'contain' if your PNG has internal padding
+  }
 }
 
 // Typography overrides

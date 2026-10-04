@@ -1,0 +1,105 @@
+{% assign data = include.data %}
+
+{% if data %}
+<section class="gallery-section-wrapper">
+  <div class="container">
+
+    <!-- Section Header -->
+    {% if data.heading or data.description %}
+      <div class="has-text-centered mb-5">
+        {% if data.heading %}
+          <h2 class="title is-3">{{ data.heading }}</h2>
+        {% endif %}
+        {% if data.description %}
+          <p class="subtitle is-6 has-text-grey mt-2">{{ data.description }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <!-- Gallery Grid -->
+    <div class="columns is-multiline">
+      {% for item in data.items %}
+        <div class="column is-12-mobile is-6-tablet is-4-desktop">
+          <div class="card gallery-card js-modal-trigger" 
+               data-target="gallery-lightbox" 
+               data-image="{{ item.image | relative_url }}" 
+               data-caption="{{ item.caption | escape }}"
+               data-alt="{{ item.alt | escape }}">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: 'Evidence figure' }}" loading="lazy">
+                <div class="gallery-overlay">
+                  <span class="icon is-medium">
+                    <i class="fas fa-search-plus"></i>
+                  </span>
+                </div>
+              </figure>
+            </div>
+            {% if item.caption %}
+              <div class="card-content p-3">
+                <p class="is-size-7 has-text-grey-dark line-clamp-2">{{ item.caption }}</p>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+<!-- Bulma Lightbox Modal Container -->
+<div id="gallery-lightbox" class="modal gallery-modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <figure class="image">
+      <img id="lightbox-img" src="" alt="">
+    </figure>
+    <figcaption id="lightbox-caption" class="has-text-white has-text-centered is-size-6 mt-3 px-3"></figcaption>
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<!-- Modal Controller Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('gallery-lightbox');
+    const modalImg = document.getElementById('lightbox-img');
+    const modalCaption = document.getElementById('lightbox-caption');
+    const modalTriggers = document.querySelectorAll('.js-modal-trigger');
+    const modalCloders = modal ? modal.querySelectorAll('.modal-background, .modal-close') : [];
+
+    function openModal($trigger) {
+      const imageSrc = $trigger.dataset.image;
+      const captionText = $trigger.dataset.caption;
+      const altText = $trigger.dataset.alt;
+
+      modalImg.src = imageSrc;
+      modalImg.alt = altText || '';
+      modalCaption.textContent = captionText || '';
+      modal.classList.add('is-active');
+      document.documentElement.classList.add('is-clipped'); // Prevents background scroll
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-active');
+      document.documentElement.classList.remove('is-clipped');
+      modalImg.src = '';
+    }
+
+    modalTriggers.forEach(($trigger) => {
+      $trigger.addEventListener('click', () => openModal($trigger));
+    });
+
+    modalCloders.forEach(($el) => {
+      $el.addEventListener('click', closeModal);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === "Escape" && modal.classList.contains('is-active')) {
+        closeModal();
+      }
+    });
+  });
+</script>
+{% endif %}

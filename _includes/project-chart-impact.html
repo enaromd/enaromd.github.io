@@ -1,0 +1,55 @@
+{% assign data = include.data %}
+
+{% if data %}
+  <div class="dark-showcase-wrapper">
+    <div class="dark-showcase-container">
+      
+      <!-- Section Title & Subtitle -->
+      {% if data.heading or data.description %}
+        <div class="showcase-header">
+          {% if data.heading %}
+            <h2 class="showcase-title">{{ data.heading }}</h2>
+          {% endif %}
+          {% if data.description %}
+            <p class="showcase-description">{{ data.description }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <!-- White Chart Card (Customizable Max-Width) -->
+      {% if data.image %}
+        <div class="showcase-chart-card">
+          <img src="{{ data.image | relative_url }}" alt="{{ data.alt | default: data.heading | strip_html }}">
+        </div>
+      {% endif %}
+
+      <!-- Chart Caption -->
+      {% if data.caption %}
+        <p class="showcase-caption">
+          {{ data.caption }}
+        </p>
+      {% endif %}
+
+      <!-- Dynamic Quantifiable Metrics Grid (Supports 3, 4, or 5 Columns) -->
+      {% if data.metrics %}
+        <div class="showcase-metrics-grid" style="--cols: {{ data.metrics.size | default: 4 }};">
+          {% for item in data.metrics %}
+            <div class="showcase-metric-col">
+              <div class="metric-val">
+                {{ item.value }}
+                {% if item.unit %}<span class="metric-unit">{{ item.unit }}</span>{% endif %}
+              </div>
+              {% if item.label %}
+                <div class="metric-lbl">{{ item.label }}</div>
+              {% endif %}
+              {% if item.detail %}
+                <p class="metric-det">{{ item.detail }}</p>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+{% endif %}

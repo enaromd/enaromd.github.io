@@ -1,0 +1,19 @@
+{% assign splash_title = include.title | default: page.splash_title | default: page.title %}
+{% assign splash_text = include.text | default: page.splash_text | default: page.description %}
+{% assign splash_bg = include.bg_image | default: page.splash_image | default: '/assets/images/splash-bg.jpg' %}
+
+<section class="page-splash" style="background-image: url('{{ splash_bg | relative_url }}');">
+  <div class="page-splash-overlay"></div>
+  <div class="container px-4">
+    <div class="page-splash-content">
+      <h1 class="title is-2 has-text-white has-text-weight-bold mb-4">
+        {{ splash_title }}
+      </h1>
+      {% if splash_text %}
+        <div class="content has-text-white-ter is-size-5 splash-description">
+          {{ splash_text | markdownify }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

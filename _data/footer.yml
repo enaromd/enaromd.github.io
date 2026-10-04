@@ -1,0 +1,23 @@
+branding:
+  logo: "/assets/images/logo.png"
+  title: "Enyel A. Rodríguez G."
+  tagline_en: "Empowering high-impact clinical decisions through data."
+  tagline_es: "Potenciando decisiones de alto impacto mediante datos."
+
+columns:
+  - title_en: "Portfolio"
+    title_es: "Portafolio"
+    links:
+      - name_en: "Projects"
+        name_es: "Proyectos"
+        url: "/portfolio/#projects"
+      - name_en: "Certifications"
+        name_es: "Certificaciones"
+        url: "/portfolio/#certifications"
+
+  - title_en: "About"
+    title_es: "Sobre mí"
+    link: "/about/"
+
+copyright_en: "© %Y Enyel Rodríguez. Powered by Jekyll and Bulma"
+copyright_es: "© %Y Enyel Rodríguez. Desarrollado con Jekyll y Bulma"

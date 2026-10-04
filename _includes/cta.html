@@ -1,0 +1,29 @@
+{% if page.cta %}
+<section class="section cta-banner-section">
+  <div class="container">
+    <div class="cta-card" style="background-image: url('{{ page.cta.bg_image | relative_url }}');">
+      <div class="cta-overlay"></div>
+      <div class="cta-content has-text-centered">
+        {% if page.cta.heading %}
+          <h2 class="title is-2 cta-heading mb-4">{{ page.cta.heading }}</h2>
+        {% endif %}
+
+        {% if page.cta.description %}
+          <p class="subtitle is-5 cta-description mb-6">{{ page.cta.description }}</p>
+        {% endif %}
+
+        {% if page.cta.button %}
+          <div class="cta-action">
+            <a href="{{ page.cta.button.url | relative_url }}" class="button cta-pill-btn">
+              <span class="icon is-small mr-1">
+                <i class="fa-solid fa-paper-plane"></i>
+              </span>
+              <span>{{ page.cta.button.text }}</span>
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}

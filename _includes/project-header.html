@@ -1,0 +1,39 @@
+{% assign data = include.data | default: page.article_header %}
+
+{% if data %}
+  <div class="project-header-wrapper">
+    <header class="project-header-content">
+      
+      <!-- Red H1 Main Title -->
+      {% if data.title %}
+        <h1 class="project-title">
+          {{ data.title }}
+        </h1>
+      {% endif %}
+
+      <!-- Bottom Line Paragraph -->
+      {% if data.bottom_line %}
+        <p class="project-bottom-line">
+          <strong class="bottom-line-label">{{ data.bottom_line.label }}:</strong> 
+          {{ data.bottom_line.text }}
+        </p>
+      {% endif %}
+
+      <!-- Tech Stack / Strategy Pills -->
+      {% if data.tech_stack.items %}
+        <div class="project-pills-container">
+          {% if data.tech_stack.label %}
+            <span class="pills-label">{{ data.tech_stack.label }}:</span>
+          {% endif %}
+          
+          {% for item in data.tech_stack.items %}
+            <span class="pill-badge">
+              {{ item }}
+            </span>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+    </header>
+  </div>
+{% endif %}

@@ -1,31 +1,41 @@
+{% assign skills_data = include.data | default: page %}
+
 <section class="section skill-cards-section">
     <div class="container">
 
-        {% if page.skills_heading %}
+        {% if skills_data.skills_heading %}
             <div class="has-text-centered mb-6">
-                <h2 class="title is-2 mb-4 skills-heading">{{ page.skills_heading }}</h2>
-                {% if page.skills_description %}
-                <p class="subtitle is-5 has-text-grey">{{ page.skills_description }}</p>
+                <h2 class="title is-3 mb-4 skills-heading">{{ skills_data.skills_heading }}</h2>
+                {% if skills_data.skills_description %}
+                <p class="subtitle is-5 has-text-grey">{{ skills_data.skills_description }}</p>
                 {% endif %}
             </div>
         {% endif %}
 
         <div class="columns is-multiline is-desktop is-centered">
             
-            {% for item in page.skills %}
+            {% for item in skills_data.skills %}
             <div class="column is-4-desktop is-12-tablet">
                 <div class="icon-card">
                     <div class="has-text-centered mb-4">
-                        <span class="icon is-large has-text-primary">
-                            <i class="{{ item.icon }} fa-2x"></i>
-                        </span>
+                        <div class="card-icon-avatar">
+                            {% if item.icon %}
+                                <img src="{{ item.icon | relative_url }}" alt="{{ item.title }}">
+                            {% endif %}
+                        </div>
                     </div>
 
                     <h3 class="title is-3 has-text-weight-bold mb-5 card-title">{{ item.title }}</h3>
                     
-                    <p class="subtitle is-6 has-text-grey mb-4 card-content">{{ item.one }}</p>
-                    <p class="subtitle is-6 has-text-grey mb-4 card-content">{{ item.two }}</p>
-                    <p class="subtitle is-6 has-text-grey mb-4 card-content">{{ item.three }}</p>
+                    {% if item.one %}
+                        <p class="subtitle is-6 has-text-grey mb-4 card-content">{{ item.one }}</p>
+                    {% endif %}
+                    {% if item.two %}
+                        <p class="subtitle is-6 has-text-grey mb-4 card-content">{{ item.two }}</p>
+                    {% endif %}
+                    {% if item.three %}
+                        <p class="subtitle is-6 has-text-grey mb-4 card-content">{{ item.three }}</p>
+                    {% endif %}
                 </div>
             </div>
             {% endfor %}

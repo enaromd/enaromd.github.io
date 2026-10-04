@@ -1,0 +1,16 @@
+{% assign sec_title = include.title | default: include.data.title %}
+{% assign sec_content = include.content | default: include.data.content %}
+
+{% if sec_title or sec_content %}
+  <div class="project-section-wrapper">
+    <section class="project-section-container">
+      {% if sec_title %}
+        <h2 class="project-section-title">{{ sec_title }}</h2>
+      {% endif %}
+      
+      {% if sec_content %}
+        <p class="project-section-body">{{ sec_content }}</p>
+      {% endif %}
+    </section>
+  </div>
+{% endif %}

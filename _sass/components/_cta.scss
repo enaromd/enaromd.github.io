@@ -1,0 +1,99 @@
+// Centered Banner CTA Component
+.cta-banner-section {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+
+  .cta-card {
+    position: relative;
+    border-radius: 28px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4.5rem 2.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // Dark overlay ensuring text contrast over custom images
+    .cta-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0, 49, 82, 0.72) 0%, rgba(0, 20, 40, 0.88) 100%);
+      z-index: 1;
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+      margin: 0 auto;
+
+      .cta-heading {
+        color: #ffffff !important;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+      }
+
+      .cta-description {
+        color: rgba(255, 255, 255, 0.9) !important;
+        font-size: 1.15rem;
+        line-height: 1.6;
+        font-weight: 400;
+      }
+
+      // Action Button (styled to match .nav-cta-btn)
+      .cta-pill-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #b80f0a !important;
+        border: 1px solid #b80f0a !important;
+        color: #ffffff !important;
+        font-size: 0.95rem;
+        font-weight: 600;
+        padding: 0.65rem 1.5rem;
+        border-radius: 8px; // Matches .nav-cta-btn
+        transition: all 0.2s ease;
+
+        &,
+        span,
+        i,
+        .icon {
+          color: #ffffff !important;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: #880b07 !important;
+          border-color: #880b07 !important;
+          transform: translateY(-1px);
+        }
+      }
+    }
+  }
+
+  // Mobile Viewports
+  @media screen and (max-width: 768px) {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+
+    .cta-card {
+      padding: 3.5rem 1.5rem;
+      border-radius: 20px;
+
+      .cta-content {
+        .cta-heading {
+          font-size: 1.85rem !important;
+        }
+
+        .cta-description {
+          font-size: 1rem !important;
+        }
+      }
+    }
+  }
+}

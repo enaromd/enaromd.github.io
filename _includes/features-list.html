@@ -1,0 +1,13 @@
+<section class="section feature-cards-section px-4 px-6-desktop">
+  <div class="container">
+    {% for item in page.features %}
+      {% assign is_even = forloop.index0 | modulo: 2 %}
+      
+      {% if is_even == 0 %}
+        {% include feature-right.html data=item %}
+      {% else %}
+        {% include feature-left.html data=item %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

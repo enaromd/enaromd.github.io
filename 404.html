@@ -1,25 +1,79 @@
 ---
-permalink: /404.html
 layout: page
+permalink: /404.html
+hide_hero: true
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      
+      <!-- Big Minimal 404 Header -->
+      <h1 class="title is-size-1 has-text-weight-bold mb-2" style="font-size: 5rem !important;">
+        404
+      </h1>
+      
+      <!-- Subtitle -->
+      <h2 id="404-subtitle" class="subtitle is-4 has-text-weight-semibold mb-4">
+        Page Not Found
+      </h2>
 
-<div class="container">
-  <h1>404</h1>
+      <!-- Description -->
+      <p id="404-desc" class="has-text-grey-light mb-6">
+        The requested page could not be found!
+      </p>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+      <!-- Minimal Return Button -->
+      <a id="404-btn" href="{{ '/' | relative_url }}" class="button nav-cta-btn">
+        <span>Go Back Home</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Detect if the user landed on a broken Spanish path
+    const isSpanish = window.location.pathname.startsWith('/es/') || window.location.pathname === '/es';
+
+    if (isSpanish) {
+      // 1. Update 404 Body Copy
+      const subtitle = document.getElementById('404-subtitle');
+      const desc = document.getElementById('404-desc');
+      const btn = document.getElementById('404-btn');
+
+      if (subtitle) subtitle.textContent = 'Página no encontrada';
+      if (desc) desc.textContent = 'La página solicitada no se pudo encontrar.';
+      if (btn) {
+        btn.querySelector('span').textContent = 'Ir al inicio';
+        btn.setAttribute('href', '{{ "/es/" | relative_url }}');
+      }
+
+      // 2. Update Header Main Label & CTA Button
+      const navLangLabel = document.querySelector('.lang-switcher .navbar-link span');
+      const navLangImg = document.querySelector('.lang-switcher .navbar-link img');
+      const navCtaBtn = document.querySelector('.nav-cta-btn span:last-child');
+      
+      if (navLangLabel) navLangLabel.textContent = 'ES';
+      if (navLangImg) navLangImg.src = '{{ "/assets/images/flags/es.svg" | relative_url }}';
+      if (navCtaBtn) navCtaBtn.textContent = 'Contáctame';
+
+      // 3. Update Navbar Dropdown Active Item Highlight
+      document.querySelectorAll('.lang-switcher .navbar-dropdown .lang-opt').forEach(el => {
+        el.classList.remove('is-active');
+        if (el.getAttribute('data-lang') === 'es') {
+          el.classList.add('is-active');
+        }
+      });
+
+      // 4. Update Footer Language Switcher Active State
+      document.querySelectorAll('.footer-lang-switcher .lang-btn').forEach(el => {
+        el.classList.remove('is-active');
+        if (el.getAttribute('data-lang') === 'es') {
+          el.classList.add('is-active');
+        }
+      });
+    }
+  });
+</script>

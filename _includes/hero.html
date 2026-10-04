@@ -22,10 +22,20 @@
         {% if hero.primary_cta or hero.secondary_cta %}
           <div class="hero-actions">
             {% if hero.primary_cta %}
-              <a href="{{ hero.primary_cta.url | relative_url }}" class="btn btn-primary">{{ hero.primary_cta.text }}</a>
+              <a href="{{ hero.primary_cta.url | relative_url }}" class="btn btn-primary">
+                <span class="icon is-small mr-1">
+                  <i class="{{ hero.primary_cta.icon | default: 'fa-solid fa-paper-plane' }}"></i>
+                </span>
+                <span>{{ hero.primary_cta.text }}</span>
+              </a>
             {% endif %}
             {% if hero.secondary_cta %}
-              <a href="{{ hero.secondary_cta.url | relative_url }}" class="btn btn-secondary">{{ hero.secondary_cta.text }}</a>
+              <a href="{{ hero.secondary_cta.url | relative_url }}" class="btn btn-secondary">
+                <span class="icon is-small mr-1">
+                  <i class="{{ hero.secondary_cta.icon | default: 'fa-solid fa-folder-open' }}"></i>
+                </span>
+                <span>{{ hero.secondary_cta.text }}</span>                
+              </a>
             {% endif %}
           </div>
         {% endif %}
@@ -38,7 +48,7 @@
             {% endif %}
             <div class="badge-row">
               {% for badge in hero.badges %}
-                <div class="badge-card">
+                <div class="badge-card" data-tooltip="{{ badge.tooltip | default: badge.alt }}">
                   {% if badge.url %}
                     <a href="{{ badge.url }}" target="_blank" rel="noopener noreferrer">
                       <img src="{{ badge.image | relative_url }}" alt="{{ badge.alt | default: 'Certification Badge' }}" />

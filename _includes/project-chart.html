@@ -1,0 +1,53 @@
+{% assign data = include.data | default: page.figure_block %}
+
+{% if data %}
+  <div class="figure-viewer-wrapper">
+    <div class="figure-viewer-container">
+      
+      <!-- Centered Header & Description -->
+      {% if data.heading or data.description %}
+        <div class="section-header-block">
+          {% if data.heading %}
+            <h2 class="section-title">{{ data.heading }}</h2>
+          {% endif %}
+          {% if data.description %}
+            <p class="section-description">{{ data.description }}</p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <!-- Image Card -->
+      {% if data.image %}
+        <div class="figure-card">
+          {% if data.link %}
+            <a href="{{ data.link }}" target="_blank" rel="noopener noreferrer" class="figure-link">
+              <img src="{{ data.image | relative_url }}" alt="{{ data.alt | default: data.caption | strip_html }}">
+            </a>
+          {% else %}
+            <img src="{{ data.image | relative_url }}" alt="{{ data.alt | default: data.caption | strip_html }}">
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if data.dashboard_vertical %}
+        <div class="dashboard-vertical">
+          {% if data.link %}
+            <a href="{{ data.link }}" target="_blank" rel="noopener noreferrer" class="figure-link">
+              <img src="{{ data.dashboard_vertical | relative_url }}" alt="{{ data.alt | default: data.caption | strip_html }}">
+            </a>
+          {% else %}
+            <img src="{{ data.dashboard_vertical | relative_url }}" alt="{{ data.alt | default: data.caption | strip_html }}">
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <!-- Caption -->
+      {% if data.caption %}
+        <p class="figure-caption">
+          {{ data.caption }}
+        </p>
+      {% endif %}
+
+    </div>
+  </div>
+{% endif %}

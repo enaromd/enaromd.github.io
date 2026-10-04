@@ -1,0 +1,263 @@
+// Component: Contact & Social Section
+
+.contact-social-section {
+  // DESKTOP BASE ( > 1024px )
+  
+  // Custom Section Spacing (Adjust margins/paddings here)
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  padding: 5rem 1.5rem;
+  width: 100%;
+
+  .contact-social-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 4.5rem;
+    align-items: flex-start;
+  }
+
+  // Left Column: Form Layout
+  .contact-form-column {
+    flex: 1 1 60%;
+  }
+
+  .contact-header {
+    margin-bottom: 2rem;
+  }
+
+  .contact-title {
+    color: #003152 !important;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .contact-subtitle {
+    color: #64748b;
+    font-size: 1.05rem;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+
+    .form-group {
+      flex: 1;
+    }
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form-label {
+    color: #334155;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    color: #0f172a;
+    background-color: #ffffff;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &::placeholder {
+      color: #cbd5e1;
+    }
+
+    &:focus {
+      border-color: #003152;
+      box-shadow: 0 0 0 3px rgba(0, 49, 82, 0.1);
+    }
+  }
+
+  .form-textarea {
+    resize: vertical;
+    min-height: 140px;
+  }
+
+  .form-error {
+    display: none;
+    color: #b80f0a;
+    font-size: 0.85rem;
+    margin-top: 0.4rem;
+    font-weight: 500;
+  }
+
+  .contact-submit-btn {
+    width: 100%;
+    background-color: #003152;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    margin-top: 0.5rem;
+
+    &:hover {
+      background-color: #b80f0a;
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  // Right Column: Vertical Social Stack
+  .contact-social-column {
+    flex: 0 0 320px;
+    padding-top: 0.5rem;
+  }
+
+  .social-column-title {
+    color: #003152 !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem !important;
+    letter-spacing: -0.01em;
+  }
+
+  .social-vertical-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .social-vertical-card {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.1rem 1.25rem;
+    border-radius: 16px;
+    background-color: #f8fafc;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    text-decoration: none !important;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      background-color: #ffffff;
+      transform: translateX(4px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+
+      .social-card-icon {
+        color: #b80f0a;
+      }
+    }
+  }
+
+  .social-card-icon {
+    font-size: 1.8rem;
+    color: #003152;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    transition: color 0.2s ease;
+
+    svg, i {
+      fill: currentColor;
+    }
+  }
+
+  .social-card-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-card-handle {
+    color: #0f172a;
+    font-weight: 700;
+    font-size: 1.05rem;
+    line-height: 1.2;
+  }
+
+  .social-card-platform {
+    color: #94a3b8;
+    font-size: 0.88rem;
+    font-weight: 400;
+    margin-top: 0.15rem;
+  }
+
+  // TABLET & IPAD PRO LAYOUT ( <= 1024px )
+  @media screen and (max-width: 1024px) {
+    // Custom Tablet Margins & Padding
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    padding: 3.5rem 1.5rem;
+
+    .contact-social-grid {
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .contact-form-column,
+    .contact-social-column {
+      width: 100%;
+      flex: 1 1 100%;
+      padding-top: 0;
+    }
+
+    // Displays social media items in a balanced 2-column grid on tablets
+    .social-vertical-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+
+  // MOBILE LAYOUT ( <= 640px 
+  @media screen and (max-width: 640px) {
+    // Custom Mobile Margins & Padding
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    padding: 2.5rem 1.5rem;
+
+    .contact-social-grid {
+      gap: 2.5rem;
+    }
+
+    // Stack form input rows vertically on smaller screens
+    .form-row {
+      flex-direction: column;
+      gap: 1.25rem;
+
+      .form-group {
+        width: 100%;
+      }
+    }
+
+    // Revert social grid to a single vertical column on mobile
+    .social-vertical-list {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    .social-vertical-card {
+      padding: 1rem;
+    }
+  }
+}

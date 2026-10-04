@@ -2,12 +2,12 @@
   <div class="container">
 
     {% if page.highlighted_projects_heading %}
-        <div class="has-text-centered mb-6">
-            <h2 class="title is-2 mb-4 highlighted-projects-heading">{{ page.highlighted_projects_heading }}</h2>
-            {% if page.highlighted_projects_description %}
-            <p class="subtitle is-5 highlighted-projects-description">{{ page.highlighted_projects_description }}</p>
-            {% endif %}
-        </div>
+      <div class="has-text-centered mb-5">
+          <h2 class="title is-3 mb-4 highlighted-projects-heading">{{ page.highlighted_projects_heading }}</h2>
+          {% if page.highlighted_projects_description %}
+          <p class="subtitle is-5 highlighted-projects-description">{{ page.highlighted_projects_description }}</p>
+          {% endif %}
+      </div>
     {% endif %}
 
     <div class="columns is-multiline is-desktop">
@@ -26,16 +26,15 @@
             <div class="highlighted-project-card-body">
               <h3 class="title is-5 has-text-weight-bold mb-2">{{ item.title }}</h3>
               <p class="subtitle is-6 has-text-grey mb-4">{{ item.description }}</p>
-              <!-- <p class="subtitle is-6 has-text-grey mb-4">{{ item.impact }}</p> -->
 
               <!-- Action Buttons -->
               <div class="buttons">
                 {% if item.details_url %}
-                  <a href="{{ item.details_url }}" class="button is-white is-small">
+                  <a href="{{ item.details_url }}" class="button is-white is-small" target="_blank" rel="noopener noreferrer">
                     <span class="icon is-small">
                       <i class="fa-solid fa-file-lines"></i>
                     </span>
-                    <span>See details</span>
+                    <span>{% if page.lang == 'es' %}Ver detalles{% else %}See details{% endif %}</span>
                   </a>
                 {% endif %}
 
@@ -44,7 +43,7 @@
                     <span class="icon is-small">
                       <i class="fa-brands fa-github"></i>
                     </span>
-                    <span>Check README</span>
+                    <span>{% if page.lang == 'es' %}Ver README{% else %}Check README{% endif %}</span>
                   </a>
                 {% endif %}
               </div>
@@ -54,6 +53,18 @@
         </div>
       {% endfor %}
     </div>
+
+    <!-- See More Projects Action -->
+    {% if page.see_more_projects %}
+      <div class="has-text-centered">
+        <a href="{{ page.see_more_projects.url | relative_url }}" class="see-more-link has-text-white has-text-weight-semibold">
+          <span>{{ page.see_more_projects.text | default: "See all projects" }}</span>
+          <span class="icon is-small">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </a>
+      </div>
+    {% endif %}
 
   </div>
 </section>

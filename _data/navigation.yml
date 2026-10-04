@@ -1,0 +1,16 @@
+main:
+
+  # Parent dropdown WITHOUT a link (label only)
+  - name_en: "Portfolio"
+    name_es: "Portafolio"
+    dropdown:
+      - name_en: "Projects"
+        name_es: "Proyectos"
+        link: "projects/"
+      - name_en: "Certifications"
+        name_es: "Certificaciones"
+        link: "certifications/"
+
+  - name_en: "About"
+    name_es: "Acerca de"
+    link: "about/"

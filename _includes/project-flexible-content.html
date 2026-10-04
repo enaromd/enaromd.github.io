@@ -1,0 +1,89 @@
+{% assign data = include.data %}
+
+{% if data %}
+<div class="project-section-wrapper flexible-content-wrapper">
+  <div class="project-section-container">
+    
+    {% if data.heading %}
+      <h2 class="project-section-title">{{ data.heading }}</h2>
+    {% endif %}
+
+    <div class="project-section-body">
+      {% for block in data.blocks %}
+
+        {% if block.type == "paragraph" %}
+          <div class="block-paragraph">
+            {{ block.text | markdownify }}
+          </div>
+
+        {% elsif block.type == "callout" %}
+          <blockquote class="block-callout">
+            <p>
+              {% if block.lead %}
+                <strong class="callout-lead">{{ block.lead }}</strong>
+              {% endif %}
+              <span class="callout-body">{{ block.text | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+            </p>
+          </blockquote>
+
+        {% elsif block.type == "formula" %}
+          <div class="block-formula">
+            $$ {{ block.equation }} $$
+          </div>
+
+        {% elsif block.type == "bullets" %}
+          <ul class="block-bullets">
+            {% for item in block.items %}
+              <li>{{ item | markdownify }}</li>
+            {% endfor %}
+          </ul>
+
+        {% elsif block.type == "table" %}
+          <div class="block-table-wrapper">
+            <table class="block-table">
+              {% if block.headers %}
+                <thead>
+                  <tr>
+                    {% for header in block.headers %}
+                      <th>{{ header }}</th>
+                    {% endfor %}
+                  </tr>
+                </thead>
+              {% endif %}
+              <tbody>
+                {% for row in block.rows %}
+                  <tr>
+                    {% for cell in row %}
+                      <td>{{ cell | markdownify }}</td>
+                    {% endfor %}
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+
+        {% endif %}
+
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+
+{% assign formula_blocks = data.blocks | where: "type", "formula" %}
+{% if formula_blocks.size > 0 %}
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% endif %}
+
+{% endif %}

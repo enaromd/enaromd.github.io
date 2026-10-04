@@ -1,0 +1,41 @@
+{% assign data = include.data | default: page.about %}
+
+{% if data %}
+<section class="about-hero-style">
+  <div class="container">
+    <div class="about-hero-grid">
+      
+      <!-- Left Column: Header & Two Paragraphs -->
+      <div class="about-hero-content">
+        {% if data.title %}
+          <h2 class="title is-3 about-hero-title mb-4">
+            {{ data.title }}
+          </h2>
+        {% endif %}
+
+        {% if data.p1 %}
+          <p class="about-hero-text mb-4">
+            {{ data.p1 }}
+          </p>
+        {% endif %}
+
+        {% if data.p2 %}
+          <p class="about-hero-text">
+            {{ data.p2 }}
+          </p>
+        {% endif %}
+      </div>
+
+      <!-- Right Column: Featured Hero Image Frame -->
+      <div class="about-hero-media">
+        {% if data.image %}
+          <div class="about-image-card">
+            <img src="{{ data.image | relative_url }}" alt="{{ data.title }}" />
+          </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endif %}

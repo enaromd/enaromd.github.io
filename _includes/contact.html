@@ -1,0 +1,177 @@
+{% assign data = include.data | default: page.contact_section %}
+
+<section class="contact-social-section">
+  <div class="container">
+    <div class="contact-social-grid">
+      
+      <!-- Left Column: Contact Form -->
+      <div class="contact-form-column">
+        <div class="contact-header">
+          <h2 class="contact-title">{{ data.title | default: "Get in Touch" }}</h2>
+          {% if data.subtitle %}
+            <p class="contact-subtitle">{{ data.subtitle }}</p>
+          {% endif %}
+        </div>
+
+        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="contact-form" novalidate>
+          <input type="hidden" name="access_key" value="{{ data.access_key }}" />
+          <input type="hidden" name="subject" value="{{ data.email_subject | default: 'New Form Submission' }}" />
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+
+          <!-- Row 1: First Name & Last Name -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name" class="form-label">{{ data.label_first_name | default: "First Name" }}</label>
+              <input 
+                type="text" 
+                id="first-name" 
+                name="first_name" 
+                class="form-input" 
+                placeholder="{{ data.placeholder_first_name | default: 'John' }}" 
+                required 
+              />
+              <span class="form-error">{{ data.error_first_name | default: "Please provide your first name." }}</span>
+            </div>
+
+            <div class="form-group">
+              <label for="last-name" class="form-label">{{ data.label_last_name | default: "Last Name" }}</label>
+              <input 
+                type="text" 
+                id="last-name" 
+                name="last_name" 
+                class="form-input" 
+                placeholder="{{ data.placeholder_last_name | default: 'Doe' }}" 
+                required 
+              />
+              <span class="form-error">{{ data.error_last_name | default: "Please provide your last name." }}</span>
+            </div>
+          </div>
+
+          <!-- Row 2: Email Address -->
+          <div class="form-group full-width">
+            <label for="email" class="form-label">{{ data.label_email | default: "Email Address" }}</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="form-input" 
+              placeholder="{{ data.placeholder_email | default: 'you@company.com' }}" 
+              required 
+            />
+            <span class="form-error">{{ data.error_email | default: "Please provide a valid email address." }}</span>
+          </div>
+
+          <!-- Row 3: Message -->
+          <div class="form-group full-width">
+            <label for="message" class="form-label">{{ data.label_message | default: "Your Message" }}</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              class="form-textarea" 
+              rows="5" 
+              placeholder="{{ data.placeholder_message | default: 'Your Message' }}" 
+              required
+            ></textarea>
+            <span class="form-error">{{ data.error_message | default: "Please enter your message." }}</span>
+          </div>
+
+          <!-- Submit Button (Holds data attributes for dynamic JS status text) -->
+          <button 
+            type="submit" 
+            id="submit-btn" 
+            class="contact-submit-btn"
+            data-txt-sending="{{ data.btn_sending | default: 'Sending...' }}"
+            data-txt-success="{{ data.btn_success | default: 'Message Sent!' }}"
+            data-txt-error="{{ data.btn_error | default: 'Error! Try Again' }}"
+          >
+            <span>{{ data.button_text | default: "Send Message" }}</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Right Column: Vertical Social Media Stack -->
+      <div class="contact-social-column">
+        {% if data.social_title %}
+          <h3 class="social-column-title">{{ data.social_title }}</h3>
+        {% endif %}
+
+        <div class="social-vertical-list">
+          {% for item in data.social_links %}
+            <a href="{{ item.url }}" class="social-vertical-card" target="_blank" rel="noopener noreferrer">
+              <div class="social-card-icon">
+                <i class="{{ item.icon }}"></i>
+              </div>
+              <div class="social-card-info">
+                <span class="social-card-handle">{{ item.handle }}</span>
+                <span class="social-card-platform">{{ item.name }}</span>
+              </div>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+
+    if (!form || !submitBtn) return;
+
+    // Read dynamic button strings from dataset attributes
+    const txtOriginal = submitBtn.innerText;
+    const txtSending = submitBtn.dataset.txtSending;
+    const txtSuccess = submitBtn.dataset.txtSuccess;
+    const txtError = submitBtn.dataset.txtError;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.classList.add('is-validated');
+        return;
+      }
+
+      submitBtn.innerText = txtSending;
+      submitBtn.disabled = true;
+
+      const formData = new FormData(form);
+      const jsonObject = JSON.stringify(Object.fromEntries(formData));
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: jsonObject
+        });
+
+        const result = await response.json();
+
+        if (response.status === 200) {
+          submitBtn.innerText = txtSuccess;
+          submitBtn.style.backgroundColor = '#10B981';
+          form.reset();
+          form.classList.remove('is-validated');
+        } else {
+          throw new Error(result.message || 'Submission failed');
+        }
+      } catch (error) {
+        submitBtn.innerText = txtError;
+        submitBtn.style.backgroundColor = '#B80F0A';
+        submitBtn.disabled = false;
+      } finally {
+        setTimeout(() => {
+          submitBtn.innerText = txtOriginal;
+          submitBtn.style.backgroundColor = '';
+          submitBtn.disabled = false;
+        }, 4000);
+      }
+    });
+  });
+</script>

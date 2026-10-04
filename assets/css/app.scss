@@ -2,6 +2,8 @@
 ---
 $primary: #003152;
 
+// Default override
+
 // Remove top/bottom padding and max-width limits from the theme's outer wrapper
 body > section.section {
   padding: 0 !important;
@@ -21,9 +23,24 @@ body > section.section {
   }
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 // Import Main CSS file from theme
+@import "components/navbar";
+@import "components/footer";
 @import "components/hero";
+@import "components/cta";
 @import "components/skill-cards";
 @import "components/highlighted-projects-cards";
 @import "components/milestones-cards";
+@import "components/about";
+@import "components/splash";
+@import "components/features";
+@import "components/contact";
+@import "components/social";
+@import "components/projects";
+@import "components/gallery";
 @import "main";

@@ -1,0 +1,19 @@
+{% assign item = include.data %}
+
+<div class="columns is-desktop is-variable is-5 mb-6 align-items-stretch">
+  <!-- Image (Left) -->
+  <div class="column is-4-desktop">
+    <div class="feature-image-wrapper">
+      <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" class="feature-image">
+    </div>
+  </div>
+
+  <!-- Text Card (Right) -->
+  <div class="column is-8-desktop">
+    <div class="feature-card">
+      <h3 class="feature-title mb-4">{{ item.heading }}</h3>
+      <p class="feature-text mb-3">{{ item.p1 }}</p>
+      <p class="feature-text">{{ item.p2 }}</p>
+    </div>
+  </div>
+</div>

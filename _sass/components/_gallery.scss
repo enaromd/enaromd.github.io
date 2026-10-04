@@ -1,0 +1,75 @@
+.gallery-section-wrapper {
+  margin: 3rem 0;
+  padding-bottom: 2.5rem;
+}
+
+.gallery-card {
+  cursor: pointer;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+  .card-image {
+    position: relative;
+    background-color: #f8fafc;
+
+    img {
+      object-fit: contain;
+      padding: 0.5rem;
+    }
+  }
+
+  .gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 49, 82, 0.45); // Theme navy with opacity
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    .gallery-overlay {
+      opacity: 1;
+    }
+  }
+}
+
+// Line clamping for multi-line captions in thumbnails
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// Lightbox Modal Adjustments
+.gallery-modal {
+  .modal-content {
+    max-width: 90vw;
+    max-height: 85vh;
+    width: auto;
+
+    img {
+      max-height: 80vh;
+      width: auto;
+      margin: 0 auto;
+      border-radius: 4px;
+      object-fit: contain;
+    }
+  }
+
+  .modal-close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+}

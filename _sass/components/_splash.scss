@@ -1,0 +1,43 @@
+.page-splash {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* Dark gradient overlay for visual hierarchy and readability */
+.page-splash-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(7, 19, 34, 0.92) 0%, rgba(12, 35, 64, 0.85) 100%);
+  z-index: 1;
+}
+
+.page-splash .container {
+  position: relative;
+  z-index: 2;
+}
+
+.page-splash-content {
+  max-width: 680px; /* Keeps line lengths comfortable and readable */
+}
+
+.splash-description p {
+  line-height: 1.6;
+  opacity: 0.92;
+}
+
+@media screen and (max-width: 768px) {
+  .page-splash-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

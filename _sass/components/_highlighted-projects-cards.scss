@@ -1,26 +1,72 @@
 // Section Wrapper with Custom Background Color
 .highlighted-projects-cards-section {
-  background-color: #003152; // Custom section background color
-  border-radius: 28px; // Large outer corner radius
-  padding: 3rem !important; // Internal breathing room for headers and grid
-  margin: 2rem;
-  // padding-top: 6rem !important;
-  // padding-bottom: 7rem !important;
+  background-color: #003152;
+  width: 100%;
+  padding: 6rem 2rem !important;
+  margin: 4.5rem 0 !important;
+  margin-bottom: 3rem !important;
 
   .highlighted-projects-heading {
-    color: #ffffff; // Target title color
+    color: #ffffff;
   }
 
-  .highlighted-projects-description{
-    color: #ffffff; // Target description color
+  .highlighted-projects-description {
+    color: #ffffff;
   }
 
+  // Centered Hyperlink (Moved outside .highlighted-project-card)
+  a.see-more-link {
+    &,
+    &:visited {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-decoration: none !important;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+
+      &,
+      span,
+      i,
+      .icon {
+        color: #ffffff !important;
+      }
+
+      .icon,
+      i {
+        font-size: 0.9em;
+        transition: transform 0.2s ease, color 0.2s ease;
+      }
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none !important;
+
+      &,
+      span,
+      i,
+      .icon {
+        color: #D29606 !important; // Accent blue on hover
+      }
+
+      .icon,
+      i {
+        transform: translateX(4px);
+      }
+    }
+  }
+
+  // Card Grid Styles
   .highlighted-project-card {
     display: flex;
     flex-direction: column;
     height: 100%;
 
-    // Rounded Image Container
     .highlighted-project-card-image {
       position: relative;
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -44,7 +90,6 @@
       }
     }
 
-    // Card Content Block
     .highlighted-project-card-body {
       display: flex;
       flex-direction: column;
@@ -62,7 +107,6 @@
         font-weight: 400;
       }
 
-      // Anchors action buttons to the bottom regardless of description length
       .buttons {
         margin-top: auto;
         padding-top: 0.75rem;
@@ -79,5 +123,11 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    margin-bottom: 2rem;
   }
 }

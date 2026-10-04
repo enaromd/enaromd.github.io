@@ -1,0 +1,39 @@
+{% assign data = include.data | default: page.results %}
+
+{% if data %}
+  <div class="reflection-cards-wrapper">
+    <div class="reflection-cards-container">
+
+      <!-- Cards Grid -->
+      {% if data.cards %}
+        <div class="columns is-desktop is-multiline">
+          {% for card in data.cards %}
+            <div class="column is-4-desktop is-12-tablet">
+              <div class="reflection-card">
+                {% if card.title %}
+                  <h3 class="card-header-title">{{ card.title }}</h3>
+                {% endif %}
+                
+                <div class="card-content-block">
+                  <p>
+                    {% if card.lead_1 %}
+                      <span class="lead-text">{{ card.lead_1 }}</span>
+                    {% endif %}
+                    <span>{{ card.description_1 }}</span>
+                  </p>
+                  <p>
+                    {% if card.lead_2 %}
+                      <span class="lead-text">{{ card.lead_2 }}</span>
+                    {% endif %}
+                    <span>{{ card.description_2 }}</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+{% endif %}

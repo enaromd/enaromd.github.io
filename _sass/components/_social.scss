@@ -1,0 +1,84 @@
+// Component: Connect with Me Cards
+.connect-section {
+  padding: 4rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.connect-title {
+  color: #003152 !important;
+  font-size: 2.25rem !important;
+  font-weight: 700;
+  margin-bottom: 3rem !important;
+  letter-spacing: -0.02em;
+}
+
+.connect-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.25rem;
+}
+
+.connect-card {
+  flex: 1 1 180px;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.25rem;
+  border-radius: 18px;
+  background-color: transparent;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: #f8fafc;
+    transform: translateY(-2px);
+  }
+}
+
+.connect-icon {
+  font-size: 2rem;
+  color: #003152;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+
+  svg, i {
+    fill: currentColor;
+    color: #003152;
+  }
+}
+
+.connect-handle {
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.3;
+  margin-bottom: 0.35rem;
+}
+
+.connect-name {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+// Mobile responsiveness
+@media screen and (max-width: 600px) {
+  .connect-grid {
+    gap: 0.75rem;
+  }
+
+  .connect-card {
+    flex: 1 1 calc(50% - 0.75rem);
+    max-width: none;
+    padding: 1.5rem 1rem;
+  }
+}

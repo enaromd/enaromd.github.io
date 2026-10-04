@@ -1,0 +1,158 @@
+<nav class="navbar custom-navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <!-- PNG Logo + Brand Name -->
+      <a class="navbar-item is-flex is-align-items-center" href="{{ '/' | relative_url }}">
+        <img src="{{ site.logo | default: '/assets/images/logo.png' | relative_url }}" 
+             alt="{{ site.title }}" 
+             class="mr-2" 
+             style="max-height: 2.25rem;">
+        <span class="has-text-weight-bold is-size-4 brand-logo">{{ site.title | default: "Enyel Rodríguez" }}</span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="mainNavbar" class="navbar-menu">
+      <!-- Left Nav Items -->
+      <div class="navbar-start">
+        {% for item in site.data.navigation.main %}
+          {% assign lang_key = 'name_' | append: site.active_lang %}
+          {% assign item_title = item[lang_key] | default: item.name %}
+
+          {% if item.dropdown %}
+            <div class="navbar-item has-dropdown is-hoverable">
+              {% if item.link %}
+                <a href="{{ item.link | relative_url }}" class="navbar-link">
+                  {{ item_title }}
+                </a>
+              {% else %}
+                <a class="navbar-link">
+                  {{ item_title }}
+                </a>
+              {% endif %}
+
+              <div class="navbar-dropdown">
+                {% for subitem in item.dropdown %}
+                  {% assign sub_title = subitem[lang_key] | default: subitem.name %}
+                  {% if subitem.link %}
+                    <a href="{{ subitem.link | relative_url }}" class="navbar-item">
+                      {{ sub_title }}
+                    </a>
+                  {% else %}
+                    <span class="navbar-item has-text-weight-semibold">
+                      {{ sub_title }}
+                    </span>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          {% else %}
+            {% if item.link %}
+              <a href="{{ item.link | relative_url }}" class="navbar-item">
+                {{ item_title }}
+              </a>
+            {% else %}
+              <span class="navbar-item">
+                {{ item_title }}
+              </span>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <!-- Right Utility Actions: Language Switcher + CTA Button -->
+      <div class="navbar-end is-flex-desktop is-align-items-center">
+        
+        <!-- Language Switcher Dropdown -->
+        {% assign current_lang = 'en' %}
+        {% if page.lang == 'es' or page.url contains '/es/' %}
+          {% assign current_lang = 'es' %}
+        {% endif %}
+
+        <div class="navbar-item has-dropdown is-hoverable lang-switcher">
+          <a class="navbar-link is-arrowless is-flex is-align-items-center">
+            <!-- Active language flag & label bound to current_lang -->
+            <img src="{{ '/assets/images/flags/' | append: current_lang | append: '.svg' | relative_url }}" 
+                alt="{{ current_lang | upcase }}" 
+                class="flag-icon mr-2">
+            <span class="has-text-weight-semibold">{{ current_lang | upcase }}</span>
+          </a>
+
+          <div class="navbar-dropdown is-right">
+            <a href="#" class="navbar-item is-flex is-align-items-center lang-opt {% if current_lang == 'en' %}is-active{% endif %}" data-lang="en">
+              <img src="{{ '/assets/images/flags/en.svg' | relative_url }}" alt="EN" class="flag-icon mr-2">
+              <span>English</span>
+            </a>
+            <a href="#" class="navbar-item is-flex is-align-items-center lang-opt {% if current_lang == 'es' %}is-active{% endif %}" data-lang="es">
+              <img src="{{ '/assets/images/flags/es.svg' | relative_url }}" alt="ES" class="flag-icon mr-2">
+              <span>Español</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="navbar-item">
+          <a href="{{ 'contact/' | relative_url }}" class="button nav-cta-btn">
+            <span class="icon is-small mr-1">
+              <i class="fa-solid fa-paper-plane"></i>
+            </span>
+            <span>{% if current_lang == 'es' %}Contáctame{% else %}Get in touch{% endif %}</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Mobile Hamburger Menu Toggle
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+
+    // 2. Client-side JS Language Redirect Logic
+    document.querySelectorAll('.lang-opt').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetLang = this.getAttribute('data-lang');
+        const currentUrl = window.location.pathname;
+        let newUrl;
+
+        if (targetLang === 'en') {
+          // Switch to English: remove /es/ or /es prefix
+          if (currentUrl === '/es' || currentUrl === '/es/') {
+            newUrl = '/';
+          } else {
+            newUrl = currentUrl.replace('/es/', '/');
+          }
+        } else {
+          // Switch to Spanish: add /es/ if not already present
+          if (currentUrl.includes('/es/') || currentUrl === '/es') {
+            newUrl = currentUrl;
+          } else if (currentUrl === '/') {
+            newUrl = '/es/';
+          } else {
+            newUrl = '/es' + currentUrl;
+          }
+        }
+
+        // Clean up double slashes and redirect
+        window.location.href = newUrl.replace(/\/+/g, '/');
+      });
+    });
+  });
+</script>

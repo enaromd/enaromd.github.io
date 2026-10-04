@@ -1,0 +1,27 @@
+{% assign data = include.data | default: site.data.connect | default: page.connect %}
+
+{% if data %}
+<section class="connect-section">
+  <div class="container">
+    {% if data.title %}
+      <h2 class="connect-title">
+        {{ data.title }}
+      </h2>
+    {% endif %}
+
+    <div class="connect-grid">
+      {% for item in data.links %}
+        <a href="{{ item.url }}" class="connect-card" target="_blank" rel="noopener noreferrer">
+          <div class="connect-icon">
+            <i class="{{ item.icon }}"></i>
+          </div>
+          <span class="connect-handle">{{ item.handle }}</span>
+          {% if item.name %}
+            <span class="connect-name">{{ item.name }}</span>
+          {% endif %}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

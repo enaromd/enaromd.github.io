@@ -1,0 +1,54 @@
+<div class="column is-4-desktop is-12-tablet">
+  <div class="milestones-card">
+
+    {% if card.image %}
+      <div class="milestones-card-image mb-4">
+        <figure class="image is-4by3">
+          <img src="{{ card.image | relative_url }}" alt="{{ card.title }}" />
+        </figure>
+      </div>
+    {% endif %}
+
+    <div class="milestones-card-body">
+      <h3 class="title is-5 mb-2">{{ card.title }}</h3>
+      
+      {% if card.issuer %}
+        <p class="subtitle is-6 is-italic mb-2">{{ card.issuer }}</p>
+      {% endif %}
+
+      {% if card.description %}
+        <p class="subtitle is-6 mb-4">{{ card.description }}</p>
+      {% endif %}
+
+      <div class="buttons">
+        {% if card.credentials_url %}
+          <a href="{{ card.credentials_url | relative_url }}" class="button is-primary-btn is-small" target="_blank" rel="noopener noreferrer">
+            <span class="icon is-small">
+              <i class="fa-solid fa-id-badge"></i>
+            </span>
+            <span>{% if page.lang == 'es' %}Ver credenciales{% else %}Check credentials{% endif %}</span>
+          </a>
+        {% endif %}
+
+        {% if card.details_url %}
+          <a href="{{ card.details_url }}" class="button is-primary-btn is-small" target="_blank" rel="noopener noreferrer">
+            <span class="icon is-small">
+              <i class="fa-solid fa-file-lines"></i>
+            </span>
+            <span>{% if page.lang == 'es' %}Ver detalles{% else %}See details{% endif %}</span>
+          </a>
+        {% endif %}
+
+        {% if card.github_url %}
+          <a href="{{ card.github_url }}" class="button is-outlined-btn is-small" target="_blank" rel="noopener noreferrer">
+            <span class="icon is-small">
+              <i class="fa-brands fa-github"></i>
+            </span>
+            <span>{% if page.lang == 'es' %}Ver README{% else %}Check README{% endif %}</span>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+
+  </div>
+</div>
