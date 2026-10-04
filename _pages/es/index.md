@@ -12,7 +12,7 @@ hero:
   description: "Soy Enyel Rodríguez, Médico y Analista de Datos. Cierro la brecha crítica entre los flujos de trabajo clínicos de primera línea y la bioestadística rigurosa, construyendo índices clínicos validados en tuberías de Datos del Mundo Real para obtener resultados basados en evidencia."
 
   primary_cta:
-    text: "Ponerse en contacto"
+    text: "Contáctame"
     url: "contact/"
     icon: "fa-solid fa-paper-plane"
 

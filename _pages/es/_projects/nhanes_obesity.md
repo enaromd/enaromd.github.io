@@ -181,7 +181,7 @@ cta:
   description: "La analítica de salud efectiva comienza entendiendo cómo nacen los datos al pie de la cama del paciente, incluyendo los flujos de trabajo ajetreados y los factores humanos que distorsionan los registros crudos. Si su equipo necesita a alguien que combine la perspectiva clínica de primera línea con Python, SQL y bioestadística, conectemos."
   bg_image: "/assets/images/cta-background.jpg"
   button:
-    text: "Ponerse en contacto"
+    text: "Contáctame"
     url: "contact/"
 ---
 
