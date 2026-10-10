@@ -45,17 +45,17 @@ skills_heading: "Metodología integral para la atención médica"
 skills_description: "Generar Evidencia del Mundo Real confiable requiere una alineación integral: desde el diagnóstico directo junto a la cama del paciente y la síntesis sistemática de evidencia, hasta la optimización de procedimientos almacenados y el modelado bioestadístico ponderado por encuestas."
 skills:
   - title: Dominio clínico de primera línea
-    icon: "fa-solid fa-stethoscope"
+    icon: "assets/images/icons/stethoscope.png"
     one: "<b>Conocimiento clínico y estrategia:</b> Medicina Interna, patología cardiorrenal y metabólica."
     two: "<b>Síntesis de evidencia:</b> Revisiones sistemáticas, meta-análisis y evaluación de sesgo sistemático."
     three: "<b>Comunicación científica:</b> Estructura de mensajes de alto impacto y diseño de presentaciones especializadas."
   - title: Ingeniería de bases de datos
-    icon: "fa-solid fa-database"
+    icon: "assets/images/icons/data_algorithm.png"
     one: "<b>Diseño de bases de datos relacionales:</b> Esquemas 3NF y Copo de Nieve (Snowflake), y optimización en MySQL."
     two: "<b>Desarrollo en SQL:</b> Uniones avanzadas (joins), subconsultas, agregaciones y procedimientos almacenados."
     three: "<b>ETL y Control de Calidad de Datos (DQC):</b> Construcción de tuberías de validación de datos y auditorías."
   - title: Bioestadística e información visual
-    icon: "fa-solid fa-chart-column"
+    icon: "assets/images/icons/statistic.png"
     one: "<b>Stack analítico de Python:</b> Pandas, NumPy, SciPy, Statsmodels y Seaborn."
     two: "<b>Dashboards interactivos de BI:</b> Storytelling de datos ejecutivo y operativo en Tableau."
     three: "<b>Modelado ponderado por encuestas:</b> Ajustes por muestreo complejo, modelos GEE Poisson y estimadores robustos (sandwich)."

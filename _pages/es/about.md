@@ -33,15 +33,15 @@ skills_heading: "Principios fundamentales y filosofía analítica"
 skills_description: "Combinando la práctica médica directa con el rigor cuantitativo para mitigar la distorsión de datos, reducir el sesgo sistemático y mejorar los resultados reales en los pacientes."
 skills:
   - title: Evidencia sobre dogma
-    icon: "fa-solid fa-stethoscope"
+    icon: "assets/images/icons/selection.png"
     one: "La intuición clínica genera hipótesis; los datos empíricos establecen la verdad."
     two: "Las decisiones deben basarse en evidencia cuantitativa verificable en lugar de hábitos o jerarquías. Esto nos permite diagnosticar mecanismos de datos faltantes, auditar flujos de trabajo y dejar que los datos dicten la solución."
   - title: Persuasión a través de la claridad
-    icon: "fa-solid fa-database"
+    icon: "assets/images/icons/event.png"
     one: "Los modelos bioestadísticos complejos son inútiles si los actores clave no pueden interpretarlos."
     two: "La verdadera influencia proviene de traducir conceptos complejos —como la heterogeneidad del efecto del tratamiento— en una comunicación transparente y lista para la toma de decisiones."
   - title: Sinergia interdisciplinaria
-    icon: "fa-solid fa-chart-column"
+    icon: "assets/images/icons/effects.png"
     one: "Controlar el ego significa reconocer los límites de la formación clínica por sí sola."
     two: "Combinar la práctica clínica de primera línea con la ingeniería de bases de datos y el pensamiento sistémico genera pipelines de datos técnicamente sólidas y operacionalmente realistas."
 
