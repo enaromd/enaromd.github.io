@@ -1,14 +1,14 @@
 {% assign item = include.data %}
 
-<div class="columns is-desktop is-variable is-5 mb-6 align-items-stretch">
-  <!-- Image (Left) -->
+<div class="columns is-vcentered is-variable is-5 mb-6 is-flex-direction-column-reverse-touch">
+  <!-- Image (Left on Desktop, Bottom on Mobile/Tablet) -->
   <div class="column is-4-desktop">
     <div class="feature-image-wrapper">
       <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" class="feature-image">
     </div>
   </div>
 
-  <!-- Text Card (Right) -->
+  <!-- Text Card (Right on Desktop, Top on Mobile/Tablet) -->
   <div class="column is-8-desktop">
     <div class="feature-card">
       <h3 class="feature-title mb-4">{{ item.heading }}</h3>

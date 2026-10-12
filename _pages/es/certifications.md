@@ -84,7 +84,7 @@ sections:
         issuer: "EF Standard English Test"
         image: "/assets/images/efset_c2.jpg"
         description: "Capacidad avanzada de síntesis y comunicación fluida en entornos complejos."
-        credentials_url: "https://www.coursera.org/account/accomplishments/specialization/MV8WGWJ9SBPRs"
+        credentials_url: "https://cert.efset.org/rn8hoZ"
 
 cta:
   heading: "Conecta la realidad clínica de primera línea con la ejecución técnica"

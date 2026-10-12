@@ -84,7 +84,7 @@ sections:
         issuer: "EF Standard English Test"
         image: "/assets/images/efset_c2.jpg"
         description: "Advanced synthesis capability and fluent communication in complex environments."
-        credentials_url: "https://www.coursera.org/account/accomplishments/specialization/MV8WGWJ9SBPRs"
+        credentials_url: "https://cert.efset.org/rn8hoZ"
 
 cta:
   heading: "Bridge Frontline Clinical Reality with Technical Execution"
